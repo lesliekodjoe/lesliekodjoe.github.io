@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const manr = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Leslie Kodjoe",
-  description: "My Portfolio Website",
+  description: "My Portfolio",
 };
 
 export default function RootLayout({
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manr.className}>
+        <Navbar/>
         {children}
       </body>
     </html>
