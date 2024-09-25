@@ -8,10 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "10px",
+          lg: "80px",
+        },
       },
+      letterSpacing: {
+        wide: "0.3em",
+        "extra-wide": "0.6em",
+        "super-wide": "0.9em",
+      },
+      backgroundImage: {
+        "about-img": "url('../assets/background/about_background.jpg')",
+      },
+    },
+    screens: {
+      sm: "375px",
+      md: "768px",
+      lg: "1200px",
     },
   },
   plugins: [],

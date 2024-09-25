@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .menu-style{
-        @apply text-6xl font-extrabold text-[#292929] md:text-8xl hover:text-white transition duration-700 ease-in-out cursor-pointer
-    }
+@layer components {
+  .menu-style {
+    @apply text-6xl font-extrabold text-[#292929] md:text-8xl hover:text-white transition duration-700 ease-in-out cursor-pointer;
+  }
+
+  .text-design {
+    @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
+  }
 }
+
