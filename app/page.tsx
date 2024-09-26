@@ -7,45 +7,54 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="pt-12 pb-28 md:pt-28">
-      <div className="container">
-        <div className="relative md:flex justify-center items-center">
-          <div className="w-[309px] md:w-[788px] h-auto">
-            <h1 className="text-center text-2xl font-bold text-design md:text-6xl md:leading-tight">
-              A Frontend Developer who loves designs & creating memorable user
-              experiences.
-            </h1>
+    <section>
+      <div className="pt-12 pb-24 lg:pb-44 md:pt-28">
+        <div className="container">
+          <div className="relative flex justify-center items-center">
+            <div className="w-[309px] md:w-[788px] h-auto">
+              <h1 className="text-center text-2xl font-bold text-design md:text-6xl md:leading-tight">
+                A Frontend Developer who loves designs & creating memorable user
+                experiences.
+              </h1>
+            </div>
+            <Image
+              src={coneImage}
+              alt="Cone Image"
+              className="hidden lg:block w-[230px] absolute -top-20 -right-28"
+            />
+            <Image
+              src={donutImage}
+              alt="Donut Image"
+              className="hidden lg:block w-[230px] absolute -bottom-28 left-0"
+            />
+            <Image
+              src={watchImage}
+              alt="Watch Image"
+              className="hidden lg:block w-[100px] absolute -top-10 -left-20"
+            />
+            <Image
+              src={mouseImage}
+              alt="Mouse Image"
+              className="hidden lg:block w-[100px] absolute -bottom-10 -right-0"
+            />
           </div>
-          <Image
-            src={coneImage}
-            alt="Cone Image"
-            className="hidden lg:block w-[230px] absolute -top-20 -right-28"
-          />
-          <Image
-            src={donutImage}
-            alt="Donut Image"
-            className="hidden lg:block w-[230px] absolute -bottom-28 left-0"
-          />
-          <Image
-            src={watchImage}
-            alt="Watch Image"
-            className="hidden lg:block w-[100px] absolute -top-10 -left-20"
-          />
-          <Image
-            src={mouseImage}
-            alt="Mouse Image"
-            className="hidden lg:block w-[100px] absolute -bottom-10 -right-0"
-          />
         </div>
       </div>
-      <div className="mt-14 w-full flex items-center justify-center">
-        <div>
-          <Image src={pencilImage} alt="Pencil Image" />
+      <div className="bg-[#1D1D1D] text-white">
+        <div className="relative flex items-center justify-center">
+          <Image
+            src={pencilImage}
+            alt="Pencil Image"
+            className="absolute -top-24"
+          />
+        </div>
+        <div className="w-full uppercase flex flex-col items-center justify-center gap-y-6 py-36 border div">
+          <span className="text-sm tracking-super-wide bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#8BCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF)] text-transparent bg-clip-text">
+            Featured
+          </span>
+          <h1 className="font-extrabold text-5xl">Projects</h1>
         </div>
       </div>
-      <div>
-        Hello
-      </div>
-    </div>
+    </section>
   );
 }

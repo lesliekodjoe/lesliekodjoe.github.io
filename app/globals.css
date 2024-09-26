@@ -10,5 +10,6 @@
   .text-design {
     @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
   }
+  
 }
 
