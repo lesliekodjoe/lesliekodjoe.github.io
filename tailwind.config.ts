@@ -16,7 +16,7 @@ const config: Config = {
         },
       },
       letterSpacing: {
-        'extra-wide': '0.6em',
+        'extra-wide': '0.5em',
         'super-wide': '0.9em',
       },
       backgroundImage: {
