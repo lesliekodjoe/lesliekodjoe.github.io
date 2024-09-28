@@ -4,14 +4,14 @@ import donutImage from "@/assets/icons/Donut.svg";
 import watchImage from "@/assets/icons/Apple_watches.svg";
 import mouseImage from "@/assets/icons/Mouse.svg";
 import pencilImage from "@/assets/icons/Pencil.svg";
-import coffeeImage from "@/assets/background/Coffee.svg";
-import arrowIcon from "@assets/icons/arrow_right.svg";
 import Image from "next/image";
 
 import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
 import proIMG3 from "@/assets/projectBackground/proIMG3.jpg";
 import proIMG4 from "@/assets/projectBackground/proIMG4.jpg";
+import Connect from "@/sections/Connect";
+import Footer from "@/components/Footer";
 
 const projects_data = [
   {
@@ -57,21 +57,25 @@ export default function Home() {
               src={coneImage}
               alt="Cone Image"
               className="w-[150px] lg:block lg:w-[230px] absolute -top-20 -right-28"
+              loading="lazy"
             />
             <Image
               src={donutImage}
               alt="Donut Image"
               className="w-[150px] -left-10 lg:block lg:w-[230px] absolute -bottom-28 lg:left-0"
+              loading="lazy"
             />
             <Image
               src={watchImage}
               alt="Watch Image"
               className="hidden md:block w-[100px] absolute -top-10 -left-20"
+              loading="lazy"
             />
             <Image
               src={mouseImage}
               alt="Mouse Image"
               className="hidden md:block w-[100px] absolute -bottom-10 -right-0"
+              loading="lazy"
             />
           </div>
         </div>
@@ -108,7 +112,7 @@ export default function Home() {
                   <div className="absolute top-0 px-[20px] py-[47px] text-3xl font-extrabold">
                     {project.num}
                   </div>
-                  <div className="absolute inset-y-1/2 px-[20px] py-[47px]">
+                  <div className="absolute top-44 w-[166px] font-semibold text-3xl px-[20px] py-[47px]">
                     {project.jobTitle}
                   </div>
                 </div>
@@ -117,26 +121,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* About Section */}
-      <div className="container">
-        <div className="px-8 py-14 border md:flex md:justify-between md:items-center">
-          <div className="gap-y-5 flex flex-col md:gap-y-10">
-            <h1 className="text-5xl md:text-7xl font-black">
-              Let's <br></br>Create
-            </h1>
-            <a
-              href=""
-              className="text-sm font-semibold px-6 py-3 bg-black text-white w-fit rounded-full"
-            >
-              <span>leswulffk@gmail.com</span>
-              <Image src={arrowIcon}alt="Arrow icon" />
-            </a>
-          </div>
-          <div>
-            <Image src={coffeeImage} alt="Coffee" />
-          </div>
-        </div>
-      </div>
+      {/* Connect Section */}
+      <Connect />
+      {/* Footer */}
+      <Footer/>
     </section>
   );
 }
