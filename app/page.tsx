@@ -6,6 +6,7 @@ import mouseImage from "@/assets/icons/Mouse.svg";
 import pencilImage from "@/assets/icons/Pencil.svg";
 import Image from "next/image";
 import { useRef } from "react";
+import Link from "next/link";
 
 import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
@@ -61,12 +62,14 @@ export default function Home() {
                 A Frontend Developer who loves designs & creating memorable user
                 experiences.
               </h1>
-              <div className="tag">About Me</div>
+              <Link href="/about">
+                <a href="">About Me</a>
+              </Link>
             </div>
             <motion.img
               src={coneImage.src}
               alt="Cone Image"
-              className="w-[150px] lg:block lg:w-[230px] absolute -top-20 -right-28"
+              className="w-[150px] lg:block lg:w-[230px] absolute top-0 -right-28"
               loading="lazy"
               style={{
                 translateY: translateY,

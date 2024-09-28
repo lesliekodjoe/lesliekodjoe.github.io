@@ -11,8 +11,8 @@
     @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
   }
 
-  .tag {
-    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight mt-6;
+  .link-tag {
+    @apply flex items-center justify-center rounded-full w-24 h-24 p-4 text-base text-center bg-black text-white mt-5 absolute bottom-0 right-40
   }
 
   .footer-bottom {

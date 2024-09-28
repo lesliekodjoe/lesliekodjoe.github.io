@@ -1,10 +1,14 @@
 import React from 'react'
 
 
-const page = () => {
+const About = () => {
   return (
-    <div>page</div>
+    <section className='bg-about-img h-screen'>
+      <div>
+        
+      </div>
+    </section>
   )
 }
 
-export default page
+export default About

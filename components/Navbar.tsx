@@ -6,7 +6,7 @@ import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 backdrop-blur-sm">
+    <header className="fixed w-full top-0 backdrop-blur-sm">
       <div className="flex items-center justify-between px-8 py-3">
         <div className="w-1/3">
           <Image src={Logo} alt="logo" height={30} width={30} />
