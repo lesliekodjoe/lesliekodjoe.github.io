@@ -66,7 +66,7 @@ export const AnimatedHamburgerMenu = () => {
         </motion.button>
 
         <motion.div
-          className={`fixed top-0 left-0 right-0 bottom-0 z-30 h-full w-full bg-[#111111]`}
+          className={`fixed top-0 left-0 right-0 bottom-0 z-30 h-screen w-full bg-[#111111]`}
           animate={active ? "open" : "closed"}
           variants={{
             open: {
@@ -96,9 +96,6 @@ export const AnimatedHamburgerMenu = () => {
 
           {/* Social Icons */}
           <div className="absolute text-white left-1/2 bottom-20 inline-flex items-center gap-10 md:flex-col md:left-20">
-            <a className="inline-flex items-center" target="_blank">
-              <Image src={Email} alt="mail" width={20} height={20} />
-            </a>
             {socialIcons.map((icon, index) => (
               <a
                 href={icon.href}
