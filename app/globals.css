@@ -11,9 +11,11 @@
     @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
   }
 
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight mt-6;
+  }
+
   .footer-bottom {
     border-bottom: 2px solid #828282;
   }
-  
 }
-

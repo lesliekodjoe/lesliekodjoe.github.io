@@ -9,7 +9,7 @@ type Props = {};
 const Connect = (props: Props) => {
   return (
     <div className="container">
-      <div className="py-4 w-full footer-bottom md:flex items-center justify-between">
+      <div className="py-12 w-full footer-bottom md:flex items-center justify-between md:py-4">
         <div className="flex flex-col gap-y-4 md:gap-y-10 md:w-1/2">
           <h1 className="text-4xl md:text-7xl font-black w-[121px]">
             Let's Create
