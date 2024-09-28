@@ -4,6 +4,7 @@ import Image from "next/image";
 import Email from "@/assets/icons/mail.svg";
 import { socialIcons } from "@/utils/data";
 import { useState } from "react";
+import Link from "next/link";
 
 
 export const AnimatedHamburgerMenu = () => {
@@ -88,10 +89,10 @@ export const AnimatedHamburgerMenu = () => {
         >
           {/* Menu Navigation */}
           <div className="flex flex-col items-end pr-8 text-white h-full justify-center gap-12">
-            <a className="menu-style ">Home.</a>
-            <a className="menu-style">About.</a>
-            <a className="menu-style">Projects.</a>
-            <a className="menu-style">Connect.</a>
+            <Link href="/" className="menu-style">Home.</Link>
+            <Link href="/about" className="menu-style">About.</Link>
+            <Link href="/project" className="menu-style">Projects.</Link>
+            <Link href="/single"  className="menu-style">Connect.</Link>
           </div>
 
           {/* Social Icons */}

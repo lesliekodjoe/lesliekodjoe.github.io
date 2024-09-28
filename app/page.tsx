@@ -62,9 +62,6 @@ export default function Home() {
                 A Frontend Developer who loves designs & creating memorable user
                 experiences.
               </h1>
-              <Link href="/about">
-                <a href="">About Me</a>
-              </Link>
             </div>
             <motion.img
               src={coneImage.src}
@@ -95,7 +92,10 @@ export default function Home() {
               alt="Mouse Image"
               className="hidden md:block w-[100px] absolute -bottom-10 -right-0"
               loading="lazy"
-            /> */}
+              /> */}
+          </div>
+          <div className="flex w-full flex-row-reverse">
+            <Link href="/about" className="link-tag">About Me</Link>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="px-6">
           <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
             <motion.div
-              className="relative flex gap-3 flex-none h-[510px] "
+              className="relative flex flex-none h-[510px] "
               animate={{
                 translateX: "-50%",
               }}
