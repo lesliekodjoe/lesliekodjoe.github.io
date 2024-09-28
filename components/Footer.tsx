@@ -5,10 +5,11 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer>
-      <div className="container">
-        <p className="mt-6">
-          &copy; 2024 YourCompany, Inc All rights reserved.
+    <footer className="pb-12 ">
+      <div className="container my-8">
+        <h1 className="font-medium text-xl">Leslie Nartey Kodjoe</h1>
+        <p className="mt-3">
+          &copy; 2024 Leslie N. Kodjoe.
         </p>
       </div>
     </footer>

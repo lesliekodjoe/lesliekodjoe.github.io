@@ -10,6 +10,10 @@
   .text-design {
     @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
   }
+
+  .footer-bottom {
+    border-bottom: 2px solid #828282;
+  }
   
 }
 
