@@ -2,46 +2,16 @@
 import coneImage from "@/assets/icons/Cone.svg";
 import donutImage from "@/assets/icons/Donut.svg";
 import watchImage from "@/assets/icons/Apple_watches.svg";
-import mouseImage from "@/assets/icons/Mouse.svg";
 import pencilImage from "@/assets/icons/Pencil.svg";
 import Image from "next/image";
 import { useRef } from "react";
 import Link from "next/link";
 
-import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
-import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
-import proIMG3 from "@/assets/projectBackground/proIMG3.jpg";
-import proIMG4 from "@/assets/projectBackground/proIMG4.jpg";
 import Connect from "@/sections/Connect";
 import Footer from "@/components/Footer";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { projects_data } from "@/utils/data";
 
-const projects_data = [
-  {
-    num: "01",
-    imageSrc: proIMG1,
-    jobTitle: "Freelance Project",
-    altname: "project 1",
-  },
-  {
-    num: "02",
-    imageSrc: proIMG2,
-    jobTitle: "Freelance Project",
-    altname: "project 2",
-  },
-  {
-    num: "03",
-    imageSrc: proIMG3,
-    jobTitle: "Freelance Project",
-    altname: "project 3",
-  },
-  {
-    num: "04",
-    imageSrc: proIMG4,
-    jobTitle: "Freelance Project",
-    altname: "project 4",
-  },
-];
 
 export default function Home() {
   const heroRef = useRef(null);
