@@ -41,7 +41,6 @@ export const AnimatedHamburgerMenu = () => {
               rotate: ["0deg", "0deg", "45deg"],
               top: ["30%", "50%", "50%"],
               color: "bg-white",
-
             },
             closed: {
               rotate: ["45deg", "0deg", "0deg"],
@@ -77,14 +76,14 @@ export const AnimatedHamburgerMenu = () => {
           open: {
             x: 0,
             transition: {
-              duration: 1,
+              duration: 0.8,
               ease: "easeInOut",
             },
           },
           closed: {
             x: "-100%",
             transition: {
-              duration: 1,
+              duration: 0.8,
               ease: "easeInOut",
             },
           },
@@ -92,16 +91,32 @@ export const AnimatedHamburgerMenu = () => {
       >
         {/* Menu Navigation */}
         <div className="flex flex-col items-end pr-8 text-white h-full justify-center gap-12">
-          <Link href="/" className="menu-style">
+          <Link
+            href="/"
+            className="menu-style"
+            onClick={() => setActive(false)}
+          >
             Home.
           </Link>
-          <Link href="/about" className="menu-style">
+          <Link
+            href="/about"
+            className="menu-style"
+            onClick={() => setActive(false)}
+          >
             About.
           </Link>
-          <Link href="/project" className="menu-style">
+          <Link
+            href="/project"
+            className="menu-style"
+            onClick={() => setActive(false)}
+          >
             Projects.
           </Link>
-          <Link href="/single" className="menu-style">
+          <Link
+            href="/single"
+            className="menu-style"
+            onClick={() => setActive(false)}
+          >
             Connect.
           </Link>
         </div>
