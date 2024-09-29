@@ -18,22 +18,5 @@
   .footer-bottom {
     border-bottom: 2px solid #828282;
   }
-
-  /* For Webkit-based browsers (Chrome, Safari and Opera) */
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* For IE, Edge and Firefox */
-  .scrollbar-hide {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .inner{
-    position: fixed;
-    background-color: blue;
-    top: 0;
-    left: 0;
-  }
+  
 }

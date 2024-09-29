@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import AnimatedContent from "@/components/AnimatedContent";
 
 const manr = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Leslie Kodjoe",
-  description: "My Portfolio",
+  description: "My Portfolio Website",
 };
 
 export default function RootLayout({
@@ -19,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manr.className}>
-        <Navbar />
-        <AnimatedContent>{children}</AnimatedContent>
+        <Navbar/>
+        {children}
       </body>
     </html>
   );
