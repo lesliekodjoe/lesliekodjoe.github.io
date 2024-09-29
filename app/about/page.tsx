@@ -8,7 +8,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-about-img h-full">
+    <section className="bg-about-img h-full scrollbar-hide">
       <div className="px-8 pt-20 pb-16 w-full md:flex">
         <h1 className="text-[#BDBDBD] md:w-1/3 md:px-12 md:py-12 md:text-3xl">
           About Me

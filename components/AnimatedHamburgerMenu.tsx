@@ -76,14 +76,14 @@ export const AnimatedHamburgerMenu = () => {
           open: {
             x: 0,
             transition: {
-              duration: 0.8,
+              duration: 0.9,
               ease: "easeInOut",
             },
           },
           closed: {
             x: "-100%",
             transition: {
-              duration: 0.8,
+              duration: 0.3,
               ease: "easeInOut",
             },
           },
