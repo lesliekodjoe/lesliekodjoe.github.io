@@ -2,19 +2,9 @@
 import Footer from "@/components/Footer";
 import Connect from "@/sections/Connect";
 import Image from "next/image";
-import { projects_data } from "@/utils/data";
+import { projects_data, tech_stack } from "@/utils/data";
 import { motion } from "framer-motion";
 import React from "react";
-
-const tech_stack = [
-  "HTML/CSS/TailwindCSS",
-  "JavaScript",
-  "ReactJs with TypeScript",
-  "Redux",
-  "Php",
-  "Python",
-  "SQL",
-];
 
 const About = () => {
   return (
@@ -52,7 +42,7 @@ const About = () => {
       <div className="pt-10">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
-            className="relative flex flex-none h-[510px] "
+            className="flex flex-none h-[510px] "
             animate={{
               translateX: "-50%",
             }}
@@ -68,13 +58,12 @@ const About = () => {
                 key={project.altname}
                 className="w-full h-full border border-[#333333]"
               >
-                <div className="relative w-full h-full">
+                <div className="w-full h-full">
                   <Image
                     src={project.imageSrc}
                     alt={project.altname}
                     className="w-full h-full"
                   />
-                  <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
               </div>
             ))}
@@ -83,13 +72,12 @@ const About = () => {
                 key={project.altname}
                 className="w-full h-full border border-[#333333]"
               >
-                <div className="relative w-full h-full">
+                <div className="w-full h-full">
                   <Image
                     src={project.imageSrc}
                     alt={project.altname}
                     className="w-full h-full"
                   />
-                  <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
               </div>
             ))}

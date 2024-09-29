@@ -51,3 +51,13 @@ export const projects_data = [
     altname: "project 4",
   },
 ];
+
+export const tech_stack = [
+  "HTML/CSS/TailwindCSS",
+  "JavaScript",
+  "ReactJs with TypeScript",
+  "Redux",
+  "Php",
+  "Python",
+  "SQL",
+];

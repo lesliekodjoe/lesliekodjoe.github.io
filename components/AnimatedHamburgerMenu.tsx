@@ -41,6 +41,7 @@ export const AnimatedHamburgerMenu = () => {
               rotate: ["0deg", "0deg", "45deg"],
               top: ["30%", "50%", "50%"],
               color: "bg-white",
+              
             },
             closed: {
               rotate: ["45deg", "0deg", "0deg"],

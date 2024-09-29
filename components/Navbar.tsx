@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import LogoWhite from "@/assets/logo/LogoWhite.svg";
 import LogoBlack from "@/assets/logo/LogoBlack.svg";
 import { useRouter, usePathname } from "next/navigation";
@@ -9,7 +10,7 @@ import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <header className="fixed w-full top-0 backdrop-blur-sm">
+    <header className="fixed w-full top-0 backdrop-blur-sm z-50">
       <div className="flex items-center justify-between px-8 py-3">
         <div className="w-1/3">
         {
@@ -23,9 +24,9 @@ const Navbar = () => {
         <nav
           className={`hidden md:flex w-1/3 items-center justify-center ${ pathname == '/about' ? 'text-white' : 'text-black'}`}
         >
-          <a href="" className="">
+          <Link href="/" className="">
             Leslie Kodjoe
-          </a>
+          </Link>
         </nav>
         <div className="w-1/3 flex flex-row-reverse">
           <AnimatedHamburgerMenu />

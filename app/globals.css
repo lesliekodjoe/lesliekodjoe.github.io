@@ -12,10 +12,21 @@
   }
 
   .link-tag {
-    @apply flex items-center justify-center rounded-full w-24 h-24 p-4 text-base text-center bg-black text-white hover:bg-white hover:text-black hover:border hover:border-black hover:font-semibold
+    @apply flex items-center justify-center rounded-full w-24 h-24 p-4 text-base text-center bg-black text-white hover:bg-white hover:text-black hover:border hover:border-black hover:font-semibold;
   }
 
   .footer-bottom {
     border-bottom: 2px solid #828282;
+  }
+
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
