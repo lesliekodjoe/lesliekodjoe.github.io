@@ -30,4 +30,23 @@
     scrollbar-width: none; /* Firefox */
   }
 
+  /* .slide-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+    transform-origin: bottom;
+  } */
+
+  .slide-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+    transform-origin: top;
+  }
 }
