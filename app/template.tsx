@@ -39,7 +39,7 @@ export default function Template({ children }: Props) {
               exit={{ y: "-100%", opacity: 1 }} // Slide out to the top
               transition={{
                 ease: "easeInOut",
-                duration: 0.75,
+                duration: 1.4,
               }}
               onAnimationComplete={handleAnimationComplete} // Handle animation completion
             >

@@ -106,7 +106,7 @@ export const AnimatedHamburgerMenu = () => {
             About.
           </Link>
           <Link
-            href="/project"
+            href="/projects"
             className="menu-style"
             onClick={() => setActive(false)}
           >

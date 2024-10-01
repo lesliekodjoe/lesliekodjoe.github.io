@@ -5,6 +5,7 @@ import Image from "next/image";
 import { projects_data, tech_stack } from "@/utils/data";
 import { motion } from "framer-motion";
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -40,49 +41,51 @@ const About = () => {
         </div>
       </div>
       <div className="pt-10">
-        <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-          <motion.div
-            className="flex flex-none h-[510px] "
-            animate={{
-              translateX: "-50%",
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear",
-              repeatType: "loop",
-            }}
-          >
-            {projects_data.map((project) => (
-              <div
-                key={project.altname}
-                className="w-full h-full border border-[#333333]"
-              >
-                <div className="w-full h-full">
-                  <Image
-                    src={project.imageSrc}
-                    alt={project.altname}
-                    className="w-full h-full"
-                  />
+        <Link href="/projects">
+          <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+            <motion.div
+              className="flex flex-none h-[510px] "
+              animate={{
+                translateX: "-50%",
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear",
+                repeatType: "loop",
+              }}
+            >
+              {projects_data.map((project) => (
+                <div
+                  key={project.altname}
+                  className="w-full h-full border border-[#333333]"
+                >
+                  <div className="w-full h-full">
+                    <Image
+                      src={project.imageSrc}
+                      alt={project.altname}
+                      className="w-full h-full"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-            {projects_data.map((project) => (
-              <div
-                key={project.altname}
-                className="w-full h-full border border-[#333333]"
-              >
-                <div className="w-full h-full">
-                  <Image
-                    src={project.imageSrc}
-                    alt={project.altname}
-                    className="w-full h-full"
-                  />
+              ))}
+              {projects_data.map((project) => (
+                <div
+                  key={project.altname}
+                  className="w-full h-full border border-[#333333]"
+                >
+                  <div className="w-full h-full">
+                    <Image
+                      src={project.imageSrc}
+                      alt={project.altname}
+                      className="w-full h-full"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </motion.div>
-        </div>
+              ))}
+            </motion.div>
+          </div>
+        </Link>
       </div>
       <Connect />
       {/* Footer */}
