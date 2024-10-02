@@ -4,9 +4,8 @@ import coffeeImage from "@/assets/background/Coffee.svg";
 import { GoArrowRight } from "react-icons/go";
 import Image from "next/image";
 
-type Props = {};
 
-const Connect = (props: Props) => {
+const Connect = () => {
   return (
     <div className="container">
       <div className="py-12 w-full footer-bottom md:flex items-center justify-between md:py-4">
