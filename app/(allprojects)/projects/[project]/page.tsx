@@ -8,9 +8,8 @@ const products = [
 ];
 
 export async function generateStaticParams() {
-  // Map over the products array and return an array of params
   return products.map((product) => ({
-    id: product.id, // This corresponds to the dynamic [id] in your route
+    id: product.id,
   }));
 }
 
@@ -20,7 +19,7 @@ interface ProjectProps{
 
 const Project = ({params}: ProjectProps) => {
     const id  = params;
-    const product = products.find((p) => p.id === id); // Find the product by id
+    const product = products.find((p) => p.id === id);
 
     if (!product) {
       return <div>Product not found</div>;
