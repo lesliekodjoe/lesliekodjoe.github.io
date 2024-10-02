@@ -1,37 +1,36 @@
-import React from "react";
 
-const products = [
-  { id: "1", name: "Product 1" },
-  { id: "2", name: "Product 2" },
-  { id: "3", name: "Product 3" },
+const projects = [
+  { id: "1", name: "Project 1" },
+  { id: "2", name: "Project 2" },
+  { id: "3", name: "Project 3" },
 ];
 
 export async function generateStaticParams() {
-  return products.map((product) => ({
-    id: product.id,
+  return projects.map((project) => ({
+    project: project.id, 
   }));
 }
 
-interface ProjectProps {
+interface ProjectPageProps {
   params: {
-    id: string;
+    project: string;
   };
 }
 
-const Project = ({ params }: ProjectProps) => {
-  const { id } = params;
-  const product = products.find((p) => p.id === id);
+const ProjectPage = ({ params }: ProjectPageProps) => {
+  const { project } = params;
+  const selectedProject = projects.find((p) => p.id === project);
 
-  if (!product) {
-    return <div>Product not found</div>;
+  if (!selectedProject) {
+    return <div>Project not found</div>;
   }
 
   return (
     <div>
-      <h1>{product.name}</h1>
-      <p>Product ID: {id}</p>
+      <h1>{selectedProject.name}</h1>
+      <p>Project ID: {project}</p>
     </div>
   );
 };
 
-export default Project;
+export default ProjectPage;
