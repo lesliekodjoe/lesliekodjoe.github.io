@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoWhite from "@/assets/logo/LogoWhite.svg";
 import LogoBlack from "@/assets/logo/LogoBlack.svg";
-import { useRouter, usePathname } from "next/navigation";
+import {usePathname } from "next/navigation";
 import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
 
 const Navbar = () => {

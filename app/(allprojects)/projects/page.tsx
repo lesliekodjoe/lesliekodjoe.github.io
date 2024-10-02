@@ -2,9 +2,8 @@
 import React from "react";
 import Link from "next/link";
 
-type Props = {};
 
-const ProjectList = (props: Props) => {
+const ProjectList = () => {
 
   return (
     <div className="pt-20">

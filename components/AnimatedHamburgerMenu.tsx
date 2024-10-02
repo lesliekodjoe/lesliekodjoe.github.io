@@ -1,7 +1,7 @@
 "use client";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
+import {usePathname } from "next/navigation";
 import { socialIcons } from "@/utils/data";
 import { useState } from "react";
 import Link from "next/link";

@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="pb-2 ">
       <div className="container my-8">
