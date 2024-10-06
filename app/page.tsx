@@ -1,163 +1,101 @@
-"use client";
-import coneImage from "@/assets/icons/Cone.svg";
-import donutImage from "@/assets/icons/Donut.svg";
-import watchImage from "@/assets/icons/Apple_watches.svg";
-import pencilImage from "@/assets/icons/Pencil.svg";
 import Image from "next/image";
-import { useRef } from "react";
-import Link from "next/link";
-
-import Connect from "@/sections/Connect";
-import Footer from "@/components/Footer";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { projects_data } from "@/utils/data";
-
 
 export default function Home() {
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start end", "end start"],
-  });
-  const translateY = useTransform(scrollYProgress, [0, 1], [120, -400]);
-
   return (
-    <section ref={heroRef} className="">
-      {/* Hero Section */}
-      <div className="pt-20 pb-36 lg:pb-32 md:pt-28 overflow-x-clip">
-        <div className="container">
-          <div className="-z-10 relative flex justify-center items-center">
-            <div className="w-[309px] md:w-[788px] h-auto flex flex-col items-center justify-center">
-              <h1 className="text-center text-2xl font-bold text-design md:text-6xl md:leading-tight">
-                A Frontend Developer who loves designs & creating memorable user
-                experiences.
-              </h1>
-            </div>
-            <motion.img
-              src={coneImage.src}
-              alt="Cone Image"
-              className="w-[150px] lg:block lg:w-[230px] absolute top-0 -right-28"
-              loading="lazy"
-              style={{
-                translateY: translateY,
-              }}
-            />
-            <motion.img
-              src={donutImage.src}
-              alt="Donut Image"
-              className="w-[150px] -left-10 lg:block lg:w-[230px] absolute -bottom-28 lg:left-0"
-              loading="lazy"
-              style={{
-                translateY: translateY,
-              }}
-            />
-            <Image
-              src={watchImage}
-              alt="Watch Image"
-              className="hidden md:block w-[100px] absolute -top-10 -left-20"
-              loading="lazy"
-            />
-            {/* <Image
-              src={mouseImage}
-              alt="Mouse Image"
-              className="hidden md:block w-[100px] absolute -bottom-10 -right-0"
-              loading="lazy"
-              /> */}
-          </div>
-          <div className="flex w-full flex-row-reverse">
-            <Link href="/about" className="link-tag">About Me</Link>
-          </div>
-        </div>
-      </div>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <Image
+          className="dark:invert"
+          src="https://nextjs.org/icons/next.svg"
+          alt="Next.js logo"
+          width={180}
+          height={38}
+          priority
+        />
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2">
+            Get started by editing{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+              app/page.tsx
+            </code>
+            .
+          </li>
+          <li>Save and see your changes instantly.</li>
+        </ol>
 
-      {/* Featured Projects Section*/}
-      <div className="relative -z-10 bg-[#1D1D1D] text-white">
-        <div className="flex items-center justify-center">
-          <motion.img
-            src={pencilImage.src}
-            alt="Pencil Image"
-            className="absolute -top-28"
-            animate={{
-              translateY: [-9, 9],
-            }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "mirror",
-              duration: 2,
-              ease: "easeInOut",
-            }}
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="dark:invert"
+              src="https://nextjs.org/icons/vercel.svg"
+              alt="Vercel logomark"
+              width={20}
+              height={20}
+            />
+            Deploy now
+          </a>
+          <a
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read our docs
+          </a>
+        </div>
+      </main>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="https://nextjs.org/icons/file.svg"
+            alt="File icon"
+            width={16}
+            height={16}
           />
-        </div>
-        <div className="w-full uppercase flex flex-col items-center justify-center gap-y-6 py-32 div">
-          <span className="text-sm tracking-extra-wide md:tracking-super-wide bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#8BCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF)] text-transparent bg-clip-text">
-            Featured
-          </span>
-          <h1 className="font-extrabold text-4xl md:text-5xl">Projects</h1>
-        </div>
-        <div className="px-6">
-          <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-            <motion.div
-              className="relative flex flex-none h-[510px] "
-              animate={{
-                translateX: "-50%",
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-                repeatType: "loop",
-              }}
-            >
-              {projects_data.map((project) => (
-                <div
-                  key={project.altname}
-                  className="w-full h-full border border-[#333333]"
-                >
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={project.imageSrc}
-                      alt={project.altname}
-                      className="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
-                    <div className="absolute top-0 px-[20px] py-[47px] text-3xl font-extrabold">
-                      {project.num}
-                    </div>
-                    <div className="absolute top-44 w-[166px] font-semibold text-3xl px-[20px] py-[47px]">
-                      {project.jobTitle}
-                    </div>
-                  </div>
-                </div>
-              ))}
-              {projects_data.map((project) => (
-                <div
-                  key={project.altname}
-                  className="w-full h-full border border-[#333333]"
-                >
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={project.imageSrc}
-                      alt={project.altname}
-                      className="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-                    <div className="z-20 absolute top-0 px-[20px] py-[47px] text-3xl font-extrabold">
-                      {project.num}
-                    </div>
-                    <div className="z-20 absolute top-44 w-[166px] font-semibold text-3xl px-[20px] py-[47px]">
-                      {project.jobTitle}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </div>
-      {/* Connect Section */}
-      <Connect />
-      {/* Footer */}
-      <Footer />
-    </section>
+          Learn
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="https://nextjs.org/icons/window.svg"
+            alt="Window icon"
+            width={16}
+            height={16}
+          />
+          Examples
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="https://nextjs.org/icons/globe.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+          Go to nextjs.org →
+        </a>
+      </footer>
+    </div>
   );
 }

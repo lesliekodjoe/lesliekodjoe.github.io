@@ -2,51 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .menu-style {
-    @apply text-6xl font-extrabold text-[#292929] md:text-8xl hover:text-white transition duration-700 ease-in-out cursor-pointer;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
+}
 
-  .text-design {
-    @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
-  }
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .link-tag {
-    @apply flex items-center justify-center rounded-full w-24 h-24 p-4 text-base text-center bg-black text-white hover:bg-white hover:text-black hover:border hover:border-black hover:font-semibold;
-  }
-
-  .footer-bottom {
-    border-bottom: 2px solid #828282;
-  }
-
-  /* For Webkit-based browsers (Chrome, Safari and Opera) */
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* For IE, Edge and Firefox */
-  .scrollbar-hide {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  /* .slide-in {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #111111;
-    transform-origin: bottom;
-  } */
-
-  .slide-out {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #111111;
-    transform-origin: top;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
