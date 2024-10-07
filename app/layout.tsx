@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import PreLoader from "@/components/PreLoader";
 
 const manr = Manrope({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="scrollbar-hide">
       <body className={manr.className}>
         <Navbar />
-        {children}
+        <PreLoader>{children}</PreLoader>
       </body>
     </html>
   );

@@ -4,7 +4,8 @@ import Image from "next/image";
 import {usePathname } from "next/navigation";
 import { socialIcons } from "@/utils/data";
 import { useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
+import TransitionLink from "./TransitionLink";
 
 export const AnimatedHamburgerMenu = () => {
   const pathname = usePathname();
@@ -91,7 +92,10 @@ export const AnimatedHamburgerMenu = () => {
       >
         {/* Menu Navigation */}
         <div className="flex flex-col items-end pr-8 text-white h-full justify-center gap-12">
-          <Link
+          <TransitionLink href="/" label="Home" />
+          <TransitionLink href="/about" label="About" />
+          <TransitionLink href="/projects" label="Projects" />
+          {/* <Link
             href="/"
             className="menu-style"
             onClick={() => setActive(false)}
@@ -118,7 +122,7 @@ export const AnimatedHamburgerMenu = () => {
             onClick={() => setActive(false)}
           >
             Connect.
-          </Link>
+          </Link> */}
         </div>
 
         {/* Social Icons */}
