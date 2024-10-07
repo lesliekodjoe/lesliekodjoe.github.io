@@ -16,6 +16,8 @@ const greet = [
 ];
 
 const PreLoader = ({ children }: Props) => {
+
+
   const [loading, setLoading] = useState(true);
   const pathname = usePathname();
   const [currentGreeting, setCurrentGreeting] = useState(greet[0]);

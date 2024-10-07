@@ -1,13 +1,21 @@
-import LocomotiveScroll from 'locomotive-scroll';
-import { useEffect } from 'react'
+"use client"
+// hooks/useLocomotiveScroll.ts
+import { useEffect } from "react";
+import LocomotiveScroll from "locomotive-scroll";
 
 const useLocomotiveScroll = () => {
-    useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'), // Select the main container
-      smooth: true,
-    });
-})
-}
+  useEffect(() => {
+    const scrollEl = document.querySelector("[data-scroll-container]");
 
-export default useLocomotiveScroll
+    if (scrollEl) {
+      const locomotiveScroll = new LocomotiveScroll({
+        el: scrollEl,
+        smooth: true,
+        lerp: 0.1, // Adjust for smoothness
+      });
+
+    }
+  }, []);
+};
+
+export default useLocomotiveScroll;
