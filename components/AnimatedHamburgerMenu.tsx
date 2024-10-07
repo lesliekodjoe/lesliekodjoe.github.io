@@ -92,9 +92,21 @@ export const AnimatedHamburgerMenu = () => {
       >
         {/* Menu Navigation */}
         <div className="flex flex-col items-end pr-8 text-white h-full justify-center gap-12">
-          <TransitionLink href="/" label="Home" />
-          <TransitionLink href="/about" label="About" />
-          <TransitionLink href="/projects" label="Projects" />
+          <TransitionLink
+            href="/"
+            label="Home"
+            onClick={() => setActive(false)}
+          />
+          <TransitionLink
+            href="/about"
+            label="About"
+            onClick={() => setActive(false)}
+          />
+          <TransitionLink
+            href="/projects"
+            label="Projects"
+            onClick={() => setActive(false)}
+          />
           {/* <Link
             href="/"
             className="menu-style"
