@@ -10,13 +10,16 @@ type Props = {
   onClick?: () => void;
 };
 
-const TransitionLink = ({ href, label }: Props) => {
+const TransitionLink = ({ href, label,onClick }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
   const handleClick = () => {
     if (pathname != href) {
       animatePageOut(href, router);
+    }
+    if (onClick) {
+      onClick();
     }
   };
 

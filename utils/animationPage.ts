@@ -13,6 +13,7 @@ export const animatePageIn = () => {
       yPercent: -100,
       ease: "power4.inOut",
       duration: 1,
+      delay: 0.2,
     });
   }
 };
@@ -29,6 +30,7 @@ export const animatePageOut = (href: string, router: AppRouterInstance) => {
       yPercent: 0,
       ease: "power4.inOut",
       duration: 1,
+      delay: 0.2,
       onComplete: () => {
         router.push(href);
       },
