@@ -17,3 +17,15 @@
   }
 
 }
+
+.hero-title {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.watch,.donut{
+  clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+  opacity: 0;
+  transform: translateX(100px);
+}

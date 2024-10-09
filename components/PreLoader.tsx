@@ -27,7 +27,7 @@ const PreLoader = ({ children }: Props) => {
       setCurrentGreeting(greet[0]);
       setLoading(true);
       animateGreetings(greet, setCurrentGreeting);
-      const totalDuration = greet.length * (0.3 + 0.2) * 1000; // Adjusting total animation duration
+      const totalDuration = greet.length * (0.3 + 0.2) * 1000;
       setTimeout(() => {
         setLoading(false);
       }, totalDuration);
@@ -36,7 +36,6 @@ const PreLoader = ({ children }: Props) => {
     }
   }, [pathname]);
 
-  // Render the loader only when loading is true
   if (pathname === "/" && loading) {
     return (
       <div className="h-screen flex flex-col items-center justify-center text-white bg-black fixed top-0 left-0 w-full">
@@ -47,7 +46,6 @@ const PreLoader = ({ children }: Props) => {
     );
   }
 
-  // Render the children normally when loading is false
   return <>{children}</>;
 };
 
