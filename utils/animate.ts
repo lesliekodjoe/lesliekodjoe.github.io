@@ -28,4 +28,13 @@ export const fadeIn = (target: GsapTarget) => {
       },
       "-=0.5"
     )
+    .to(
+      [".pencil"],
+      {
+        opacity: 1,
+      },
+      "-=0.5"
+    )
 };
+
+
