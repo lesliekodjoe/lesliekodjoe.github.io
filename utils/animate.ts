@@ -105,7 +105,6 @@ export const scrollIn = () => {
         start: "top 95%",
         end: "top 90%",
         scrub: 1,
-        markers: true
       },
     }
   );
