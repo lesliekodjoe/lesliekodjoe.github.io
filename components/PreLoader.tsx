@@ -12,7 +12,7 @@ const greet = [
   "Problem-Solver",
   "Designer",
   "Developer",
-  "Welcome to My Digital World",
+  "Welcome to My Space",
 ];
 
 const PreLoader = ({ children }: Props) => {

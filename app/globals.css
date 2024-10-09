@@ -12,7 +12,7 @@
   }
 
   .about-tag {
-    @apply flex items-center justify-center rounded-lg  px-4 py-3 text-base text-center text-black ;
+    @apply flex items-center justify-center rounded-lg  px-4 py-3 text-base text-center text-black;
   }
 }
 
@@ -23,24 +23,31 @@
 }
 
 .watch,
-.donut {
+.donut,
+.connect-left {
   clip-path: polygon(100% 100%, 100% 100%, 100% 0%, 100% 0%);
   opacity: 0;
 }
 
 .watch,
-.donut {
+.donut,
+.connect-left {
   transform: translateX(100px);
 }
 
 .cone,
-.about-tag {
+.about-tag,
+.connect-right {
   clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
   opacity: 0;
 }
 
 .cone,
-.about-tag {
+.about-tag,
+.connect-right {
   transform: translateX(-100px);
 }
 
+.footer-top {
+  border-top: 2px solid #828282;
+}
