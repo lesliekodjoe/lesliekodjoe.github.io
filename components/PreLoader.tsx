@@ -39,8 +39,8 @@ const PreLoader = ({ children }: Props) => {
   // Render the loader only when loading is true
   if (pathname === "/" && loading) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center text-3xl text-white bg-black fixed top-0 left-0 w-full">
-        <h1 id="greetingText" className="font-bold text-[5rem]">
+      <div className="h-screen flex flex-col items-center justify-center text-white bg-black fixed top-0 left-0 w-full">
+        <h1 id="greetingText" className="font-bold text-3xl lg:text-[5rem]">
           {currentGreeting}
         </h1>
       </div>

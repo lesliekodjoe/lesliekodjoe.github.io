@@ -12,20 +12,19 @@ export const animateGreetings = (
     tl.to(
       {},
       {
-        duration: isFirstGreeting  ? 0 : 0.3, // Short duration for the transition between greetings
+        duration: isFirstGreeting  ? 0 : 0.3,
         onStart: () => {
-          setGreeting(greeting); // Update the greeting in the PreLoader component
+          setGreeting(greeting); 
           gsap.to("#greetingText", {
-            fontSize: "5rem", // Smoothly scale down to normal size
-            duration: 0.2, // Longer duration for a smooth transition
-            ease: "power2.out", // Smooth easing for a natural effect
+            duration: 0.2,
+            ease: "power2.out",
           });
         },
       }
     ).to(
       {},
       {
-        duration: isLastGreeting ? 0 : 0.2, // Immediate transition for the last greeting
+        duration: isLastGreeting ? 0 : 0.2,
       }
     );
   });
