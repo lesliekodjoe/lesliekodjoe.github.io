@@ -5,7 +5,6 @@ import Image from "next/image";
 import { projects_data, tech_stack } from "@/utils/data";
 import { motion } from "framer-motion";
 import React from "react";
-import Link from "next/link";
 
 const About = () => {
   return (
@@ -22,6 +21,10 @@ const About = () => {
           opportunities.
         </p>
       </div>
+      {/* Connect Section */}
+      <Connect />
+      {/* Footer */}
+      <Footer />
     </section>
   );
 };
