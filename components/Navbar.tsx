@@ -13,16 +13,16 @@ const Navbar = () => {
     <header className="fixed w-full top-0 backdrop-blur-sm z-50">
       <div className="flex items-center justify-between px-12 py-3">
         <div className="w-1/3">
-        {
-          pathname == '/about' ? (
-            <Image src={LogoWhite} alt="logo" height={30} width={30}/>
+          {pathname == "/about" ? (
+            <Image src={LogoWhite} alt="logo" height={30} width={30} />
           ) : (
-            <Image src={LogoBlack} alt="logo" height={30} width={30}/>
-          )
-        }
+            <Image src={LogoBlack} alt="logo" height={30} width={30} />
+          )}
         </div>
         <nav
-          className={`hidden md:flex w-1/3 items-center justify-center ${ pathname == '/about' ? 'text-white' : 'text-black'}`}
+          className={`hidden w-1/3 md:flex items-center justify-center ${
+            pathname == "/about" ? "text-white" : "text-black"
+          }`}
         >
           <Link href="/" className="">
             Leslie Kodjoe

@@ -95,46 +95,21 @@ export const AnimatedHamburgerMenu = () => {
           <TransitionLink
             href="/"
             label="Home"
+            className="menu-style"
             onClick={() => setActive(false)}
           />
           <TransitionLink
             href="/about"
             label="About"
+            className="menu-style"
             onClick={() => setActive(false)}
           />
           <TransitionLink
             href="/projects"
             label="Projects"
+            className="menu-style"
             onClick={() => setActive(false)}
           />
-          {/* <Link
-            href="/"
-            className="menu-style"
-            onClick={() => setActive(false)}
-          >
-            Home.
-          </Link>
-          <Link
-            href="/about"
-            className="menu-style"
-            onClick={() => setActive(false)}
-          >
-            About.
-          </Link>
-          <Link
-            href="/projects"
-            className="menu-style"
-            onClick={() => setActive(false)}
-          >
-            Projects.
-          </Link>
-          <Link
-            href="/single"
-            className="menu-style"
-            onClick={() => setActive(false)}
-          >
-            Connect.
-          </Link> */}
         </div>
 
         {/* Social Icons */}

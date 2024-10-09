@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .menu-style {
     @apply text-6xl font-extrabold text-[#292929] md:text-8xl hover:text-white transition duration-700 ease-in-out cursor-pointer;
   }
 
-    .text-design {
+  .text-design {
     @apply bg-gradient-to-b from-black from-55% to-[#B372CF] text-transparent bg-clip-text;
   }
 
-  .link-tag {
+  .about-tag {
     @apply flex items-center justify-center rounded-full w-24 h-24 p-4 text-base text-center bg-black text-white hover:bg-white hover:text-black hover:border hover:border-black hover:font-semibold;
   }
-
 }
 
 .hero-title {
@@ -24,8 +22,24 @@
   transform: translateY(100px);
 }
 
-.watch,.donut{
+.watch,
+.donut {
+  clip-path: polygon(100% 100%, 100% 100%, 100% 0%, 100% 0%);
+  opacity: 0;
+}
+
+.watch,
+.donut {
+  transform: translateX(100px);
+}
+
+.cone,
+.about-tag {
   clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
   opacity: 0;
-  transform: translateX(100px);
+}
+
+.cone,
+.about-tag {
+  transform: translateX(-100px);
 }

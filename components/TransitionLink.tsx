@@ -7,10 +7,11 @@ import React from "react";
 type Props = {
   href: string;
   label: string;
+  className: string;
   onClick?: () => void;
 };
 
-const TransitionLink = ({ href, label,onClick }: Props) => {
+const TransitionLink = ({ href, label,onClick, className }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -25,8 +26,8 @@ const TransitionLink = ({ href, label,onClick }: Props) => {
 
   return (
     <button
-      className={`menu-style`}
       onClick={handleClick}
+      className={className}
     >
       {label}
     </button>

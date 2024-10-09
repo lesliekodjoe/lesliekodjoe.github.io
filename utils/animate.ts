@@ -6,7 +6,7 @@ type GsapTarget = gsap.TweenTarget;
 
 export const fadeIn = (target: GsapTarget) => {
   const tl = gsap.timeline({
-    defaults: { ease: "power2.inOut"},
+    defaults: { ease: "power2.inOut" },
   });
 
   //   first parameter is selector, second=cssStyle
@@ -16,10 +16,16 @@ export const fadeIn = (target: GsapTarget) => {
     opacity: 1,
     y: 0,
     delay: 1,
-    duration: 2.2,
-  }).to(['.watch','.donut'],{
-    clipPath: "polygon(100% 100%, 0 100%, 0 0, 100% 0)",
-    opacity: 1,
-    x:0,
+    duration: 1.3,
   })
+    .to(
+      [".watch", ".donut", ".cone", ".about-tag"],
+      {
+        clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+        opacity: 1,
+        x: 0,
+        duration: 1.4,
+      },
+      "-=0.5"
+    )
 };

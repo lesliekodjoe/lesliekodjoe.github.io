@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { fadeIn } from "../utils/animate";
+import TransitionLink from "@/components/TransitionLink";
 
 
 export default function Home() {
@@ -20,9 +21,12 @@ export default function Home() {
     <section className="">
       <div className="pt-20 pb-36 lg:pb-32 md:pt-28 overflow-x-clip">
         <div className="container">
-          <div className="-z-10 relative flex justify-center items-center">
+          <div className="-z-10 relative h-[280px] lg:h-[450px] flex justify-center items-center">
             <div className="w-[309px] md:w-[788px] h-auto flex flex-col items-center justify-center">
-              <h1 ref={heroTitle} className="hero-title text-center text-2xl font-bold text-design md:text-6xl md:leading-tight">
+              <h1
+                ref={heroTitle}
+                className="hero-title text-center text-2xl font-bold text-design md:text-6xl md:leading-tight"
+              >
                 A Frontend Developer who loves designs & creating memorable user
                 experiences.
               </h1>
@@ -30,16 +34,12 @@ export default function Home() {
             <Image
               src={coneImage}
               alt="Cone Image"
-              className="cone absolute top-0 -right-28"
-              width={230}
-              height={230}
+              className="w-[150px] lg:block lg:w-[230px] cone absolute top-0 -right-28"
             />
             <Image
               src={donutImage}
               alt="Donut Image"
-              className="donut absolute -bottom-28 lg:left-0"
-              width={230}
-              height={230}
+              className="w-[150px] -left-10 lg:block lg:w-[230px] donut absolute -bottom-28 lg:left-0"
             />
             <Image
               src={watchImage}
@@ -48,7 +48,11 @@ export default function Home() {
             />
           </div>
           <div className="flex w-full flex-row-reverse">
-            <Link href="/about" className="link-tag">About Me</Link>
+            <TransitionLink
+              href="/about"
+              label="About Me"
+              className="about-tag"
+            />
           </div>
         </div>
       </div>
