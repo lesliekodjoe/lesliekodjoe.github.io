@@ -108,4 +108,23 @@ export const scrollIn = () => {
       },
     }
   );
+  gsap.fromTo(
+    ".footer-top",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top 95%",
+        end: "top 90%",
+        scrub: 1,
+      },
+    }
+  );
+  gsap.to("" ,{
+
+  });
 };

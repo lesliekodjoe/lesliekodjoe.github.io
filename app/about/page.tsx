@@ -1,12 +1,15 @@
 "use client";
 import Footer from "@/components/Footer";
 import Connect from "@/sections/Connect";
-import Image from "next/image";
-import { projects_data, tech_stack } from "@/utils/data";
-import { motion } from "framer-motion";
-import React from "react";
+import { scrollIn } from "@/utils/animate";
+import { tech_stack } from "@/utils/data";
+import React, { useEffect } from "react";
 
 const About = () => {
+    useEffect(() => {
+
+      scrollIn();
+    }, []);
   return (
     <section className="bg-about-img h-full scrollbar-hide">
       <div className="px-12 pt-20 pb-16 w-full md:flex md:px-16">
