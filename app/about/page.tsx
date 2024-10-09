@@ -21,6 +21,11 @@ const About = () => {
           opportunities.
         </p>
       </div>
+      <div className="px-12 pt-10 pb-20 w-full md:px-16 md:flex">
+        <h1 className="text-[#BDBDBD] md:w-1/3 md:px-12 md:py-12 md:text-3xl">
+          Tech Stack
+        </h1>
+      </div>
       {/* Connect Section */}
       <Connect />
       {/* Footer */}
