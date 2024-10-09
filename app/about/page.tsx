@@ -25,6 +25,19 @@ const About = () => {
         <h1 className="text-[#BDBDBD] md:w-1/3 md:px-12 md:py-12 md:text-3xl">
           Tech Stack
         </h1>
+        <div className="mt-4 md:w-2/3">
+          {tech_stack.map((tech, index) => (
+            <div
+              key={index}
+              className="text-white py-4 border-b border-[#828282] md:text-5xl md:py-8"
+            >
+              {tech}
+            </div>
+          ))}
+          <div className="py-4 text-base bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#8BCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF)] text-transparent bg-clip-text md:text-5xl">
+            Always ready for a Tech Adventure
+          </div>
+        </div>
       </div>
       {/* Connect Section */}
       <Connect />
