@@ -13,7 +13,7 @@ export const AnimatedHamburgerMenu = () => {
 
   const menuColor = active
     ? "bg-white"
-    : pathname == "/about"
+    : pathname == "/projects"
     ? "bg-white"
     : "bg-black";
   return (

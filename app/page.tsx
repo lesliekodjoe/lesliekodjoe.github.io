@@ -39,6 +39,7 @@ export default function Home() {
               src={coneImage}
               alt="Cone Image"
               className="w-[150px] lg:block lg:w-[230px] cone absolute top-0 -right-28"
+              
             />
             <Image
               src={donutImage}
