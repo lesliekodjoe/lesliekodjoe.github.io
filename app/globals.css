@@ -14,6 +14,14 @@
   .about-tag {
     @apply flex items-center justify-center rounded-lg  px-4 py-3 text-base text-center text-black;
   }
+
+  .about-header{
+    @apply text-[#CCCCCC] text-[88px] font-black;
+  }
+
+  .about-text{
+    @apply text-black mt-8 leading-loose;
+  }
 }
 
 .hero-title {
