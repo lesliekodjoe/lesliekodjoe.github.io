@@ -19,8 +19,12 @@
     @apply text-[#CCCCCC] text-[88px] font-black;
   }
 
+  .about-section-header{
+    @apply text-[40px] font-black opacity-80;
+  }
+
   .about-text{
-    @apply text-black mt-8 leading-loose;
+    @apply text-black text-opacity-80 mt-12 leading-loose;
   }
 }
 
