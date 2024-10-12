@@ -5,11 +5,13 @@ import { hobbys_data, tech_stack } from "@/utils/data";
 import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
 import TransitionLink from "@/components/TransitionLink";
+import Footer from "@/components/Footer";
+import Connect from "@/sections/Connect";
 
 const About = () => {
   return (
     <section className="bg-white h-full">
-      <div className="pt-20 pb-16 w-full">
+      <div className="pt-20 pb-8 w-full">
         <div className="container">
           {/* About Bio */}
           <div className="py-16">
@@ -105,6 +107,10 @@ const About = () => {
               </div>
             </div>
           </div>
+          {/* Connect Section */}
+          <Connect />
+          {/* Footer */}
+          <Footer />
         </div>
       </div>
     </section>

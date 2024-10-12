@@ -15,15 +15,15 @@
     @apply flex items-center justify-center rounded-lg  px-4 py-3 text-base text-center text-black;
   }
 
-  .about-header{
+  .about-header {
     @apply text-[#CCCCCC] text-[88px] font-black;
   }
 
-  .about-section-header{
+  .about-section-header {
     @apply text-[40px] font-black opacity-80;
   }
 
-  .about-text{
+  .about-text {
     @apply text-black text-opacity-80 mt-10 leading-loose;
   }
 }
@@ -35,28 +35,24 @@
 }
 
 .watch,
-.donut,
-.connect-left {
+.donut {
   clip-path: polygon(100% 100%, 100% 100%, 100% 0%, 100% 0%);
   opacity: 0;
 }
 
 .watch,
-.donut,
-.connect-left {
+.donut {
   transform: translateX(100px);
 }
 
 .cone,
-.about-tag,
-.connect-right {
+.about-tag {
   clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
   opacity: 0;
 }
 
 .cone,
-.about-tag,
-.connect-right {
+.about-tag {
   transform: translateX(-100px);
 }
 
@@ -64,6 +60,6 @@
   border-top: 2px solid #828282;
 }
 
-.color-update{
+.color-update {
   color: white;
 }
