@@ -7,7 +7,7 @@ import React from "react";
 type Props = {
   href: string;
   label: string;
-  className: string;
+  className?: string;
   onClick?: () => void;
 };
 

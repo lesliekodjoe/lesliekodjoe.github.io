@@ -4,7 +4,6 @@ import Image from "next/image";
 import {usePathname } from "next/navigation";
 import { socialIcons } from "@/utils/data";
 import { useState } from "react";
-// import Link from "next/link";
 import TransitionLink from "./TransitionLink";
 
 export const AnimatedHamburgerMenu = () => {

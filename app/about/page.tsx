@@ -11,7 +11,7 @@ const About = () => {
       scrollIn();
     }, []);
   return (
-    <section className="bg-about-img h-full scrollbar-hide">
+    <section className="bg-white h-full">
       <div className=" px-12 pt-20 pb-16 w-full md:flex md:px-16 ">
         <h1 className="text-[#BDBDBD] md:w-1/3 md:px-12 md:py-12 md:text-3xl">
           About Me
