@@ -50,7 +50,7 @@ const About = () => {
             </div>
           </div>
           {/* Projects */}
-          <div className="py-16">
+          <div className="py-16 mb-80 md:mb-0">
             <h1 className="about-header">Projects.</h1>
             <div className="mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
               <TransitionLink
@@ -58,14 +58,14 @@ const About = () => {
                 className="absolute h-32 w-32 px-4 text-[14px] bg-white rounded-full uppercase hover:bg-black hover:text-white"
                 label="Explore Projects"
               />
-              <div className="w-1/2 h-full">
+              <div className="w-full md:w-1/2 h-full">
                 <Image
                   src={proIMG1}
                   alt="image 1"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="w-1/2 h-full">
+              <div className="w- md:w-1/2 h-full">
                 <Image
                   src={proIMG2}
                   alt="image 2"
@@ -77,7 +77,7 @@ const About = () => {
           {/* Fun & Hobbies */}
           <div className="py-16">
             <h1 className="about-header">Other.</h1>
-            <div className="mt-14 md:flex w-full">
+            <div className="mt-14 md:flex gap-x-20 w-full ">
               {/* Left Column */}
               <div className="md:w-1/2">
                 <div className="about-section-header">
@@ -90,7 +90,7 @@ const About = () => {
               </div>
               {/* Right Column */}
               <div className="mt-10 md:mt-0 md:w-1/2">
-                <div className="grid grid-cols-3 gap-y-5">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-5">
                   {hobbys_data.map((hobby) => (
                     <div
                       key={hobby.num}
