@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { tech_stack } from "@/utils/data";
+import { hobbys_data, tech_stack } from "@/utils/data";
 import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
 import TransitionLink from "@/components/TransitionLink";
@@ -51,7 +51,11 @@ const About = () => {
           <div className="py-16">
             <h1 className="about-header">Projects.</h1>
             <div className="mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
-              <TransitionLink href="/projects" className="absolute h-32 w-32 px-4 text-[14px] bg-white rounded-full uppercase hover:bg-black hover:text-white" label="Explore Projects" />
+              <TransitionLink
+                href="/projects"
+                className="absolute h-32 w-32 px-4 text-[14px] bg-white rounded-full uppercase hover:bg-black hover:text-white"
+                label="Explore Projects"
+              />
               <div className="w-1/2 h-full">
                 <Image
                   src={proIMG1}
@@ -65,6 +69,39 @@ const About = () => {
                   alt="image 2"
                   className="w-full h-full object-cover"
                 />
+              </div>
+            </div>
+          </div>
+          {/* Fun & Hobbies */}
+          <div className="py-16">
+            <h1 className="about-header">Other.</h1>
+            <div className="mt-14 md:flex w-full">
+              {/* Left Column */}
+              <div className="md:w-1/2">
+                <div className="about-section-header">
+                  What I&apos;m watching
+                </div>
+                <div className="text-black opacity-80 max-w-80 leading-loose">
+                  Experienced Frontend Developer creating different full-stack
+                  solutions.
+                </div>
+              </div>
+              {/* Right Column */}
+              <div className="mt-10 md:mt-0 md:w-1/2">
+                <div className="grid grid-cols-3 gap-y-5">
+                  {hobbys_data.map((hobby) => (
+                    <div
+                      key={hobby.num}
+                      className="w-[145px] h-[145px] rounded-xl overflow-hidden"
+                    >
+                      <Image
+                        src={hobby.imageSrc}
+                        alt={hobby.altname}
+                        className="w-full h-full object-cover "
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
