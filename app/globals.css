@@ -24,7 +24,7 @@
   }
 
   .about-text{
-    @apply text-black text-opacity-80 mt-12 leading-loose;
+    @apply text-black text-opacity-80 mt-10 leading-loose;
   }
 }
 

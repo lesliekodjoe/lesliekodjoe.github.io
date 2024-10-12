@@ -1,6 +1,10 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { tech_stack } from "@/utils/data";
+import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
+import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
+import TransitionLink from "@/components/TransitionLink";
 
 const About = () => {
   return (
@@ -21,7 +25,7 @@ const About = () => {
           {/* Tech Stack */}
           <div className="py-16">
             <h1 className="about-header">Things I need.</h1>
-            <div className="mt-16 md:flex w-full">
+            <div className="mt-14 md:flex w-full">
               {/* Left Column */}
               <div className="md:w-1/2">
                 <div className="about-section-header">Tech Stack</div>
@@ -33,13 +37,34 @@ const About = () => {
               {/* Right Column */}
               <div className="mt-10 md:mt-0 md:w-1/2">
                 {tech_stack.map((tech, index) => (
-                  <div
-                    key={index}
-                    className="py-4 border-b border-[#CCCCCC]"
-                  >
+                  <div key={index} className="py-4 border-b border-[#CCCCCC]">
                     {tech}
                   </div>
                 ))}
+                <div className="py-4 font-semibold bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#8BCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF)] text-transparent bg-clip-text">
+                  Always ready for a Tech Adventure
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Projects */}
+          <div className="py-16">
+            <h1 className="about-header">Projects.</h1>
+            <div className="mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
+              <TransitionLink href="/projects" className="absolute h-32 w-32 px-4 text-[14px] bg-white rounded-full uppercase hover:bg-black hover:text-white" label="Explore Projects" />
+              <div className="w-1/2 h-full">
+                <Image
+                  src={proIMG1}
+                  alt="image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-1/2 h-full">
+                <Image
+                  src={proIMG2}
+                  alt="image 2"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
