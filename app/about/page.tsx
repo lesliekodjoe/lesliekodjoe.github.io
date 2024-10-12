@@ -55,7 +55,7 @@ const About = () => {
             <div className="mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
               <TransitionLink
                 href="/projects"
-                className="absolute h-32 w-32 px-4 text-[14px] bg-white rounded-full uppercase hover:bg-black hover:text-white"
+                className="absolute h-28 w-28 px-4 text-[14px] bg-white rounded-full uppercase hover:scale-110 hover:shadow-2xl ease-in-out duration-300"
                 label="Explore Projects"
               />
               <div className="w-full md:w-1/2 h-full">
