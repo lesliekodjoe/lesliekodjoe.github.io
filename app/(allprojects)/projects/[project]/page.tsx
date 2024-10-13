@@ -47,9 +47,11 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
           />
         </div>
         <div className="container mt-20">
-          <div className="w-full md:flex md:gap-x-">
+          <div className="w-full md:flex border-b border-[#828282] pb-16">
             <div className="flex flex-col gap-y-4 md:w-[739px] w-full">
-              <h1 className="uppercase text-[12px] font-semibold tracking-[5px]">Description</h1>
+              <h1 className="uppercase text-[12px] font-semibold tracking-[5px]">
+                Description
+              </h1>
               <p className="text-xl leading-relaxed">
                 In 2024, Force embarked on a mission to update and redesign
                 their website. Their primary objective was to gain the ability
@@ -62,7 +64,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             <div className="md:w-[371px] flex md:items-end md:justify-end">
               <TransitionLink
                 href={"/projects"}
-                className="group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105"
+                className="mt-8 md:mt-0 group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105"
               >
                 Visit Website
                 <GoArrowLeft className="text-2xl ml-2 group-hover:translate-x-2 ease-in-out duration-300 rotate-180" />
