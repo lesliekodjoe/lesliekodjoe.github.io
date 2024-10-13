@@ -24,7 +24,7 @@ const Navbar = () => {
             pathname == "/projects" ? "text-white" : "text-black"
           }`}
         >
-          <TransitionLink href="/" label="Leslie Kodjoe" className=""/>
+        <TransitionLink href="/" >Leslie Kodjoe</TransitionLink>
         </nav>
         <div className="w-1/3 flex flex-row-reverse">
           <AnimatedHamburgerMenu />

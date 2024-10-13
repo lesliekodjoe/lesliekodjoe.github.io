@@ -1,13 +1,9 @@
+import { projects_data } from "@/utils/data";
 
-const projects = [
-  { id: "1", name: "Project 1" },
-  { id: "2", name: "Project 2" },
-  { id: "3", name: "Project 3" },
-];
 
 export async function generateStaticParams() {
-  return projects.map((project) => ({
-    project: project.id, 
+  return projects_data.map((project) => ({
+    project: project.num, 
   }));
 }
 
@@ -19,16 +15,14 @@ interface ProjectPageProps {
 
 const ProjectPage = ({ params }: ProjectPageProps) => {
   const { project } = params;
-  const selectedProject = projects.find((p) => p.id === project);
+  const selectedProject = projects_data.find((p) => p.num === project);
 
   if (!selectedProject) {
     return <div>Project not found</div>;
   }
 
   return (
-    <div>
-      <h1>{selectedProject.name}</h1>
-      <p>Project ID: {project}</p>
+    <div className="pt-44">
     </div>
   );
 };
