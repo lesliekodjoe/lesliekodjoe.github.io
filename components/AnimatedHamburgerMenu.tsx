@@ -103,7 +103,7 @@ export const AnimatedHamburgerMenu = () => {
             className="menu-style"
             onClick={() => setActive(false)}
           >
-            Home
+            About
           </TransitionLink>
           <TransitionLink
             href="/projects"
