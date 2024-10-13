@@ -22,8 +22,11 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
   }
 
   return (
-    <div className="pt-44">
-    </div>
+    <section className="bg-project-img h-full">
+      <div className="pt-32 pb-8 w-full h-full ">
+        
+      </div>
+    </section>
   );
 };
 

@@ -7,7 +7,7 @@ import TransitionLink from "@/components/TransitionLink";
 
 const ProjectList = () => {
   return (
-    <section className="bg-about-img h-full">
+    <section className="bg-project-img h-full">
       <div className="pt-32 pb-8 w-full h-full ">
         <div className="container flex flex-col items-center justify-center space-y-8 borde">
           {projects_data.map((project) => (
