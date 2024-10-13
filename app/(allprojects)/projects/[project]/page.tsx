@@ -25,8 +25,8 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
   }
 
   return (
-    <section className="bg-project-img h-screen text-white">
-      <div className="pt-32 pb-8 w-full h-full ">
+    <section className="bg-project-img h-full text-white">
+      <div className="pt-28 pb-8 w-full h-full ">
         <div className="container">
           <TransitionLink
             href={"/projects"}
@@ -45,6 +45,30 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             alt="image 1"
             className="w-full h-full object-cover"
           />
+        </div>
+        <div className="container mt-20">
+          <div className="w-full md:flex">
+            <div className="md:w-3/4">
+              <h1>Description</h1>
+              <p>
+                In 2024, Force embarked on a mission to update and redesign
+                their website. Their primary objective was to gain the ability
+                to control content seamlessly through a Content Management
+                System (CMS). The redesign aimed to ensure the website's
+                responsiveness across mobile, tablet, and desktop devices. They
+                chose Webflow to facilitate easy and efficient content updates.
+              </p>
+            </div>
+            <div className="md:1/4">
+              <TransitionLink
+                href={"/projects"}
+                className="group flex items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105"
+              >
+                <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-300" />
+                Back
+              </TransitionLink>
+            </div>
+          </div>
         </div>
       </div>
     </section>
