@@ -37,24 +37,28 @@ export const projects_data = [
     num: "01",
     imageSrc: proIMG1,
     jobTitle: "Freelance Project",
+    projectName: "Portfolio Website",
     altname: "project 1",
   },
   {
     num: "02",
     imageSrc: proIMG2,
     jobTitle: "Freelance Project",
+    projectName: "Portfolio Website",
     altname: "project 2",
   },
   {
     num: "03",
     imageSrc: proIMG3,
     jobTitle: "Freelance Project",
+    projectName: "Portfolio Website",
     altname: "project 3",
   },
   {
     num: "04",
     imageSrc: proIMG4,
     jobTitle: "Freelance Project",
+    projectName: "Portfolio Website",
     altname: "project 4",
   },
 ];
