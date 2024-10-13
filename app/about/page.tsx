@@ -56,8 +56,9 @@ const About = () => {
               <TransitionLink
                 href="/projects"
                 className="absolute h-28 w-28 px-4 text-[14px] bg-white rounded-full uppercase hover:scale-110 hover:shadow-2xl ease-in-out duration-300"
-                label="Explore Projects"
-              />
+              >
+                Explore Projects
+              </TransitionLink>
               <div className="w-full md:w-1/2 h-full">
                 <Image
                   src={proIMG1}

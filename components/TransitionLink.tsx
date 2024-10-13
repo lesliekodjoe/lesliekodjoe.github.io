@@ -2,16 +2,16 @@
 import { usePathname, useRouter } from "next/navigation";
 import { animatePageOut } from "@/utils/animationPage";
 
-import React from "react";
+import React, { ReactNode } from "react";
 
 type Props = {
   href: string;
-  label: string;
+  children: ReactNode;
   className?: string;
   onClick?: () => void;
 };
 
-const TransitionLink = ({ href, label,onClick, className }: Props) => {
+const TransitionLink = ({ href, children,onClick, className }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -29,7 +29,7 @@ const TransitionLink = ({ href, label,onClick, className }: Props) => {
       onClick={handleClick}
       className={className}
     >
-      {label}
+      {children}
     </button>
   );
 };

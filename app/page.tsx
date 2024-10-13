@@ -39,7 +39,6 @@ export default function Home() {
               src={coneImage}
               alt="Cone Image"
               className="w-[150px] lg:block lg:w-[230px] cone absolute top-0 -right-28"
-              
             />
             <Image
               src={donutImage}
@@ -55,9 +54,10 @@ export default function Home() {
           <div className="flex w-full flex-row-reverse">
             <TransitionLink
               href="/about"
-              label="About Me"
               className="about-tag border border-black hover:bg-black hover:text-white"
-            />
+            >
+              About Me
+            </TransitionLink>
           </div>
         </div>
       </div>

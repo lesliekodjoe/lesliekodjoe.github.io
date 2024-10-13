@@ -1,7 +1,7 @@
 "use client";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
-import {usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { socialIcons } from "@/utils/data";
 import { useState } from "react";
 import TransitionLink from "./TransitionLink";
@@ -93,22 +93,25 @@ export const AnimatedHamburgerMenu = () => {
         <div className="flex flex-col items-end pr-8 text-white h-full justify-center gap-12">
           <TransitionLink
             href="/"
-            label="Home"
             className="menu-style"
             onClick={() => setActive(false)}
-          />
+          >
+            Home
+          </TransitionLink>
           <TransitionLink
             href="/about"
-            label="About"
             className="menu-style"
             onClick={() => setActive(false)}
-          />
+          >
+            Home
+          </TransitionLink>
           <TransitionLink
             href="/projects"
-            label="Projects"
             className="menu-style"
             onClick={() => setActive(false)}
-          />
+          >
+            Projects
+          </TransitionLink>
         </div>
 
         {/* Social Icons */}
