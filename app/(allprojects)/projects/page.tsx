@@ -7,12 +7,12 @@ import TransitionLink from "@/components/TransitionLink";
 
 const ProjectList = () => {
   return (
-    <section className="bg-project-img h-full">
+    <section className="bg-project-img w-full h-full">
       <div className="pt-32 pb-8 w-full h-full ">
-        <div className="container flex flex-col items-center justify-center space-y-8 borde">
+        <div className="container flex flex-col items-center justify-center space-y-8">
           {projects_data.map((project) => (
             <TransitionLink key={project.num} href={`/projects/${project.num}`}>
-              <div className="w-[888px] h-[504px] ">
+              <div className="w-full md:w-[888px] h-[504px] ">
                 <Image
                   src={project.imageSrc}
                   alt={project.altname}
