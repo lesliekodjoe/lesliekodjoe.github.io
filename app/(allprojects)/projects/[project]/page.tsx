@@ -79,13 +79,13 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
               2024
             </div>
           </div>
-          <div className="w-1/3 mt-10">
+          <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Role:</h1>
             <div className="mt-5 w-fit px-6 py-2 text-center border border-[#828282] rounded-full">
               Frontend Developer
             </div>
           </div>
-          <div className="w-1/3 mt-10">
+          <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Technologies:</h1>
             <div className="mt-5 w-fit px-6 py-2 text-center border border-[#828282] rounded-full">
               2024
