@@ -7,12 +7,12 @@ import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
 import proIMG3 from "@/assets/projectBackground/proIMG3.jpg";
 import proIMG4 from "@/assets/projectBackground/proIMG4.jpg";
 
-import hobIMG1 from "@/assets/hobb_img/titan.jpg"
-import hobIMG2 from "@/assets/hobb_img/lincoln.jpg"
-import hobIMG3 from "@/assets/hobb_img/blacklist.jpg"
-import hobIMG4 from "@/assets/hobb_img/you.jpg"
-import hobIMG5 from "@/assets/hobb_img/boys1.jpg"
-import hobIMG6 from "@/assets/hobb_img/caped.jpg"
+import hobIMG1 from "@/assets/hobb_img/titan.jpg";
+import hobIMG2 from "@/assets/hobb_img/lincoln.jpg";
+import hobIMG3 from "@/assets/hobb_img/blacklist.jpg";
+import hobIMG4 from "@/assets/hobb_img/you.jpg";
+import hobIMG5 from "@/assets/hobb_img/boys1.jpg";
+import hobIMG6 from "@/assets/hobb_img/caped.jpg";
 
 export const socialIcons = [
   {
@@ -35,32 +35,73 @@ export const socialIcons = [
 export const projects_data = [
   {
     num: "01",
-    imageSrc: proIMG1,
-    jobTitle: "Freelance Project",
-    projectName: "Portfolio Website",
-    altname: "project 1",
+    project_info: {
+      projectName: "Portfolio Website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "",
+      projectYear: "",
+      projectRole: "",
+      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
+    },
+    media: {
+      imageSrc: proIMG1,
+      altname: "project 1",
+      mockUps: [proIMG1,]
+    },
   },
   {
-    num: "02",
-    imageSrc: proIMG2,
-    jobTitle: "Freelance Project",
-    projectName: "Portfolio Website",
-    altname: "project 2",
+    num: "01",
+    project_info: {
+      projectName: "Portfolio Website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "",
+      projectYear: "",
+      projectRole: "",
+      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
+    },
+    media: {
+      imageSrc: proIMG1,
+      altname: "project 1",
+      mockUps: [proIMG1,]
+    },
   },
   {
-    num: "03",
-    imageSrc: proIMG3,
-    jobTitle: "Freelance Project",
-    projectName: "Portfolio Website",
-    altname: "project 3",
+    num: "01",
+    project_info: {
+      projectName: "Portfolio Website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "",
+      projectYear: "",
+      projectRole: "",
+      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
+    },
+    media: {
+      imageSrc: proIMG1,
+      altname: "project 1",
+      mockUps: [proIMG1,]
+    },
   },
   {
-    num: "04",
-    imageSrc: proIMG4,
-    jobTitle: "Freelance Project",
-    projectName: "Portfolio Website",
-    altname: "project 4",
+    num: "01",
+    project_info: {
+      projectName: "Portfolio Website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "",
+      projectYear: "",
+      projectRole: "",
+      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
+    },
+    media: {
+      imageSrc: proIMG1,
+      altname: "project 1",
+      mockUps: [proIMG1,]
+    },
   },
+
 ];
 
 export const tech_stack = [

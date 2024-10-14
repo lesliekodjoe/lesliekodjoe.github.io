@@ -1,7 +1,6 @@
 import TransitionLink from "@/components/TransitionLink";
 import { projects_data } from "@/utils/data";
 import { GoArrowLeft } from "react-icons/go";
-import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import Image from "next/image";
 
 export async function generateStaticParams() {
@@ -39,6 +38,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             {selectedProject.projectName}
           </div>
         </div>
+        {/* Main Image */}
         <div className="mt-20 w-full h-[554px]">
           <Image
             src={selectedProject.imageSrc}
@@ -46,6 +46,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             className="w-full h-full object-cover"
           />
         </div>
+        {/* Website Description */}
         <div className="container mt-20">
           <div className="w-full md:flex border-b border-[#828282] pb-16">
             <div className="flex flex-col gap-y-4 md:w-[739px] w-full">
@@ -72,6 +73,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             </div>
           </div>
         </div>
+        {/* Role & Time */}
         <div className="mt-10 container md:flex  md:gap-y-0">
           <div className="w-1/3">
             <h1 className="uppercase text-sm">Year:</h1>
@@ -92,6 +94,8 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             </div>
           </div>
         </div>
+        {/* Mock/Freestyle Images */}
+
       </div>
     </section>
   );
