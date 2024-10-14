@@ -72,6 +72,26 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             </div>
           </div>
         </div>
+        <div className="mt-10 container md:flex  md:gap-y-0">
+          <div className="w-1/3">
+            <h1 className="uppercase text-sm">Year:</h1>
+            <div className="mt-5 w-fit px-6 py-2 text-center border border-[#828282] rounded-full">
+              2024
+            </div>
+          </div>
+          <div className="w-1/3 mt-10">
+            <h1 className="uppercase text-sm">Role:</h1>
+            <div className="mt-5 w-fit px-6 py-2 text-center border border-[#828282] rounded-full">
+              Frontend Developer
+            </div>
+          </div>
+          <div className="w-1/3 mt-10">
+            <h1 className="uppercase text-sm">Technologies:</h1>
+            <div className="mt-5 w-fit px-6 py-2 text-center border border-[#828282] rounded-full">
+              2024
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
