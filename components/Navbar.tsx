@@ -14,9 +14,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-12 py-3">
         <div className="w-1/3">
           {pathname == "/projects" ? (
-            <Image src={LogoWhite} alt="logo" height={30} width={30} />
+            <TransitionLink href="/">
+              <Image src={LogoWhite} alt="logo" height={30} width={30} />
+            </TransitionLink>
           ) : (
-            <Image src={LogoBlack} alt="logo" height={30} width={30} />
+            <TransitionLink href="/">
+              <Image src={LogoBlack} alt="logo" height={30} width={30} />
+            </TransitionLink>
           )}
         </div>
         <nav
@@ -24,7 +28,7 @@ const Navbar = () => {
             pathname == "/projects" ? "text-white" : "text-black"
           }`}
         >
-        <TransitionLink href="/" >Leslie Kodjoe</TransitionLink>
+          <TransitionLink href="/">Leslie Kodjoe</TransitionLink>
         </nav>
         <div className="w-1/3 flex flex-row-reverse">
           <AnimatedHamburgerMenu />
