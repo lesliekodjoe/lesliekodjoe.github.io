@@ -6,6 +6,7 @@ import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
 import proIMG3 from "@/assets/projectBackground/proIMG3.jpg";
 import proIMG4 from "@/assets/projectBackground/proIMG4.jpg";
+import mock1 from "@/assets/projectBackground/mock1.jpg";
 
 import hobIMG1 from "@/assets/hobb_img/titan.jpg";
 import hobIMG2 from "@/assets/hobb_img/lincoln.jpg";
@@ -35,24 +36,24 @@ export const socialIcons = [
 export const projects_data = [
   {
     num: "01",
-    project_info: {
+    projectInfo: {
       projectName: "Portfolio Website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
       projectLink: "",
-      projectYear: "",
-      projectRole: "",
+      projectYear: "2024",
+      projectRole: "Frontend Developer",
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
       imageSrc: proIMG1,
       altname: "project 1",
-      mockUps: [proIMG1,]
+      mockUps: [mock1, mock1],
     },
   },
   {
-    num: "01",
-    project_info: {
+    num: "02",
+    projectInfo: {
       projectName: "Portfolio Website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
@@ -62,14 +63,14 @@ export const projects_data = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG1,
-      altname: "project 1",
-      mockUps: [proIMG1,]
+      imageSrc: proIMG2,
+      altname: "project 2",
+      mockUps: [mock1],
     },
   },
   {
-    num: "01",
-    project_info: {
+    num: "03",
+    projectInfo: {
       projectName: "Portfolio Website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
@@ -79,14 +80,14 @@ export const projects_data = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG1,
-      altname: "project 1",
-      mockUps: [proIMG1,]
+      imageSrc: proIMG3,
+      altname: "project 3",
+      mockUps: [mock1],
     },
   },
   {
-    num: "01",
-    project_info: {
+    num: "04",
+    projectInfo: {
       projectName: "Portfolio Website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
@@ -96,12 +97,11 @@ export const projects_data = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG1,
-      altname: "project 1",
-      mockUps: [proIMG1,]
+      imageSrc: proIMG4,
+      altname: "project 4",
+      mockUps: [mock1],
     },
   },
-
 ];
 
 export const tech_stack = [

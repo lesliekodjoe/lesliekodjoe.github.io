@@ -94,13 +94,13 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-4">
             {projects_data.map((project) => (
               <div
-                key={project.altname}
+                key={project.num}
                 className="w-full h-[500px] border border-[#333333] project"
               >
                 <div className="relative w-full h-full">
                   <Image
-                    src={project.imageSrc}
-                    alt={project.altname}
+                    src={project.media.imageSrc}
+                    alt={project.media.altname}
                     className="w-full h-full"
                   />
                   <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -108,7 +108,7 @@ export default function Home() {
                     {project.num}
                   </div>
                   <div className="absolute top-44 w-[166px] font-semibold text-3xl px-[20px] py-[47px]">
-                    {project.jobTitle}
+                    {project.projectInfo.projectName}
                   </div>
                 </div>
               </div>

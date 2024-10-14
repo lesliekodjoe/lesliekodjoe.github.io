@@ -14,8 +14,8 @@ const ProjectList = () => {
             <TransitionLink key={project.num} href={`/projects/${project.num}`}>
               <div className="w-full md:w-[888px] h-[504px] ">
                 <Image
-                  src={project.imageSrc}
-                  alt={project.altname}
+                  src={project.media.imageSrc}
+                  alt={project.media.altname}
                   className="w-full h-full object-cover"
                 />
               </div>
