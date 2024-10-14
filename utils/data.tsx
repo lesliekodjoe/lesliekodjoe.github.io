@@ -40,7 +40,7 @@ export const projects_data = [
       projectName: "Portfolio Website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
-      projectLink: "",
+      projectLink: "https://www.google.com",
       projectYear: "2024",
       projectRole: "Frontend Developer",
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
@@ -48,7 +48,7 @@ export const projects_data = [
     media: {
       imageSrc: proIMG1,
       altname: "project 1",
-      mockUps: [mock1, mock1],
+      mockUps: [mock1, mock1, mock1],
     },
   },
   {

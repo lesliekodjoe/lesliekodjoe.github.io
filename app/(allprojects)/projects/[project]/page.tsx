@@ -59,10 +59,10 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             </div>
             <div className="md:w-[371px] flex md:items-end md:justify-end">
               <TransitionLink
-                href={"/projects"}
+                href={selectedProject.projectInfo.projectLink}
                 className="mt-8 md:mt-0 group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105"
               >
-                {selectedProject.projectInfo.projectLink}
+                Visit Website
                 <GoArrowLeft className="text-2xl ml-2 group-hover:translate-x-2 ease-in-out duration-300 rotate-180" />
               </TransitionLink>
             </div>
@@ -84,16 +84,31 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
           </div>
           <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Technologies:</h1>
-            {selectedProject.projectInfo.tech.map((tech) => (
-              <div className="flex flex-wrap">
+            <div className="flex flex-wrap mt-5 gap-2">
+              {selectedProject.projectInfo.tech.map((tech) => (
                 <div className="px-6 py-2 text-center border border-[#828282] rounded-full">
                   {tech}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
         {/* Mock/Freestyle Images */}
+        <div className="container">
+          <div className="flex gap-x-6 justify-between">
+            {selectedProject.media.mockUps.map((img, index) => (
+              <div className="mt-20 w-32">
+                <Image
+                  key={index}
+                  src={img}
+                  alt={`Mockup ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          {/* Next & Back function */}
+        </div>
       </div>
     </section>
   );
