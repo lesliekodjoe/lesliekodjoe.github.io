@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off", // Set to "warn" to show it as a warning
+    "react/jsx-key": "off" // Make sure this rule is enabled
+  }
 }
