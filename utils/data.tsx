@@ -42,7 +42,7 @@ export const projects_data = [
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
       projectLink: "https://www.google.com",
       projectYear: "2024",
-      projectRole: "Frontend Developer",
+      projectRole: "Developer",
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
