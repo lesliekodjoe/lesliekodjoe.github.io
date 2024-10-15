@@ -178,3 +178,22 @@ export const aboutAnimate = () => {
     }
   );
 };
+
+export const projectScroll = () => {
+  gsap.fromTo(
+    ".single-proj-anim",
+    {
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    },
+    {
+      clipPath: "polygon(11% 10%, 89% 10%, 89% 89%, 11% 89%)",
+      scrollTrigger: {
+        trigger: ".anim-start",
+        start: "top 70%",
+        end: "top 40%",
+        scrub: 1,
+        markers: true
+      },
+    }
+  );
+};
