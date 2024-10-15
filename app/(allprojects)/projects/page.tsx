@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
 import { projects_data } from "@/utils/data";
 import TransitionLink from "@/components/TransitionLink";
 

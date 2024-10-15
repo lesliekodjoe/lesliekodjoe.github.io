@@ -20,8 +20,8 @@ export default function RootLayout({
     <html lang="en" className="scrollbar-hide">
       <body className={manr.className}>
         <Navbar />
-        {/* <PreLoader>{children}</PreLoader> */}
-        {children}
+        <PreLoader>{children}</PreLoader>
+        {/* {children} */}
       </body>
     </html>
   );
