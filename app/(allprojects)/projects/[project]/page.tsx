@@ -85,8 +85,8 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
           <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Technologies:</h1>
             <div className="flex flex-wrap mt-5 gap-2">
-              {selectedProject.projectInfo.tech.map((tech) => (
-                <div className="px-6 py-2 text-center border border-[#828282] rounded-full">
+              {selectedProject.projectInfo.tech.map((tech, index) => (
+                <div key={index} className="px-6 py-2 text-center border border-[#828282] rounded-full">
                   {tech}
                 </div>
               ))}
