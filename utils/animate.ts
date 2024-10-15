@@ -108,15 +108,73 @@ export const scrollIn = () => {
       },
     }
   );
+};
 
-  // gsap.to("pinned", {
-  //   scrollTrigger: {
-  //     trigger: ".pin",
-  //     start: "top top",
-  //     end: "+=200",
-  //     scrub: true,
-  //     markers: true,
-  //     pin: true,
-  //   },
-  // });
+export const aboutAnimate = () => {
+  gsap.fromTo(
+    ".about-text",
+    { y: 100, opacity: 0 },
+    { y: 0, opacity: 1, duration: 2, ease: "expo.out", delay: 1 }
+  );
+
+  gsap.fromTo(
+    ".tech-left",
+    { x: -100, opacity: 0 },
+    {
+      x: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".tech-header",
+        start: "top 50%",
+        end: "top 30%",
+      },
+    }
+  );
+  gsap.fromTo(
+    ".tech-right",
+    { x: 100, opacity: 0 },
+    {
+      x: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".tech-header",
+        start: "top 50%",
+        end: "top 30%",
+      },
+    }
+  );
+  gsap.fromTo(
+    ".projects",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".project-anim-start",
+        start: "top 50%",
+        end: "top 30%",
+      },
+    }
+  );
+  gsap.fromTo(
+    ".hobbys-anim",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".hobby-start",
+        start: "top 50%",
+        end: "top 30%",
+      },
+    }
+  );
 };
