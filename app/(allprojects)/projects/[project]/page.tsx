@@ -34,12 +34,12 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
             <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-300" />
             Back
           </TransitionLink>
-          <div className="mt-20 w-full md:text-center font-black text-4xl">
+          <div className="mt-10 w-full md:text-center font-black text-4xl">
             {selectedProject.projectInfo.projectName}
           </div>
         </div>
         {/* Main Image */}
-        <div className="mt-20 w-full h-[554px]">
+        <div className="mt-20 w-full h-[584px]">
           <Image
             src={selectedProject.media.imageSrc}
             alt={selectedProject.media.altname}

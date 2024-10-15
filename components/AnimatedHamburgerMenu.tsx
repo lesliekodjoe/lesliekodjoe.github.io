@@ -11,10 +11,10 @@ export const AnimatedHamburgerMenu = () => {
   const [active, setActive] = useState(false);
 
   const menuColor = active
-    ? "bg-white"
-    : pathname == "/projects"
-    ? "bg-white"
-    : "bg-black";
+    ? "bg-black"
+    : pathname == "/" || pathname == "/about"
+    ? "bg-black"
+    : "bg-white";
   return (
     <MotionConfig
       transition={{

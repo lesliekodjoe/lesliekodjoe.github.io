@@ -13,19 +13,21 @@ const Navbar = () => {
     <header className="fixed w-full top-0 backdrop-blur-sm z-50">
       <div className="flex items-center justify-between px-12 py-3">
         <div className="w-1/3">
-          {pathname == "/projects" ? (
+          {pathname == "/" || pathname == "/about" ? (
             <TransitionLink href="/">
-              <Image src={LogoWhite} alt="logo" height={30} width={30} />
+              <Image src={LogoBlack} alt="logo" height={30} width={30} />
             </TransitionLink>
           ) : (
             <TransitionLink href="/">
-              <Image src={LogoBlack} alt="logo" height={30} width={30} />
+              <Image src={LogoWhite} alt="logo" height={30} width={30} />
             </TransitionLink>
           )}
         </div>
         <nav
           className={`hidden w-1/3 md:flex items-center justify-center ${
-            pathname == "/projects" ? "text-white" : "text-black"
+            pathname == "/" || pathname == "/about"
+              ? "text-black"
+              : "text-white"
           }`}
         >
           <TransitionLink href="/">Leslie Kodjoe</TransitionLink>
