@@ -47,7 +47,7 @@ const About = () => {
                     {tech}
                   </div>
                 ))}
-                <div className="project-anim-start py-4 font-semibold bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#8BCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF)] text-transparent bg-clip-text">
+                <div className="py-4 font-semibold bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#8BCB92,#71C2EF,#3BFFFF,#DD7DDF,#DD7DDF)] text-transparent bg-clip-text">
                   Always ready for a Tech Adventure
                 </div>
               </div>
@@ -55,6 +55,7 @@ const About = () => {
           </div>
           {/* Projects */}
           <div className="py-16 mb-80 md:mb-0">
+          <div className="project-anim-start "></div>
             <h1 className="about-header">Projects.</h1>
             <div className="projects mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
               <TransitionLink

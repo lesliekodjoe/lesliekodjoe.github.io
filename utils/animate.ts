@@ -174,6 +174,7 @@ export const aboutAnimate = () => {
         trigger: ".hobby-start",
         start: "top 50%",
         end: "top 30%",
+        markers: true,
       },
     }
   );
@@ -193,7 +194,6 @@ export const projectScroll = () => {
           start: "top 95%",
           end: "top 20%",
           scrub: 1,
-          markers: true,
         },
       }
     )
