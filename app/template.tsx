@@ -20,7 +20,7 @@ export default function Template({ children }: Props) {
     <div>
       <div
         id="banner-1"
-        className="min-h-screen bg-neutral-950 z-10 fixed top-0 left-0 w-full flex items-center justify-center"
+        className="min-h-screen bg-neutral-950 z-50 fixed top-0 left-0 w-full flex items-center justify-center"
       >
         <h1 className="text-white text-4xl">
           {pathname}

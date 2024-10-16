@@ -37,7 +37,8 @@ export const projects_data = [
   {
     num: "01",
     projectInfo: {
-      projectName: "Portfolio Website",
+      projectName: "Kweku's Portfolio",
+      projectCategory: "Portfolio website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
       projectLink: "https://www.google.com",
@@ -55,6 +56,7 @@ export const projects_data = [
     num: "02",
     projectInfo: {
       projectName: "Portfolio Website",
+      projectCategory: "",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
       projectLink: "",
@@ -72,6 +74,7 @@ export const projects_data = [
     num: "03",
     projectInfo: {
       projectName: "Portfolio Website",
+      projectCategory: "",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
       projectLink: "",
@@ -89,6 +92,7 @@ export const projects_data = [
     num: "04",
     projectInfo: {
       projectName: "Portfolio Website",
+      projectCategory: "",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
       projectLink: "",
