@@ -26,7 +26,7 @@ const ProjectPage = ({project}: Props) => {
               <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-300" />
               Back
             </TransitionLink>
-            <div className="anim-start mt-10 w-full md:text-center font-black text-4xl">
+            <div className="mt-10 w-full md:text-center font-black text-4xl">
               {selectedProject.projectInfo.projectName}
             </div>
           </div>
@@ -38,6 +38,7 @@ const ProjectPage = ({project}: Props) => {
               className="w-full h-full object-cover"
             />
           </div>
+          <div className="anim-start"></div>
           {/* Website Description */}
           <div className="container mt-20">
             <div className="w-full md:flex border-b border-[#828282] pb-16">
@@ -77,30 +78,34 @@ const ProjectPage = ({project}: Props) => {
             <div className="w-1/3 mt-10 md:mt-0">
               <h1 className="uppercase text-sm">Technologies:</h1>
               <div className="flex flex-wrap mt-5 gap-2">
-                {selectedProject.projectInfo.tech.map((tech:string, index:number) => (
-                  <div
-                    key={index}
-                    className="px-6 py-2 text-xs text-center border border-[#828282] rounded-full"
-                  >
-                    {tech}
-                  </div>
-                ))}
+                {selectedProject.projectInfo.tech.map(
+                  (tech: string, index: number) => (
+                    <div
+                      key={index}
+                      className="px-6 py-2 text-xs text-center border border-[#828282] rounded-full"
+                    >
+                      {tech}
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>
           {/* Mock/Freestyle Images */}
           <div className="container">
             <div className="flex gap-x-6 justify-between">
-              {selectedProject.media.mockUps.map((img:string, index:number) => (
-                <div className="mt-20 w-32">
-                  <Image
-                    key={index}
-                    src={img}
-                    alt={`Mockup ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+              {selectedProject.media.mockUps.map(
+                (img: string, index: number) => (
+                  <div className="mt-20 w-32">
+                    <Image
+                      key={index}
+                      src={img}
+                      alt={`Mockup ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )
+              )}
             </div>
             {/* Next & Back function */}
           </div>

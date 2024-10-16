@@ -180,20 +180,21 @@ export const aboutAnimate = () => {
 };
 
 export const projectScroll = () => {
-  gsap.fromTo(
-    ".single-proj-anim",
-    {
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    },
-    {
-      clipPath: "polygon(11% 10%, 89% 10%, 89% 89%, 11% 89%)",
-      scrollTrigger: {
-        trigger: ".anim-start",
-        start: "top 70%",
-        end: "top 40%",
-        scrub: 1,
-        markers: true
+  gsap
+    .fromTo(
+      ".single-proj-anim",
+      {
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       },
-    }
-  );
+      {
+        clipPath: "polygon(15% 11%, 86% 11%, 86% 90%, 15% 90%)",
+        scrollTrigger: {
+          trigger: ".anim-start",
+          start: "top 95%",
+          end: "top 20%",
+          scrub: 1,
+          markers: true,
+        },
+      }
+    )
 };

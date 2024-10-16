@@ -22,6 +22,7 @@ const config: Config = {
       },
       backgroundImage: {
         "project-img": "url('../assets/background/about_background.jpg')",
+        "trial-img": "url('../assets/projectBackground/proIMG1.jpg')",
       },
     },
     screens: {
