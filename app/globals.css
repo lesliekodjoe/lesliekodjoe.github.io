@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
 @layer components {
   .menu-style {
     @apply text-6xl font-extrabold text-[#292929] md:text-8xl hover:text-white transition duration-700 ease-in-out cursor-pointer;
