@@ -17,7 +17,7 @@ const ProjectPage = ({project}: Props) => {
 
     return (
       <section className="bg-project-img h-full text-white">
-        <div className="pt-28 pb-8 w-full h-full ">
+        <div className="pt-28 pb-14 w-full h-full ">
           <div className="container">
             <TransitionLink
               href={"/projects"}
@@ -36,12 +36,14 @@ const ProjectPage = ({project}: Props) => {
               src={selectedProject.media.imageSrc}
               alt={selectedProject.media.altname}
               className="w-full h-full object-cover"
+              priority
             />
           </div>
           <div className="anim-start"></div>
           {/* Website Description */}
           <div className="container mt-20">
-            <div className="w-full md:flex border-b border-[#828282] pb-16">
+            <div className="desc-anim-start"></div>
+            <div className="desc-anim w-full md:flex border-b border-[#828282] pb-16">
               <div className="flex flex-col gap-y-4 md:w-[739px] w-full">
                 <h1 className="uppercase text-[12px] font-semibold tracking-[5px]">
                   Description
@@ -91,9 +93,10 @@ const ProjectPage = ({project}: Props) => {
               </div>
             </div>
           </div>
+          <div className="mock-anim-start"></div>
           {/* Mock/Freestyle Images */}
-          <div className="container">
-            <div className="flex gap-x-6 justify-between">
+          <div className="container ">
+            <div className="mock-anim flex gap-x-6 justify-between pb-20 border-b border-[#828282]">
               {selectedProject.media.mockUps.map(
                 (img: string, index: number) => (
                   <div className="mt-20 w-32">
@@ -107,7 +110,6 @@ const ProjectPage = ({project}: Props) => {
                 )
               )}
             </div>
-            {/* Next & Back function */}
           </div>
         </div>
       </section>

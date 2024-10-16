@@ -174,27 +174,55 @@ export const aboutAnimate = () => {
         trigger: ".hobby-start",
         start: "top 50%",
         end: "top 30%",
-        markers: true,
       },
     }
   );
 };
 
 export const projectScroll = () => {
-  gsap
-    .fromTo(
-      ".single-proj-anim",
-      {
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  gsap.fromTo(
+    ".single-proj-anim",
+    {
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    },
+    {
+      clipPath: "polygon(15% 11%, 86% 11%, 86% 90%, 15% 90%)",
+      scrollTrigger: {
+        trigger: ".anim-start",
+        start: "top 95%",
+        end: "top 20%",
+        scrub: 1,
       },
-      {
-        clipPath: "polygon(15% 11%, 86% 11%, 86% 90%, 15% 90%)",
-        scrollTrigger: {
-          trigger: ".anim-start",
-          start: "top 95%",
-          end: "top 20%",
-          scrub: 1,
-        },
-      }
-    )
+    }
+  );
+  gsap.fromTo(
+    ".desc-anim",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".desc-anim-start",
+        start: "top 75%",
+        end: "top 30%",
+      },
+    }
+  );
+  gsap.fromTo(
+    ".mock-anim",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".mock-anim-start",
+        start: "top 75%",
+        end: "top 30%",
+      },
+    }
+  );
 };
