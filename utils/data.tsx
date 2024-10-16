@@ -14,8 +14,10 @@ import hobIMG3 from "@/assets/hobb_img/blacklist.jpg";
 import hobIMG4 from "@/assets/hobb_img/you.jpg";
 import hobIMG5 from "@/assets/hobb_img/boys1.jpg";
 import hobIMG6 from "@/assets/hobb_img/caped.jpg";
+import { ProjectData, SocialIcons } from "./dataType";
 
-export const socialIcons = [
+
+export const socialIcons: SocialIcons[] = [
   {
     src: Email,
     alt: "mail",
@@ -33,7 +35,7 @@ export const socialIcons = [
   },
 ];
 
-export const projects_data = [
+export const projects_data: ProjectData[] = [
   {
     num: "01",
     projectInfo: {

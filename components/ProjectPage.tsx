@@ -4,9 +4,10 @@ import { GoArrowLeft } from "react-icons/go";
 import TransitionLink from "@/components/TransitionLink";
 import Image from "next/image";
 import { projectScroll } from "@/utils/animate";
+import { ProjectData } from "@/utils/dataType";
 
 type Props = {
-    project: any
+    project: ProjectData
 };
 
 const ProjectPage = ({project}: Props) => {
@@ -98,7 +99,7 @@ const ProjectPage = ({project}: Props) => {
           <div className="container ">
             <div className="mock-anim flex gap-x-6 justify-between pb-20 border-b border-[#828282]">
               {selectedProject.media.mockUps.map(
-                (img: string, index: number) => (
+                (img, index) => (
                   <div className="mt-20 w-32">
                     <Image
                       key={index}
