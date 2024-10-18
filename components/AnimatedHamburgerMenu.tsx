@@ -11,7 +11,7 @@ export const AnimatedHamburgerMenu = () => {
   const [active, setActive] = useState(false);
 
   const menuColor = active
-    ? "bg-black"
+    ? "bg-white"
     : pathname == "/" || pathname == "/about"
     ? "bg-black"
     : "bg-white";
