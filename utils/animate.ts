@@ -118,25 +118,10 @@ export const aboutAnimate = () => {
   );
 
   gsap.fromTo(
-    ".tech-left",
-    { x: -100, opacity: 0 },
+    ".tech",
+    { y: 100, opacity: 0 },
     {
-      x: 0,
-      opacity: 1,
-      duration: 2,
-      ease: "expo.out",
-      scrollTrigger: {
-        trigger: ".tech-header",
-        start: "top 50%",
-        end: "top 30%",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".tech-right",
-    { x: 100, opacity: 0 },
-    {
-      x: 0,
+      y: 0,
       opacity: 1,
       duration: 2,
       ease: "expo.out",
