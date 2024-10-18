@@ -22,7 +22,7 @@ body{
   }
 
   .about-header {
-    @apply text-[#CCCCCC] text-[88px] font-black;
+    @apply text-[#CCCCCC] text-[68px] md:text-[88px] font-black;
   }
 
   .about-section-header {

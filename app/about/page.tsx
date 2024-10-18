@@ -10,15 +10,15 @@ import Connect from "@/sections/Connect";
 import { aboutAnimate } from "@/utils/animate";
 
 const About = () => {
-  useEffect(()=>{
-    aboutAnimate()
-  },)
+  useEffect(() => {
+    aboutAnimate();
+  });
   return (
     <section className="bg-white h-full">
       <div className="pt-20 pb-8 w-full">
         <div className="container">
           {/* About Bio */}
-          <div className="py-16 ">
+          <div className="py-16 px-6 md:px-0">
             <h1 className="about-header">Me?</h1>
             <p className="about-text ">
               Experienced Frontend Developer creating different full-stack
@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
           {/* Tech Stack */}
-          <div className="py-16">
+          <div className="py-16 px-6 md:px-0">
             <h1 className="about-header tech-header">Things I need.</h1>
             <div className="mt-14 md:flex w-full">
               {/* Left Column */}
@@ -54,8 +54,8 @@ const About = () => {
             </div>
           </div>
           {/* Projects */}
-          <div className="py-16 mb-80 md:mb-0">
-          <div className="project-anim-start "></div>
+          <div className="py-16 px-6 md:px-0 mb-80 md:mb-0">
+            <div className="project-anim-start "></div>
             <h1 className="about-header">Projects.</h1>
             <div className="projects mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
               <TransitionLink
@@ -83,7 +83,7 @@ const About = () => {
             </div>
           </div>
           {/* Fun & Hobbies */}
-          <div className="py-16 hobby-start">
+          <div className="py-16 px-6 md:px-0 hobby-start">
             <h1 className="about-header">Other.</h1>
             <div className="hobbys-anim mt-14 md:flex gap-x-20 w-full ">
               {/* Left Column */}

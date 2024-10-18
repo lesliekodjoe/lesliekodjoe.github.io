@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <header className="fixed w-full top-0 backdrop-blur-sm z-50">
-      <div className="flex items-center justify-between px-12 py-3">
+      <div className="flex items-center justify-between px-8 py-3">
         <div className="w-1/3">
           {pathname == "/" || pathname == "/about" ? (
             <TransitionLink href="/">
