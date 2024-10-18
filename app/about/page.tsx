@@ -14,20 +14,22 @@ const About = () => {
     aboutAnimate();
   });
   return (
-    <section className="bg-white h-full">
+    <section className="container bg-white h-full">
       <div className="pt-20 pb-8">
-        <div className="container">
-          {/* About Bio */}
-          <div className="py-16 px-6 md:px-0">
-            <h1 className="about-header">Me?</h1>
-            <p className="about-text ">
-              Experienced Frontend Developer creating different full-stack
-              solutions that are functional and visually pleasing with modern
-              web technologies. I am eager to explore innovative approaches and
-              grow my tech stack. Feel free to reach out — I’m open for new,
-              exciting opportunities.
-            </p>
-          </div>
+        {/* About Bio */}
+        <div className="py-16 px-6 md:px-0">
+          <h1 className="about-header">Me?</h1>
+          <p className="about-text ">
+            Experienced Frontend Developer creating different full-stack
+            solutions that are functional and visually pleasing with modern web
+            technologies. I am eager to explore innovative approaches and grow
+            my tech stack. Feel free to reach out — I’m open for new, exciting
+            opportunities.
+          </p>
+        </div>
+        {/* Tech Stack */}
+        <div className="py-16 px-6 md:px-0">
+          
         </div>
       </div>
     </section>
