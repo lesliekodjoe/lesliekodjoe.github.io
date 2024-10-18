@@ -116,11 +116,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* Connect Section */}
-          <Connect />
-          {/* Footer */}
-          <Footer />
         </div>
+        {/* Connect Section */}
+        <Connect />
+        {/* Footer */}
+        <Footer />
       </div>
     </section>
   );
