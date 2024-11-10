@@ -1,17 +1,37 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import TransitionLink from "./TransitionLink";
 import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
 import useMediaQuery from "@/utils/useMediaQuery";
-import { socialIcons } from "@/utils/data";
 
 const Navbar = () => {
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  const handleScroll = () => {
+    // Update the scroll state
+    if (window.scrollY > 0) {
+      setIsScrolling(true); // Scrolling has started
+    } else {
+      setIsScrolling(false); // Scrolling has stopped or back to top
+    }
+  };
+
+  // Listen for scroll events
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const isAboveMediumScreens = useMediaQuery("(min-width: 720px)");
   const pathname = usePathname();
   return (
-    <header className="fixed w-full top-0 backdrop-blur-sm z-50">
+    <header className="nav fixed w-full top-0 backdrop-blur-sm z-50">
       <div className="flex items-center justify-between px-8 py-3">
         <div className="w-1/3">
           {pathname == "/" || pathname == "/about" ? (

@@ -34,34 +34,6 @@ body{
   }
 }
 
-.hero-title {
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-  opacity: 0;
-  transform: translateY(100px);
-}
-
-.watch,
-.donut {
-  clip-path: polygon(100% 100%, 100% 100%, 100% 0%, 100% 0%);
-  opacity: 0;
-}
-
-.watch,
-.donut {
-  transform: translateX(100px);
-}
-
-.cone,
-.about-tag {
-  clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
-  opacity: 0;
-}
-
-.cone,
-.about-tag {
-  transform: translateX(-100px);
-}
-
 .footer-top {
   border-top: 2px solid #828282;
 }

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="h-screen flex items-center justify-center sticky top-0 z-10 pt-20 pb-20 px-8">
       {/* Flex container to center the video */}
-      <div className="absolute top-20 right-40 flex items-center justify-center">
+      <div className={`absolute top-20 right-40 flex items-center justify-center`}>
         <div className="w-[340px] h-[340px] rounded-full overflow-hidden">
           <video
             src="/background.mp4"
