@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scrollbar-hide">
       <body className={manrope.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         {/* <PreLoader>{children}</PreLoader> */}
         {children}
       </body>
