@@ -1,10 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+import pencilImage from "@/assets/icons/Pencil.svg";
+
+
 
 const Hero = () => {
   return (
-    <div className=" h-screen sticky top-0 z-10 pt-20 pb-36 px-8 lg:pb-32 md:pt-28 border">
+    <div className=" h-screen sticky top-0 z-10 pt-20 pb-20 px-8 md:pt-28">
       <div className="flex items-end w-full h-full">
-        <div className="w-full md:px-24">
+        <div className="w-full md:px-40">
           <div>
             <h4 className="text-6xl text-[#cccccc] font-black md:text-8xl">
               Leslie Kodjoe
@@ -15,12 +19,38 @@ const Hero = () => {
               who loves creating different user experiences.
             </p>
           </div>
-          {/* <div className="mt-8 w-full border flex flex-wrap md:mt-16">
-            <div className="w-1/4">Freelance<br/>Developer</div>
-            <div className="w-1/4">Based in<br/> Ghana</div>
-            <div className="w-1/4">Get in touch<br/><span className="font-semibold">leswulffk@gmail.com</span></div>
-            <div className="w-1/4">right</div>
-          </div> */}
+          <div className="relative mt-8 w-full flex flex-col gap-y-4 md:mt-16 md:flex-row md:justify-between">
+            <div className="absolute top-0 right-0 flex items-center justify-center md:right-28 md:-top-12">
+              <motion.img
+                src={pencilImage.src}
+                alt="Pencil Image"
+                className="pencil"
+                animate={{
+                  translateY: [-15, 10],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  duration: 2,
+                  ease: "easeInOut",
+                }}
+              />
+            </div>
+            <div className="">
+              Freelance
+              <br />
+              Developer
+            </div>
+            <div className="">
+              Based in
+              <br /> Ghana
+            </div>
+            <div className="">
+              Get in touch
+              <br />
+              <span className="font-semibold">leswulffk@gmail.com</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
