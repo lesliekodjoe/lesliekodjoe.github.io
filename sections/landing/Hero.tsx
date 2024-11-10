@@ -3,11 +3,28 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className=" h-screen sticky top-0 z-10 pt-20 pb-20 px-8 md:pt-28">
-      <div className="flex items-end w-full h-full">
+    <div className="h-screen flex items-center justify-center sticky top-0 z-10 pt-20 pb-20 px-8">
+      {/* Flex container to center the video */}
+      <div className="absolute top-20 right-40 flex items-center justify-center">
+        <div className="w-[320px] h-[320px] rounded-full overflow-hidden">
+          <video
+            src="/background.mp4"
+            autoPlay
+            loop
+            muted
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+
+      {/* Glassmorphism effect */}
+      <div className="absolute w-full h-full top-0 left-0 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg"></div>
+
+      {/* Content */}
+      <div className="flex items-end w-full h-full relative z-20">
         <div className="w-full md:px-40">
           <div>
-            <h4 className="text-6xl text-[#cccccc] font-black md:text-8xl">
+            <h4 className="text-6xl text-[#b3b3b3] font-black md:text-8xl">
               Leslie Kodjoe
             </h4>
             <p className="mt-4 text-lg leading-loose md:w-[518px] md:text-xl">
