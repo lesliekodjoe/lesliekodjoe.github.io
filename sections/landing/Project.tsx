@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 
 
 const Project = () => {
-  const [activeTab, setActiveTab] = useState("work")
+  const [activeTab, setActiveTab] = useState("design")
 
   const handleTabButton = (tab:string) => {
       setActiveTab(tab)

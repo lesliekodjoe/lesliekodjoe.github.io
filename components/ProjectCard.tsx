@@ -5,7 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 const ProjectCard = () => {
   return (
     <>
-      <div className="w-full mt-16 md:container">
+      <div className="w-full mt-16 md:px-48">
         <div className="bg-[#2C2C2C] w-full h-full md:h-[625px] border border-[#393939] rounded-xl overflow-y-hidden">
           <div className="px-5 py-8 md:px-12 md:py-10 md:flex items-center">
             <div className="mb-4">
