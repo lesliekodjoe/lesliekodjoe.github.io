@@ -10,6 +10,8 @@ import TransitionLink from "@/components/TransitionLink";
 import { motion } from "framer-motion";
 import { projects_data } from "@/utils/data";
 import Footer from "@/components/Footer";
+import Hero from "@/sections/landing/Hero";
+import Project from "@/sections/landing/Project";
 import Connect from "@/sections/Connect";
 
 export default function Home() {
@@ -23,7 +25,9 @@ export default function Home() {
   }, []);
   return (
     <section className="">
-      <div className="pt-20 pb-36 lg:pb-32 md:pt-28 overflow-x-clip">
+      <Hero/>
+      <Project/>
+      {/* <div className="pt-20 pb-36 lg:pb-32 md:pt-28 overflow-x-clip">
         <div className="container">
           <div className="-z-10 relative h-[280px] lg:h-[430px] flex justify-center items-center">
             <div className="w-[309px] md:w-[788px] h-auto flex flex-col items-center justify-center">
@@ -60,9 +64,9 @@ export default function Home() {
             </TransitionLink>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Featured Projects Section*/}
-      <div className="relative -z-10 bg-[#1D1D1D] text-white">
+      {/* <div className="relative -z-10 bg-[#1D1D1D] text-white">
         <div className="flex items-center justify-center">
           <motion.img
             src={pencilImage.src}
@@ -115,11 +119,11 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Connect Section */}
-      <Connect />
+      {/* <Connect /> */}
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 }

@@ -6,8 +6,11 @@ import LogoBlack from "@/assets/logo/LogoBlack.svg";
 import { usePathname } from "next/navigation";
 import TransitionLink from "./TransitionLink";
 import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
+import useMediaQuery from "@/utils/useMediaQuery";
+import { socialIcons } from "@/utils/data";
 
 const Navbar = () => {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 720px)");
   const pathname = usePathname();
   return (
     <header className="fixed w-full top-0 backdrop-blur-sm z-50">
@@ -29,12 +32,17 @@ const Navbar = () => {
               ? "text-black"
               : "text-white"
           }`}
-        >
-          <TransitionLink href="/">Leslie Kodjoe</TransitionLink>
-        </nav>
-        <div className="w-1/3 flex flex-row-reverse">
-          <AnimatedHamburgerMenu />
-        </div>
+        ></nav>
+        {isAboveMediumScreens ? (
+          <div className="flex gap-x-5 text-sm font-semibold">
+            <a href="">Work</a>
+            <a href="">About</a>
+          </div>
+        ) : (
+          <div className="w-1/3 flex flex-row-reverse">
+            <AnimatedHamburgerMenu />
+          </div>
+        )}
       </div>
     </header>
   );
