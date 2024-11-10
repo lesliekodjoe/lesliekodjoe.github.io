@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="h-screen flex items-center justify-center sticky top-0 z-10 pt-20 pb-20 px-8">
       {/* Flex container to center the video */}
       <div className="absolute top-20 right-40 flex items-center justify-center">
-        <div className="w-[320px] h-[320px] rounded-full overflow-hidden">
+        <div className="w-[340px] h-[340px] rounded-full overflow-hidden">
           <video
             src="/background.mp4"
             autoPlay
@@ -40,12 +40,12 @@ const Hero = () => {
                 alt="Pencil Image"
                 className="pencil"
                 animate={{
-                  translateY: [-15, 10],
+                  translateY: [-18, 4],
                 }}
                 transition={{
                   repeat: Infinity,
                   repeatType: "mirror",
-                  duration: 2,
+                  duration: 1,
                   ease: "easeInOut",
                 }}
               />

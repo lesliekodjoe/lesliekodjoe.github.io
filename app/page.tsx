@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <section className="">
       <Hero/>
-      {/* <Project/> */}
+      <Project/>
       {/* <div className="pt-20 pb-36 lg:pb-32 md:pt-28 overflow-x-clip">
         <div className="container">
           <div className="-z-10 relative h-[280px] lg:h-[430px] flex justify-center items-center">
