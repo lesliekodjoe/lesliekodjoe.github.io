@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import LogoWhite from "@/assets/logo/LogoWhite.svg";
-import LogoBlack from "@/assets/logo/LogoBlack.svg";
 import { usePathname } from "next/navigation";
 import TransitionLink from "./TransitionLink";
 import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
@@ -18,11 +16,21 @@ const Navbar = () => {
         <div className="w-1/3">
           {pathname == "/" || pathname == "/about" ? (
             <TransitionLink href="/">
-              <Image src={LogoBlack} alt="logo" height={30} width={30} />
+              <Image
+                src={"/assets/logo/LogoBlack.svg"}
+                alt="logo"
+                height={30}
+                width={30}
+              />
             </TransitionLink>
           ) : (
             <TransitionLink href="/">
-              <Image src={LogoWhite} alt="logo" height={30} width={30} />
+              <Image
+                src={"/assets/logo/LogoWhite.svg"}
+                alt="logo"
+                height={30}
+                width={30}
+              />
             </TransitionLink>
           )}
         </div>

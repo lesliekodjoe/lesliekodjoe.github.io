@@ -17,9 +17,9 @@ interface ProjectInfo {
 }
 
 interface Media {
-  imageSrc: StaticImageData;
+  imageSrc: string;
   altname: string;
-  mockUps: StaticImageData[];
+  mockUps: string[];
 }
 
 export interface ProjectData {

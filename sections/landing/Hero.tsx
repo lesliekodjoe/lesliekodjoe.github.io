@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import pencilImage from "@/assets/icons/Pencil.svg";
-
-
 
 const Hero = () => {
   return (
@@ -22,7 +19,7 @@ const Hero = () => {
           <div className="relative mt-8 w-full flex flex-col gap-y-4 md:mt-16 md:flex-row md:justify-between">
             <div className="absolute top-0 right-0 flex items-center justify-center md:right-28 md:-top-12">
               <motion.img
-                src={pencilImage.src}
+                src="/assets/icons/Pencil.svg"
                 alt="Pencil Image"
                 className="pencil"
                 animate={{

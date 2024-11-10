@@ -19,17 +19,17 @@ import { ProjectData, SocialIcons } from "./dataType";
 
 export const socialIcons: SocialIcons[] = [
   {
-    src: Email,
+    src: "/assets/icons/mail.svg",
     alt: "mail",
     href: "leswulffk@gmail.com",
   },
   {
-    src: Github,
+    src: "/assets/icons/github.svg",
     alt: "mail",
     href: "https://github.com/Leswulff23",
   },
   {
-    src: Twitter,
+    src: "/assets/icons/twitter.svg",
     alt: "twitter",
     href: "https://x.com/WulffKodjoe",
   },
@@ -49,9 +49,13 @@ export const projects_data: ProjectData[] = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG1,
+      imageSrc: "/assets/projectBackground/proIMG1.jpg",
       altname: "project 1",
-      mockUps: [mock1, mock1, mock1],
+      mockUps: [
+        "/assets/projectBackground/mock1.jpg",
+        "/assets/projectBackground/mock1.jpg",
+        "/assets/projectBackground/mock1.jpg",
+      ],
     },
   },
   {
@@ -67,9 +71,9 @@ export const projects_data: ProjectData[] = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG2,
+      imageSrc: "/assets/projectBackground/proIMG2.jpg",
       altname: "project 2",
-      mockUps: [mock1],
+      mockUps: ["/assets/projectBackground/mock1.jpg"],
     },
   },
   {
@@ -85,9 +89,9 @@ export const projects_data: ProjectData[] = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG3,
+      imageSrc: "/assets/projectBackground/proIMG3.jpg",
       altname: "project 3",
-      mockUps: [mock1],
+      mockUps: ["/assets/projectBackground/mock1.jpg"],
     },
   },
   {
@@ -103,9 +107,9 @@ export const projects_data: ProjectData[] = [
       tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
     },
     media: {
-      imageSrc: proIMG4,
+      imageSrc: "/assets/projectBackground/proIMG4.jpg",
       altname: "project 4",
-      mockUps: [mock1],
+      mockUps: ["/assets/projectBackground/mock1.jpg"],
     },
   },
 ];
@@ -123,32 +127,32 @@ export const tech_stack = [
 export const hobbys_data = [
   {
     num: 1,
-    imageSrc: hobIMG1,
+    imageSrc: "/assets/hobb_img/titan.jpg",
     altname: "hobby 1",
   },
   {
     num: 2,
-    imageSrc: hobIMG2,
+    imageSrc: "/assets/hobb_img/lincoln.jpg",
     altname: "hobby 2",
   },
   {
     num: 3,
-    imageSrc: hobIMG3,
+    imageSrc: "/assets/hobb_img/blacklist.jpg",
     altname: "hobby 3",
   },
   {
     num: 4,
-    imageSrc: hobIMG4,
+    imageSrc: "/assets/hobb_img/you.jpg",
     altname: "hobby 4",
   },
   {
     num: 5,
-    imageSrc: hobIMG5,
+    imageSrc: "/assets/hobb_img/boys1.jpg",
     altname: "hobby 5",
   },
   {
     num: 6,
-    imageSrc: hobIMG6,
+    imageSrc: "/assets/hobb_img/caped.jpg",
     altname: "hobby 6",
   },
 ];

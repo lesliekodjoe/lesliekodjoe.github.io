@@ -21,7 +21,7 @@ const config: Config = {
         "super-wide": "0.9em",
       },
       backgroundImage: {
-        "project-img": "url('../assets/background/about_background.jpg')",
+        "project-img": "url('/assets/background/about_background.jpg')",
       },
     },
     screens: {
