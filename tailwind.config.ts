@@ -22,7 +22,8 @@ const config: Config = {
       },
       backgroundImage: {
         "project-img": "url('/assets/background/about_background.jpg')",
-        
+        "design-img":
+          "linear-gradient(#ffffffa6, #ffffffa6),url('/assets/background/design_background.jpg')",
       },
     },
     screens: {

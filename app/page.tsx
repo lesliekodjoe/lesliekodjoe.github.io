@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
   return (
     <section className="">
-      {/* <Hero/> */}
+      <Hero/>
       <Project/>
       {/* Featured Projects Section*/}
       {/* <div className="relative -z-10 bg-[#1D1D1D] text-white">
