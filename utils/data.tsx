@@ -1,19 +1,3 @@
-import Email from "@/assets/icons/mail.svg";
-import Github from "@/assets/icons/github.svg";
-import Twitter from "@/assets/icons/twitter.svg";
-
-import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
-import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
-import proIMG3 from "@/assets/projectBackground/proIMG3.jpg";
-import proIMG4 from "@/assets/projectBackground/proIMG4.jpg";
-import mock1 from "@/assets/projectBackground/mock1.jpg";
-
-import hobIMG1 from "@/assets/hobb_img/titan.jpg";
-import hobIMG2 from "@/assets/hobb_img/lincoln.jpg";
-import hobIMG3 from "@/assets/hobb_img/blacklist.jpg";
-import hobIMG4 from "@/assets/hobb_img/you.jpg";
-import hobIMG5 from "@/assets/hobb_img/boys1.jpg";
-import hobIMG6 from "@/assets/hobb_img/caped.jpg";
 import { ProjectData, SocialIcons } from "./dataType";
 
 
@@ -27,12 +11,7 @@ export const socialIcons: SocialIcons[] = [
     src: "/assets/icons/github.svg",
     alt: "mail",
     href: "https://github.com/Leswulff23",
-  },
-  {
-    src: "/assets/icons/twitter.svg",
-    alt: "twitter",
-    href: "https://x.com/WulffKodjoe",
-  },
+  }
 ];
 
 export const projects_data: ProjectData[] = [

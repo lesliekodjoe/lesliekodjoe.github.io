@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Glassmorphism effect */}
-      <div className="absolute w-full h-full top-0 left-0 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg"></div>
+      <div className="absolute w-full h-[800px] top-0 left-0 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg"></div>
 
       {/* Content */}
       <div className="flex items-end w-full h-full relative z-20">
