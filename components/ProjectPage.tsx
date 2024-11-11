@@ -21,7 +21,7 @@ const ProjectPage = ({project}: Props) => {
         <div className="pt-28 pb-14 w-full h-full ">
           <div className="container">
             <TransitionLink
-              href={"/projects"}
+              href={"/"}
               className="group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105"
             >
               <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-300" />
@@ -36,6 +36,9 @@ const ProjectPage = ({project}: Props) => {
             <Image
               src={selectedProject.media.imageSrc}
               alt={selectedProject.media.altname}
+              width="0"
+              height="0"
+              sizes="100vw"
               className="w-full h-full object-cover"
               priority
             />
@@ -98,18 +101,19 @@ const ProjectPage = ({project}: Props) => {
           {/* Mock/Freestyle Images */}
           <div className="container ">
             <div className="mock-anim flex gap-x-6 justify-between pb-20 border-b border-[#828282]">
-              {selectedProject.media.mockUps.map(
-                (img, index) => (
-                  <div className="mt-20 w-32">
-                    <Image
-                      key={index}
-                      src={img}
-                      alt={`Mockup ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )
-              )}
+              {selectedProject.media.mockUps.map((img, index) => (
+                <div className="mt-20 w-32">
+                  <Image
+                    key={index}
+                    src={img}
+                    alt={`Mockup ${index + 1}`}
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

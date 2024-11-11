@@ -48,13 +48,13 @@ const Navbar = () => {
                 </div>
                 <a
                   href="#"
-                  className="text-white text-sm hover:text-gray-300"
+                  className="text-white text-sm hover:text-gray-400"
                 >
                   Work
                 </a>
                 <TransitionLink
                   href="/about"
-                  className="text-white text-sm hover:text-gray-300"
+                  className="text-white text-sm hover:text-gray-400"
                 >
                   About
                 </TransitionLink>
