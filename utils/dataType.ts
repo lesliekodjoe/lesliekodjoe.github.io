@@ -16,7 +16,19 @@ interface ProjectInfo {
   tech: string[];
 }
 
-interface Media {
+interface DesignInfo {
+  designDate: string;
+  designName: string;
+  designDescription: string;
+  designLink: string;
+}
+
+interface DesignMedia {
+  imageSrc: string;
+  altname: string;
+}
+
+interface ProjectMedia {
   imageSrc: string;
   altname: string;
   mockUps: string[];
@@ -25,5 +37,12 @@ interface Media {
 export interface ProjectData {
   num: string;
   projectInfo: ProjectInfo;
-  media: Media;
+  media: ProjectMedia;
+}
+
+export interface DesignData {
+  num: string;
+  designInfo: DesignInfo;
+  designBgColor: string;
+  media: DesignMedia
 }

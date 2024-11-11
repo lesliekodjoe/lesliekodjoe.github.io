@@ -1,4 +1,4 @@
-import { ProjectData, SocialIcons } from "./dataType";
+import { DesignData, ProjectData, SocialIcons } from "./dataType";
 
 
 export const socialIcons: SocialIcons[] = [
@@ -35,6 +35,24 @@ export const projects_data: ProjectData[] = [
         "/assets/projectBackground/mock1.jpg",
         "/assets/projectBackground/mock1.jpg",
       ],
+    },
+  },
+];
+
+export const design_data: DesignData[] = [
+  {
+    num: "01",
+    designInfo: {
+      designDate: "Jan 2024",
+      designName: "MenCrud",
+      designDescription:
+        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+      designLink: "https://www.google.com",
+    },
+    designBgColor: "bg-[#FF6F6F]",
+    media: {
+      imageSrc: "/assets/projectBackground/projCard1.png",
+      altname: "project 1",
     },
   },
 ];
