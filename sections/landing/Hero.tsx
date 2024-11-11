@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="h-screen flex items-center justify-center sticky top-0 z-10 pt-20 pb-20 px-8">
-      {/* Flex container to center the video */}
-      <div className={`absolute top-20 right-40 flex items-center justify-center`}>
+      <div
+        className={`absolute top-20 right-40 flex items-center justify-center`}
+      >
         <div className="w-[340px] h-[340px] rounded-full overflow-hidden">
           <video
             src="/background.mp4"
@@ -17,10 +18,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Glassmorphism effect */}
       <div className="absolute w-full h-[800px] top-0 left-0 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg"></div>
 
-      {/* Content */}
       <div className="flex items-end w-full h-full relative z-20">
         <div className="w-full md:px-40">
           <div>

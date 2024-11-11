@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import TransitionLink from "./TransitionLink";
@@ -33,20 +33,32 @@ const Navbar = () => {
       {isScrolling ? (
         <nav className="fixed bottom-5 z-20 w-full">
           <div className="w-full flex justify-center">
-            <div className="w-[243px] py-3.5 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
+            <div className="w-[303px] py-3 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
               <div className="flex items-center justify-center h-full space-x-6">
+                <div className="flex">
+                  <TransitionLink href="/">
+                    <Image
+                      src={"/assets/logo/LogoWhite.svg"}
+                      alt="logo"
+                      height={20}
+                      width={20}
+                    />
+                  </TransitionLink>
+                  <div className="w-0.5 h-6 bg-zinc-500 rounded-full ml-3"></div>
+                </div>
                 <a
                   href="#"
-                  className="text-white text-base hover:text-gray-300"
+                  className="text-white text-sm hover:text-gray-300"
                 >
                   Work
                 </a>
-                <a
-                  href="#"
-                  className="text-white text-base hover:text-gray-300"
+                <TransitionLink
+                  href="/about"
+                  className="text-white text-sm hover:text-gray-300"
                 >
                   About
-                </a>
+                </TransitionLink>
+
                 {socialIcons.map((icon, index) => (
                   <a
                     href={icon.href}
@@ -57,8 +69,8 @@ const Navbar = () => {
                     <Image
                       src={icon.src}
                       alt={icon.alt}
-                      width={20}
-                      height={20}
+                      width={18}
+                      height={18}
                     />
                   </a>
                 ))}
@@ -100,7 +112,9 @@ const Navbar = () => {
             {isAboveMediumScreens ? (
               <div className="flex gap-x-5 text-sm font-semibold">
                 <a href="">Work</a>
-                <a href="">About</a>
+                <TransitionLink href="/about" className="">
+                  About
+                </TransitionLink>
               </div>
             ) : (
               <div className="w-1/3 flex flex-row-reverse">

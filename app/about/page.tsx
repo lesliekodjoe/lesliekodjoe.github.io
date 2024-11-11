@@ -2,8 +2,6 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { hobbys_data, tech_stack } from "@/utils/data";
-import proIMG1 from "@/assets/projectBackground/proIMG1.jpg";
-import proIMG2 from "@/assets/projectBackground/proIMG2.jpg";
 import TransitionLink from "@/components/TransitionLink";
 import Footer from "@/components/Footer";
 import Connect from "@/sections/Connect";
@@ -66,18 +64,22 @@ const About = () => {
               </TransitionLink>
               <div className="w-full md:w-1/2 h-full">
                 <Image
-                  src={proIMG1}
+                  src={"/assets/projectBackground/proIMG1.jpg"}
                   alt="image 1"
-                  className="w-full h-full object-cover"
-                  placeholder="blur"
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  className="w-full h-auto"
                 />
               </div>
               <div className="w-full md:w-1/2 h-full">
                 <Image
-                  src={proIMG2}
+                  src={"/assets/projectBackground/proIMG1.jpg"}
                   alt="image 2"
-                  className="w-full h-full object-cover"
-                  placeholder="blur"
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
@@ -107,8 +109,10 @@ const About = () => {
                       <Image
                         src={hobby.imageSrc}
                         alt={hobby.altname}
-                        className="w-full h-full object-cover "
-                        placeholder="blur"
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="w-full h-auto"
                       />
                     </div>
                   ))}

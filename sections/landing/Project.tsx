@@ -3,13 +3,13 @@ import ProjectCard from '@/components/ProjectCard'
 import React, { useState } from 'react'
 
 const Project = () => {
-  const [activeTab, setActiveTab] = useState("design")
+  const [activeTab, setActiveTab] = useState("work")
 
   const handleTabButton = (tab:string) => {
       setActiveTab(tab)
   }
   return (
-    <div
+    <div id="project"
       className={`min-h-screen w-full relative z-10   ${
         activeTab === "work" ? "bg-[#1d1d1d] text-white" : "bg-design-img text-black"
       }`}
