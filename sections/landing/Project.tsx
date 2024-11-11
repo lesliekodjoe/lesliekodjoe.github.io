@@ -2,8 +2,6 @@ import DesignCard from '@/components/DesignCard'
 import ProjectCard from '@/components/ProjectCard'
 import React, { useState } from 'react'
 
-
-
 const Project = () => {
   const [activeTab, setActiveTab] = useState("design")
 
