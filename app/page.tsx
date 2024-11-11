@@ -15,8 +15,7 @@ export default function Home() {
       <Hero/>
       <Project/>
       <Connect />
-      {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </section>
   );
 }

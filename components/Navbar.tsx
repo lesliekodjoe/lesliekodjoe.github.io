@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div>
       {isScrolling ? (
-        <nav className="fixed bottom-12 z-20 w-full">
+        <nav className="fixed bottom-5 z-20 w-full">
           <div className="w-full flex justify-center">
             <div className="w-[243px] py-3.5 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
               <div className="flex items-center justify-center h-full space-x-6">
