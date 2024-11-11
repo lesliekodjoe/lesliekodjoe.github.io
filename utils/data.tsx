@@ -25,70 +25,16 @@ export const projects_data: ProjectData[] = [
       projectLink: "https://www.google.com",
       projectYear: "2024",
       projectRole: "Developer",
-      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
+      tech: ["Figma, ", "React, ", "TailwindCSS"],
     },
     media: {
-      imageSrc: "/assets/projectBackground/proIMG1.jpg",
+      imageSrc: "/assets/projectBackground/projCard1.png",
       altname: "project 1",
       mockUps: [
         "/assets/projectBackground/mock1.jpg",
         "/assets/projectBackground/mock1.jpg",
         "/assets/projectBackground/mock1.jpg",
       ],
-    },
-  },
-  {
-    num: "02",
-    projectInfo: {
-      projectName: "Portfolio Website",
-      projectCategory: "",
-      projectDescription:
-        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
-      projectLink: "",
-      projectYear: "",
-      projectRole: "",
-      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
-    },
-    media: {
-      imageSrc: "/assets/projectBackground/proIMG2.jpg",
-      altname: "project 2",
-      mockUps: ["/assets/projectBackground/mock1.jpg"],
-    },
-  },
-  {
-    num: "03",
-    projectInfo: {
-      projectName: "Portfolio Website",
-      projectCategory: "",
-      projectDescription:
-        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
-      projectLink: "",
-      projectYear: "",
-      projectRole: "",
-      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
-    },
-    media: {
-      imageSrc: "/assets/projectBackground/proIMG3.jpg",
-      altname: "project 3",
-      mockUps: ["/assets/projectBackground/mock1.jpg"],
-    },
-  },
-  {
-    num: "04",
-    projectInfo: {
-      projectName: "Portfolio Website",
-      projectCategory: "",
-      projectDescription:
-        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
-      projectLink: "",
-      projectYear: "",
-      projectRole: "",
-      tech: ["HTML", "CSS", "JavaScript", "TailwindCSS", "NextJS"],
-    },
-    media: {
-      imageSrc: "/assets/projectBackground/proIMG4.jpg",
-      altname: "project 4",
-      mockUps: ["/assets/projectBackground/mock1.jpg"],
     },
   },
 ];

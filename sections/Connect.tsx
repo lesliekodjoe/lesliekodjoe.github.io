@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Connect = () => {
   return (
-    <section className="w-full relative z-10 bg-white pt-16">
+    <section className="w-full relative z-10 bg-white pt-10 md:pt-0">
       <div className="px-6 md:px-48">
         <div className="py-4 w-full md:flex items-center justify-between md:py-1">
           <div className="connect-left flex flex-col gap-y-4 md:gap-y-10 md:w-1/2">

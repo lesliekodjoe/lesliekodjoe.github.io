@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { hobbys_data, tech_stack } from "@/utils/data";
+import { hobbys_data, projects_data, tech_stack } from "@/utils/data";
 import TransitionLink from "@/components/TransitionLink";
 import Footer from "@/components/Footer";
 import Connect from "@/sections/Connect";
@@ -52,10 +52,18 @@ const About = () => {
             </div>
           </div>
           {/* Projects */}
-          <div className="py-16 px-6 md:px-0 mb-80 md:mb-0">
+          <div className="py-16 px-6 md:px-0 mb-80">
             <div className="project-anim-start "></div>
             <h1 className="about-header">Projects.</h1>
-            <div className="projects mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
+            <div className="mt-14 flex flex-col md:flex-row">
+                {
+                  projects_data.map((project)=>(
+                    <div key={project.num}>
+                    </div>
+                  ))
+                }
+            </div>
+            {/* <div className="projects mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
               <TransitionLink
                 href="/projects"
                 className="absolute h-28 w-28 px-4 text-[14px] bg-white rounded-full uppercase hover:scale-110 hover:shadow-2xl ease-in-out duration-300"
@@ -82,10 +90,10 @@ const About = () => {
                   className="w-full h-auto"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Fun & Hobbies */}
-          <div className="py-16 px-6 md:px-0 hobby-start">
+          <div className="py-16 px-6 md:px-0 md:pt-40 hobby-start">
             <h1 className="about-header">Other.</h1>
             <div className="hobbys-anim mt-14 md:flex gap-x-20 w-full ">
               {/* Left Column */}
@@ -112,7 +120,7 @@ const About = () => {
                         width="0"
                         height="0"
                         sizes="100vw"
-                        className="w-full h-auto"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   ))}

@@ -39,7 +39,6 @@ const Project = () => {
           {activeTab === "work" ? (
             <div>
               <ProjectCard />
-              <ProjectCard />
             </div>
           ) : (
             <div>
