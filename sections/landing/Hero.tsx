@@ -1,7 +1,12 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { HeroFadeIn } from "@/utils/animate";
 
 const Hero = () => {
+    useEffect(() => {
+      HeroFadeIn();
+    });
   return (
     <div className="h-screen flex items-center justify-center sticky top-0 z-10 pt-20 pb-20 px-8">
       <div
@@ -20,7 +25,8 @@ const Hero = () => {
 
       <div className="absolute w-full h-[800px] top-0 left-0 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg"></div>
 
-      <div className="flex items-end w-full h-full relative z-20">
+      <div className="flex items-end w-full h-full relative z-20 hero
+      ">
         <div className="w-full md:px-40">
           <div>
             <h4 className="text-6xl text-[#b3b3b3] font-black md:text-8xl">
@@ -55,8 +61,7 @@ const Hero = () => {
               Developer
             </div>
             <div className="">
-              Based in
-              <br /> Ghana
+             Ghana
             </div>
             <div className="">
               Get in touch
@@ -64,6 +69,7 @@ const Hero = () => {
               <span className="font-semibold">leswulffk@gmail.com</span>
             </div>
           </div>
+          <div className="proj-start-marker"></div>
         </div>
       </div>
     </div>

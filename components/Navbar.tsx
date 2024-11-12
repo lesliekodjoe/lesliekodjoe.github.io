@@ -110,7 +110,11 @@ const Navbar = () => {
               }`}
             ></nav>
             {isAboveMediumScreens ? (
-              <div className="flex gap-x-5 text-sm font-semibold">
+              <div className={`flex gap-x-5 text-sm font-semibold ${
+                pathname == "/" || pathname == "/about"
+                  ? "text-black"
+                  : "text-white"
+              }`}>
                 <a href="">Work</a>
                 <TransitionLink href="/about" className="">
                   About

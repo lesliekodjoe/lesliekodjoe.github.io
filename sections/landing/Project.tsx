@@ -1,17 +1,25 @@
-import DesignCard from '@/components/DesignCard'
-import ProjectCard from '@/components/ProjectCard'
-import React, { useState } from 'react'
+"use client";
+import DesignCard from "@/components/DesignCard";
+import ProjectCard from "@/components/ProjectCard";
+import React, { useEffect, useState } from "react";
+import { HeroFadeIn } from "@/utils/animate";
 
 const Project = () => {
-  const [activeTab, setActiveTab] = useState("work")
+  useEffect(() => {
+    HeroFadeIn();
+  });
+  const [activeTab, setActiveTab] = useState("work");
 
-  const handleTabButton = (tab:string) => {
-      setActiveTab(tab)
-  }
+  const handleTabButton = (tab: string) => {
+    setActiveTab(tab);
+  };
   return (
-    <div id="project"
+    <div
+      id="project"
       className={`min-h-screen w-full relative z-10   ${
-        activeTab === "work" ? "bg-[#1d1d1d] text-white" : "bg-design-img text-black"
+        activeTab === "work"
+          ? "bg-[#1d1d1d] text-white"
+          : "bg-design-img text-black"
       }`}
     >
       <div className="pt-10">
@@ -37,7 +45,7 @@ const Project = () => {
         </div>
         <div className="pt-5 pb-20 px-8 md:px-0">
           {activeTab === "work" ? (
-            <div>
+            <div className="proj-anim">
               <ProjectCard />
             </div>
           ) : (
@@ -49,6 +57,6 @@ const Project = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Project
+export default Project;
