@@ -17,15 +17,21 @@ const Project = () => {
   return (
     <div
       id="project"
-      className={`min-h-screen w-full relative z-10   ${
-        activeTab === "work" ? ("bg-[#1d1d1d] text-white") :  activeTab === "design" ? ("bg-design-img text-black") :("bg-white text-black")
+      className={`min-h-screen w-full relative z-10  border-t border-[#3f3f3f] ${
+        activeTab === "work"
+          ? "bg-[#1d1d1d] text-white"
+          : activeTab === "design"
+          ? "bg-design-img text-black"
+          : "bg-white text-black"
       }`}
     >
       <div className="pt-10">
         <div className="container bg-white bg-opacity-5 py-2 px-4 w-fit rounded-full border border-[#3f3f3f]">
           <button
             className={`w-[91px] h-[41px] ${
-              activeTab === "work" ? "bg-[#3B3B3B] rounded-full font-medium" : ""
+              activeTab === "work"
+                ? "bg-[#3B3B3B] rounded-full font-medium"
+                : ""
             }`}
             onClick={() => handleTabButton("work")}
           >

@@ -130,8 +130,8 @@ const About = () => {
                 </div>
               </div>
               {/* Right Column */}
-              <div className="mt-10 md:mt-0 md:w-1/2">
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-5">
+              <div className="mt-10 md:mt-0 md:w-1/2 px-6">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-4">
                   {hobbys_data.map((hobby) => (
                     <div
                       key={hobby.num}
@@ -144,6 +144,7 @@ const About = () => {
                         height="0"
                         sizes="100vw"
                         className="w-full h-full object-cover"
+                        priority
                       />
                     </div>
                   ))}
