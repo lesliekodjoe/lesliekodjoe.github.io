@@ -57,11 +57,11 @@ const About = () => {
               </div>
             </div>
           </div>
+          <div className="project-anim-start "></div>
           {/* Projects */}
           <div className="py-16 px-6 md:px-0 overflow-x-hidden">
-            <div className="project-anim-start "></div>
             <h1 className="about-header">Projects.</h1>
-            <div className="mt-14 py-3 flex flex-col gap-y-10 md:flex-row md:gap-x-12 overflow-x-auto">
+            <div className="projects mt-14 py-3 px-3 flex flex-col gap-y-10 md:flex-row md:gap-x-12 overflow-x-auto">
               {projects_data.map((project) => (
                 <div>
                   <TransitionLink
@@ -87,9 +87,10 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-14 overflow-x-hidden">
+            <div className="design-anim-start "></div>
+            <div className="mt-14 overflow-hidden">
               <h1 className="about-header">Designs.</h1>
-              <div className="mt-14 py-3 flex flex-col gap-y-10 md:flex-row md:gap-x-12 overflow-x-auto">
+              <div className="design mt-14 py-3 px-3 flex flex-col gap-y-10 md:flex-row md:gap-x-12 overflow-x-auto">
                 {design_data.map((design) => (
                   <div
                     key={design.num}

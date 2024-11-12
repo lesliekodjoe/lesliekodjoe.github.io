@@ -83,6 +83,21 @@ export const aboutAnimate = () => {
     }
   );
   gsap.fromTo(
+    ".design",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: ".design-anim-start",
+        start: "top 50%",
+        end: "top 30%",
+      },
+    }
+  );
+  gsap.fromTo(
     ".hobbys-anim",
     { y: 100, opacity: 0 },
     {
