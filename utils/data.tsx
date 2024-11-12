@@ -37,9 +37,46 @@ export const projects_data: ProjectData[] = [
       ],
     },
   },
+  {
+    num: "01",
+    projectInfo: {
+      projectName: "Kweku's Portfolio",
+      projectCategory: "Portfolio website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "https://www.google.com",
+      projectYear: "2024",
+      projectRole: "Developer",
+      tech: ["Figma, ", "React, ", "TailwindCSS"],
+    },
+    media: {
+      imageSrc: "/assets/projectBackground/projCard1.png",
+      altname: "project 1",
+      mockUps: [
+        "/assets/projectBackground/mock1.jpg",
+        "/assets/projectBackground/mock1.jpg",
+        "/assets/projectBackground/mock1.jpg",
+      ],
+    },
+  },
 ];
 
 export const design_data: DesignData[] = [
+  {
+    num: "01",
+    designInfo: {
+      designDate: "Jan 2024",
+      designName: "MenCrud",
+      designDescription:
+        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+      designLink: "https://www.google.com",
+    },
+    designBgColor: "bg-[#FF6F6F]",
+    media: {
+      imageSrc: "/assets/projectBackground/projCard1.png",
+      altname: "project 1",
+    },
+  },
   {
     num: "01",
     designInfo: {
