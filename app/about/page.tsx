@@ -6,6 +6,7 @@ import TransitionLink from "@/components/TransitionLink";
 import Footer from "@/components/Footer";
 import Connect from "@/sections/Connect";
 import { aboutAnimate } from "@/utils/animate";
+import { GoArrowUpRight } from "react-icons/go";
 
 const About = () => {
   useEffect(() => {
@@ -55,13 +56,31 @@ const About = () => {
           <div className="py-16 px-6 md:px-0 mb-80">
             <div className="project-anim-start "></div>
             <h1 className="about-header">Projects.</h1>
-            <div className="mt-14 flex flex-col md:flex-row">
-                {
-                  projects_data.map((project)=>(
-                    <div key={project.num}>
+            <div className="mt-14 flex flex-col gap-y-10 md:flex-row">
+              {projects_data.map((project) => (
+                <TransitionLink
+                  key={project.num}
+                  href={`/projects/${project.num}`}
+                  className="w-full"
+                >
+                  <div className="w-full flex flex-col items-start group">
+                    <div className="w-full md:w-[480px] group-hover:scale-105 ease-in-out duration-500">
+                      <Image
+                        src={project.media.imageSrc}
+                        alt="projCard1"
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     </div>
-                  ))
-                }
+                    <h4 className="mt-5 flex items-center">
+                      {project.projectInfo.projectName}
+                      <GoArrowUpRight className="text-xl ml-1 md:text-2xl transform group-hover:translate-x-2 group-hover:-translate-y-2 ease-in-out duration-500" />
+                    </h4>
+                  </div>
+                </TransitionLink>
+              ))}
             </div>
             {/* <div className="projects mt-14 relative w-full md:flex h-[363px] gap-x-5 items-center justify-center">
               <TransitionLink
