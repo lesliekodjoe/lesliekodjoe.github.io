@@ -6,6 +6,7 @@ import TransitionLink from "./TransitionLink";
 import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
 import useMediaQuery from "@/utils/useMediaQuery";
 import { socialIcons } from "@/utils/data";
+import { PiDownloadSimple } from "react-icons/pi";
 
 const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -33,6 +34,7 @@ const Navbar = () => {
       {isScrolling ? (
         <nav className="fixed bottom-5 z-20 w-full">
           <div className="w-full flex justify-center">
+            {/* Floating Navbar */}
             <div className="w-[303px] py-3 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
               <div className="flex items-center justify-center h-full space-x-6">
                 <div className="flex">
@@ -47,14 +49,20 @@ const Navbar = () => {
                   <div className="w-0.5 h-6 bg-zinc-500 rounded-full ml-3"></div>
                 </div>
                 <a
-                  href="#"
-                  className="text-white text-sm hover:text-gray-400"
+                  href="#design"
+                  className={`text-white text-sm hover:text-zinc-400 ${
+                    pathname == "/projects" || pathname == "/about"
+                      ? ""
+                      : "text-[#d28d50] font-bold"
+                  }`}
                 >
                   Work
                 </a>
                 <TransitionLink
                   href="/about"
-                  className="text-white text-sm hover:text-gray-400"
+                  className={`text-white text-sm hover:text-zinc-400 ${
+                    pathname === "/about" ? "text-[#d28d50] font-bold" : ""
+                  }`}
                 >
                   About
                 </TransitionLink>
@@ -102,29 +110,16 @@ const Navbar = () => {
                 </TransitionLink>
               )}
             </div>
-            <nav
-              className={`hidden w-1/3 md:flex items-center justify-center ${
+            <div
+              className={`flex items-center text-sm font-semibold ${
                 pathname == "/" || pathname == "/about"
                   ? "text-black"
                   : "text-white"
               }`}
-            ></nav>
-            {isAboveMediumScreens ? (
-              <div className={`flex gap-x-5 text-sm font-semibold ${
-                pathname == "/" || pathname == "/about"
-                  ? "text-black"
-                  : "text-white"
-              }`}>
-                <a href="">Work</a>
-                <TransitionLink href="/about" className="">
-                  About
-                </TransitionLink>
-              </div>
-            ) : (
-              <div className="w-1/3 flex flex-row-reverse">
-                <AnimatedHamburgerMenu />
-              </div>
-            )}
+            >
+              <PiDownloadSimple />
+              My CV
+            </div>
           </div>
         </header>
       )}

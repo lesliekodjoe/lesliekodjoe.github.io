@@ -8,8 +8,6 @@ import {
   tech_stack,
 } from "@/utils/data";
 import TransitionLink from "@/components/TransitionLink";
-import Footer from "@/components/Footer";
-import Connect from "@/sections/Connect";
 import { aboutAnimate } from "@/utils/animate";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -19,8 +17,8 @@ const About = () => {
   });
   return (
     <section className="bg-white h-full">
-      <div className="pt-20 pb-8">
-        <div className="px-8 md:px-48">
+      <div className="">
+        <div className="md:px-48">
           {/* About Bio */}
           <div className="py-16">
             <h1 className="about-header">Me?</h1>
@@ -34,7 +32,9 @@ const About = () => {
           </div>
           {/* Tech Stack */}
           <div className="py-16">
-            <h1 className="about-header tech-header break-words">Technologies.</h1>
+            <h1 className="about-header tech-header break-words">
+              Technologies.
+            </h1>
             <div className="tech md:flex mt-14 gap-y-20 md:text-lg">
               {/* Left Column */}
               <div className="md:w-1/2">
@@ -152,10 +152,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Connect Section */}
-        <Connect />
-        {/* Footer */}
-        <Footer />
       </div>
     </section>
   );
