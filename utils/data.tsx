@@ -58,13 +58,15 @@ export const design_data: DesignData[] = [
 ];
 
 export const tech_stack = [
-  "HTML/CSS/TailwindCSS",
+  "HTML/CSS/TailwindCSS/Bootstrap",
   "JavaScript",
   "ReactJs with TypeScript",
-  "Redux",
+  "NextJS",
+  "Redux - New",
   "Php",
   "Python",
   "SQL",
+  "MongoDB - New"
 ];
 
 export const hobbys_data = [

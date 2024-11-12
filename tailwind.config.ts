@@ -21,6 +21,9 @@ const config: Config = {
         "extra-wide": "0.5em",
         "super-wide": "0.9em",
       },
+      lineHeight: {
+        "line-wide": "2",
+      },
       backgroundImage: {
         "project-img": "url('/assets/background/about_background.jpg')",
         "design-img":

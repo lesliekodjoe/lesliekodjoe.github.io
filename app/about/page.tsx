@@ -20,9 +20,9 @@ const About = () => {
   return (
     <section className="bg-white h-full">
       <div className="pt-20 pb-8">
-        <div className="container">
+        <div className="px-8 md:px-48">
           {/* About Bio */}
-          <div className="py-16 px-6 md:px-0">
+          <div className="py-16">
             <h1 className="about-header">Me?</h1>
             <p className="about-text ">
               Experienced Frontend Developer creating different full-stack
@@ -33,19 +33,19 @@ const About = () => {
             </p>
           </div>
           {/* Tech Stack */}
-          <div className="py-16 px-6 md:px-0">
-            <h1 className="about-header tech-header">Things I need.</h1>
-            <div className="tech md:flex mt-14 gap-y-20">
+          <div className="py-16">
+            <h1 className="about-header tech-header break-words">Technologies.</h1>
+            <div className="tech md:flex mt-14 gap-y-20 md:text-lg">
               {/* Left Column */}
               <div className="md:w-1/2">
-                <div className="about-section-header">Tech Stack</div>
-                <div className="text-black opacity-80 max-w-80 leading-loose">
-                  Experienced Frontend Developer creating different full-stack
-                  solutions.
+                <div className="about-section-header">My Stack</div>
+                <div className="text-black opacity-80 max-w-80 leading-relaxed mt-4">
+                  Technologies I have used for most of my projects. Both Work
+                  and Freelance
                 </div>
               </div>
               {/* Right Column */}
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 mt-5 md:mt-0">
                 {tech_stack.map((tech, index) => (
                   <div key={index} className="py-4 border-b border-[#CCCCCC]">
                     {tech}
@@ -59,7 +59,7 @@ const About = () => {
           </div>
           <div className="project-anim-start "></div>
           {/* Projects */}
-          <div className="py-16 px-6 md:px-0 overflow-x-hidden">
+          <div className="py-16 overflow-x-hidden">
             <h1 className="about-header">Projects.</h1>
             <div className="projects mt-14 py-3 px-3 flex flex-col gap-y-10 md:flex-row md:gap-x-12 overflow-x-auto">
               {projects_data.map((project) => (
@@ -116,7 +116,7 @@ const About = () => {
             </div>
           </div>
           {/* Fun & Hobbies */}
-          <div className="py-16 px-6 md:px-0 hobby-start">
+          <div className="py-16 hobby-start">
             <h1 className="about-header">Other.</h1>
             <div className="hobbys-anim mt-14 md:flex gap-x-20 w-full ">
               {/* Left Column */}
@@ -124,9 +124,9 @@ const About = () => {
                 <div className="about-section-header">
                   What I&apos;m watching
                 </div>
-                <div className="text-black opacity-80 max-w-80 leading-loose">
-                  Experienced Frontend Developer creating different full-stack
-                  solutions.
+                <div className="text-black opacity-80 leading-loose">
+                  Attack on Titan, The Lincoln Lawyer Series, The Blacklist,
+                  YOU, The Boys, Batman Caped Crusader
                 </div>
               </div>
               {/* Right Column */}

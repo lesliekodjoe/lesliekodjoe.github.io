@@ -8,11 +8,11 @@ type Props = {
 };
 
 const greet = [
+  "Herzlich Wilkommen",
   "Creator",
-  "Problem-Solver",
   "Designer",
   "Developer",
-  "Welcome to My Space",
+  "Welcome",
 ];
 
 const PreLoader = ({ children }: Props) => {
@@ -39,7 +39,7 @@ const PreLoader = ({ children }: Props) => {
   if (pathname === "/" && loading) {
     return (
       <div className="h-screen flex flex-col items-center justify-center text-white bg-black fixed top-0 left-0 w-full">
-        <h1 id="greetingText" className="font-bold text-3xl lg:text-[5rem]">
+        <h1 id="greetingText" className="font-bold text-3xl lg:text-[2rem]">
           {currentGreeting}
         </h1>
       </div>

@@ -25,17 +25,23 @@ const Hero = () => {
 
       <div className="absolute w-full h-[800px] top-0 left-0 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg"></div>
 
-      <div className="flex items-end w-full h-full relative z-20 hero
-      ">
+      <div
+        className="flex items-end w-full h-full relative z-20 hero
+      "
+      >
         <div className="w-full md:px-40">
           <div>
             <h4 className="text-6xl text-[#b3b3b3] font-black md:text-8xl">
               Leslie Kodjoe
             </h4>
-            <p className="mt-4 text-lg leading-loose md:w-[518px] md:text-xl">
+            <p
+              className="mt-4 text-lg md:w-[518px] md:text-xl"
+              style={{ lineHeight: "1.8" }}
+            >
               A{" "}
               <span className="font-black">Frontend Developer & Designer</span>{" "}
-              who loves creating different user experiences.
+              who loves creating different user experiences. Let&apos;s develop
+              together.
             </p>
           </div>
           <div className="relative mt-8 w-full flex flex-col gap-y-4 md:mt-16 md:flex-row md:justify-between">
@@ -58,11 +64,9 @@ const Hero = () => {
             <div className="">
               Freelance
               <br />
-              Developer
+              Designer & Developer
             </div>
-            <div className="">
-             Ghana
-            </div>
+            <div className="">Ghana</div>
             <div className="">
               Get in touch
               <br />
