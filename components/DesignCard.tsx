@@ -7,7 +7,7 @@ const DesignCard = () => {
   return (
     <>
       {design_data.map((design) => (
-        <div key={design.num} className="w-full pt-16 md:px-48">
+        <div key={design.num} className="w-full pt-16 md:px-48" id="design">
           <div className="w-full flex flex-col-reverse md:flex-row md:h-[521px] md:items-center md:gap-x-10">
             <div className="md:w-1/3 mt-10 md:mt-0">
               <h4 className="text-[#656565] text-lg font-medium flex items-center">

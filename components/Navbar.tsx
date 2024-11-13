@@ -7,6 +7,7 @@ import { AnimatedHamburgerMenu } from "@/components/AnimatedHamburgerMenu";
 import useMediaQuery from "@/utils/useMediaQuery";
 import { socialIcons } from "@/utils/data";
 import { PiDownloadSimple } from "react-icons/pi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -48,8 +49,9 @@ const Navbar = () => {
                   </TransitionLink>
                   <div className="w-0.5 h-6 bg-zinc-500 rounded-full ml-3"></div>
                 </div>
-                <a
-                  href="#design"
+                <Link
+                  href="#project"
+                  scroll={true}
                   className={`text-white text-sm hover:text-zinc-400 ${
                     pathname == "/projects" || pathname == "/about"
                       ? ""
@@ -57,15 +59,7 @@ const Navbar = () => {
                   }`}
                 >
                   Work
-                </a>
-                <TransitionLink
-                  href="/about"
-                  className={`text-white text-sm hover:text-zinc-400 ${
-                    pathname === "/about" ? "text-[#d28d50] font-bold" : ""
-                  }`}
-                >
-                  About
-                </TransitionLink>
+                </Link>
 
                 {socialIcons.map((icon, index) => (
                   <a
@@ -82,6 +76,14 @@ const Navbar = () => {
                     />
                   </a>
                 ))}
+                <a
+                  href="/Leslie_CV.pdf"
+                  download
+                  className={`flex items-center text-sm font-semibold text-white`}
+                >
+                  <PiDownloadSimple className="text-xl mr-1" />
+                  CV
+                </a>
               </div>
             </div>
           </div>
@@ -110,16 +112,35 @@ const Navbar = () => {
                 </TransitionLink>
               )}
             </div>
-            <div
-              className={`flex items-center text-sm font-semibold ${
-                pathname == "/" || pathname == "/about"
-                  ? "text-black"
-                  : "text-white"
-              }`}
-            >
-              <PiDownloadSimple />
-              My CV
-            </div>
+            {isAboveMediumScreens ? (
+              <div
+                className={`flex gap-x-5 text-sm font-semibold ${
+                  pathname == "/" || pathname == "/about"
+                    ? "text-black"
+                    : "text-white"
+                }`}
+              >
+                <Link
+                  href="#project"
+                  scroll={true}
+                  className="hover:text-zinc-400 ease-in-out duration-500"
+                >
+                  Work
+                </Link>
+                <a
+                  href="/Leslie_CV.pdf"
+                  download
+                  className={`flex items-center text-sm font-semibold hover:text-zinc-400 ease-in-out duration-500`}
+                >
+                  <PiDownloadSimple className="text-xl mr-1" />
+                  My CV
+                </a>
+              </div>
+            ) : (
+              <div className="w-1/3 flex flex-row-reverse">
+                <AnimatedHamburgerMenu />
+              </div>
+            )}
           </div>
         </header>
       )}

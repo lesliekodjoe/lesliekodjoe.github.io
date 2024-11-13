@@ -19,11 +19,6 @@ export const HeroFadeIn = () => {
       opacity: 1,
       duration: 2,
       ease: "expo.out",
-      scrollTrigger: {
-        trigger: ".proj-start-marker",
-        start: "top 60%",
-        end: "top 30%",
-      },
     }
   );
 };

@@ -10,7 +10,7 @@ export const socialIcons: SocialIcons[] = [
   {
     src: "/assets/icons/github.svg",
     alt: "mail",
-    href: "https://github.com/Leswulff23",
+    href: "https://github.com/lesliekodjoe/",
   }
 ];
 

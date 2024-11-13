@@ -14,7 +14,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex mt-10 md:mt-0">
-          <a href="" className="flex items-center hover:text-zinc-500">
+          <a
+            href="https://github.com/lesliekodjoe/"
+            className="flex items-center hover:text-zinc-500"
+          >
             <GoArrowRight className="text-xl mr-1" />
             Github
           </a>

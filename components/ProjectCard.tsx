@@ -8,7 +8,7 @@ const ProjectCard = () => {
   return (
     <>
       {projects_data.map((project) => (
-        <div className="w-full pt-16 md:px-48 ">
+        <div className="w-full pt-16 md:px-48">
           <TransitionLink
             key={project.num}
             href={`/projects/${project.num}`}
@@ -36,6 +36,7 @@ const ProjectCard = () => {
                     height="0"
                     sizes="100vw"
                     className="w-full h-auto"
+                    priority
                   />
                 </div>
               </div>
