@@ -30,6 +30,24 @@ export const projects_data: ProjectData[] = [
       tech: ["Figma", "React", "TailwindCSS"],
     },
     media: {
+      imageSrc: images.exp,
+      altName: "project 1",
+      mockups: [images.exp_mock1, images.exp_mock2, images.exp_mock3],
+    },
+  },
+  {
+    num: "02",
+    projectInfo: {
+      projectName: "Experiential Transcript",
+      projectCategory: "Website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "https://apps.ashesi.edu.gh/",
+      projectYear: "2024",
+      projectRole: ["Designer", "Developer"],
+      tech: ["Figma", "React", "TailwindCSS"],
+    },
+    media: {
       imageSrc: images.kweku_main,
       altName: "project 1",
       mockups: [images.kweku_mock1, images.kweku_mock2, images.kweku_mock3],
