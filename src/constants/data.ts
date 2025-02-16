@@ -27,7 +27,7 @@ export const projects_data: ProjectData[] = [
       projectLink: "https://www.google.com",
       projectYear: "2024",
       projectRole: "Developer",
-      tech: ["Figma, ", "React, ", "TailwindCSS"],
+      tech: ["Figma", "React", "TailwindCSS"],
     },
     media: {
       imageSrc: images.projCard,
