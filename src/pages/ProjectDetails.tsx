@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useParams, Link } from "react-router-dom";
 import { projects_data } from "../constants/data";
-import { ImGooglePlus2 } from "react-icons/im";
 
 type Props = {};
 
@@ -12,13 +11,15 @@ const ProjectDetails = (props: Props) => {
   return (
     <section className="pt-6 px-8 md:px-48 bg-project h-full text-white">
       <div className="pt-28 pb-14 w-full h-full ">
-        <Link
-          to={"/"}
-          className="w-fit group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105 ease-in-out duration-500"
-        >
-          <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-500" />
-          Back
-        </Link>
+        <div className="">
+          <Link
+            to={"/"}
+            className="w-fit group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105 ease-in-out duration-500"
+          >
+            <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-500" />
+            Back
+          </Link>
+        </div>
         <div className="my-10 w-full md:text-center font-black text-4xl">
           {selectedProject.projectInfo.projectName}
         </div>
@@ -74,13 +75,19 @@ const ProjectDetails = (props: Props) => {
           </div>
           <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Role:</h1>
-            {selectedProject.projectInfo.projectRole.map(
-              (role: string, index: number) => (
-                <div className="mt-5 w-fit px-6 text-xs md:text-sm py-2 text-center border border-[#828282] rounded-full">{role}</div>
-          
-              )
-            )}
-            
+            <div className="flex flex-wrap gap-2">
+              {selectedProject.projectInfo.projectRole.map(
+                (role: string, index: number) => (
+                  <div
+                    key={index}
+                    className="mt-5 w-fit px-6 text-xs md:text-sm py-2 text-center border border-[#828282] rounded-full"
+                  >
+                    {role}
+                  </div>
+                )
+              )}
+            </div>
+          </div>
           <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Technologies:</h1>
             <div className="flex flex-wrap mt-5 gap-2">
@@ -102,7 +109,7 @@ const ProjectDetails = (props: Props) => {
         <div className="md:">
           <div className="mock-anim flex gap-x-6 justify-between pb-20 border-b border-[#828282]">
             {selectedProject.media.mockups.map((img, index) => (
-              <div className="mt-20 w-32">
+              <div className="mt-20 w-72">
                 <img
                   key={index}
                   src={img}
