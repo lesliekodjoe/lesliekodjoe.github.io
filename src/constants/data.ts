@@ -2,6 +2,7 @@ import { DesignData, ProjectData, SocialIcons } from "../utils/dataType";
 import icons from "./icons"
 import images from "./images"
 
+
 export const socialIcons: SocialIcons[] = [
   {
     src: icons.mail,
@@ -29,12 +30,13 @@ export const projects_data: ProjectData[] = [
       tech: ["Figma, ", "React, ", "TailwindCSS"],
     },
     media: {
-      imageSrc: "/assets/projects/projCard1.png",
+      imageSrc: images.projCard,
       altName: "project 1",
       mockups: [
-        "/assets/projects/mock1.jpg",
-        "/assets/projects/mock1.jpg",
-        "/assets/projects/mock1.jpg",
+        images.mock,
+        images.mock,
+        images.mock,
+   
       ],
     },
   },
@@ -52,7 +54,7 @@ export const design_data: DesignData[] = [
     },
     designBgColor: "bg-[#FF6F6F]",
     media: {
-      imageSrc: "/assets/projects/projCard1.png",
+      imageSrc: images.projCard,
       altName: "project 1",
     },
   },
