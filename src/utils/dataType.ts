@@ -10,7 +10,7 @@ interface ProjectInfo {
   projectDescription: string;
   projectLink: string;
   projectYear: string;
-  projectRole: string;
+  projectRole: readonly string[];
   tech: readonly string[];
 }
 

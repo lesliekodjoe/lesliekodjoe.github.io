@@ -53,13 +53,14 @@ const ProjectDetails = (props: Props) => {
               </p>
             </div>
             <div className="md:w-[371px] flex md:items-end md:justify-end">
-              <Link
-                to={selectedProject.projectInfo.projectLink}
+              <a
+                href={selectedProject.projectInfo.projectLink}
+                target="_blank"
                 className="mt-8 md:mt-0 group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105 ease-in-out duration-500"
               >
                 Visit Website
                 <GoArrowLeft className="text-2xl ml-2 group-hover:translate-x-2 ease-in-out duration-500 rotate-180" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -73,10 +74,13 @@ const ProjectDetails = (props: Props) => {
           </div>
           <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Role:</h1>
-            <div className="mt-5 w-fit px-6 text-xs md:text-sm py-2 text-center border border-[#828282] rounded-full">
-              {selectedProject.projectInfo.projectRole}
-            </div>
-          </div>
+            {selectedProject.projectInfo.projectRole.map(
+              (role: string, index: number) => (
+                <div className="mt-5 w-fit px-6 text-xs md:text-sm py-2 text-center border border-[#828282] rounded-full">{role}</div>
+          
+              )
+            )}
+            
           <div className="w-1/3 mt-10 md:mt-0">
             <h1 className="uppercase text-sm">Technologies:</h1>
             <div className="flex flex-wrap mt-5 gap-2">

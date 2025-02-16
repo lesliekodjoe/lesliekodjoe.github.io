@@ -24,20 +24,15 @@ export const projects_data: ProjectData[] = [
       projectCategory: "Portfolio website",
       projectDescription:
         "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
-      projectLink: "https://www.google.com",
+      projectLink: "https://kwekuyamoah.github.io/",
       projectYear: "2024",
-      projectRole: "Developer",
+      projectRole: ["Designer", "Developer"],
       tech: ["Figma", "React", "TailwindCSS"],
     },
     media: {
-      imageSrc: images.projCard,
+      imageSrc: images.kweku_main,
       altName: "project 1",
-      mockups: [
-        images.mock,
-        images.mock,
-        images.mock,
-   
-      ],
+      mockups: [images.kweku_mock1, images.kweku_mock2, images.kweku_mock3],
     },
   },
 ];
