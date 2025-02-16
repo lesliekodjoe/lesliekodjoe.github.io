@@ -12,6 +12,10 @@ import exp from "../assets/projects/projE.svg";
 import exp_mock1 from "../assets/projects/Emock1.svg";
 import exp_mock2 from "../assets/projects/Emock2.svg";
 import exp_mock3 from "../assets/projects/Emock3.svg";
+import net from "../assets/projects/projN.svg";
+import net_mock1 from "../assets/projects/Nmock1.svg";
+import net_mock2 from "../assets/projects/Nmock2.svg";
+import net_mock3 from "../assets/projects/Nmock3.svg";
 
 export default {
   blacklist,
@@ -27,6 +31,10 @@ export default {
   exp,
   exp_mock1,
   exp_mock2,
-  exp_mock3
+  exp_mock3,
+  net,
+  net_mock1,
+  net_mock2,
+  net_mock3
 
 };

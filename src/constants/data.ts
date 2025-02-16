@@ -53,6 +53,24 @@ export const projects_data: ProjectData[] = [
       mockups: [images.exp_mock1, images.exp_mock2, images.exp_mock3],
     },
   },
+  {
+    num: "03",
+    projectInfo: {
+      projectName: "Netflix Clone",
+      projectCategory: "Website",
+      projectDescription:
+        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+      projectLink: "https://apps.ashesi.edu.gh/",
+      projectYear: "2024",
+      projectRole: ["Designer", "Developer"],
+      tech: ["Figma", "React", "TailwindCSS"],
+    },
+    media: {
+      imageSrc: images.net,
+      altName: "project 2",
+      mockups: [images.net_mock1, images.net_mock2, images.net_mock3],
+    },
+  },
 ];
 
 export const design_data: DesignData[] = [
