@@ -1,9 +1,10 @@
-import github  from "./icons/github.svg"
-import mail  from "./icons/mail.svg"
-import pencil  from "./icons/pencil.svg"
-import twitter  from "./icons/twitter.svg"
-import logoBlack  from "./icons/LogoBlack.svg"
-import logoWhite  from "./icons/LogoWhite.svg"
+import github  from "../assets/icons/github.svg"
+import mail  from "../assets/icons/mail.svg"
+import pencil  from "../assets/icons/pencil.svg"
+import twitter  from "../assets/icons/twitter.svg"
+import logoBlack  from "../assets/icons/LogoBlack.svg"
+import logoWhite  from "../assets/icons/LogoWhite.svg"
+import download  from "../assets/icons/download.svg"
 
 
 
@@ -14,5 +15,6 @@ export default {
     pencil,
     twitter,
     logoBlack,
-    logoWhite
+    logoWhite,
+    download
 }

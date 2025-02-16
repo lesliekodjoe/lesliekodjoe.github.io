@@ -1,14 +1,15 @@
-import { DesignData, ProjectData, SocialIcons } from "@utils/dataType";
+import { DesignData, ProjectData, SocialIcons } from "../utils/dataType";
+import icons from "./icons"
 
 export const socialIcons: SocialIcons[] = [
   {
-    src: "/assets/icons/mail.svg",
+    src: icons.mail,
     alt: "mail",
     href: "leswulffk@gmail.com",
   },
   {
-    src: "/assets/icons/github.svg",
-    alt: "mail",
+    src: icons.github,
+    alt: "githun",
     href: "https://github.com/lesliekodjoe/",
   },
 ];
