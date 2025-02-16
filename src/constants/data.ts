@@ -29,12 +29,12 @@ export const projects_data: ProjectData[] = [
       tech: ["Figma, ", "React, ", "TailwindCSS"],
     },
     media: {
-      imageSrc: "/assets/projectBackground/projCard1.png",
+      imageSrc: "/assets/projects/projCard1.png",
       altName: "project 1",
       mockups: [
-        "/assets/projectBackground/mock1.jpg",
-        "/assets/projectBackground/mock1.jpg",
-        "/assets/projectBackground/mock1.jpg",
+        "/assets/projects/mock1.jpg",
+        "/assets/projects/mock1.jpg",
+        "/assets/projects/mock1.jpg",
       ],
     },
   },
@@ -52,7 +52,7 @@ export const design_data: DesignData[] = [
     },
     designBgColor: "bg-[#FF6F6F]",
     media: {
-      imageSrc: "/assets/projectBackground/projCard1.png",
+      imageSrc: "/assets/projects/projCard1.png",
       altName: "project 1",
     },
   },
