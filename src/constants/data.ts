@@ -30,9 +30,9 @@ export const projects_data: ProjectData[] = [
       tech: ["Figma", "React", "TailwindCSS"],
     },
     media: {
-      imageSrc: images.exp,
+      imageSrc: images.kweku_main,
       altName: "project 1",
-      mockups: [images.exp_mock1, images.exp_mock2, images.exp_mock3],
+      mockups: [images.kweku_mock1, images.kweku_mock2, images.kweku_mock3],
     },
   },
   {
@@ -48,9 +48,9 @@ export const projects_data: ProjectData[] = [
       tech: ["Figma", "React", "TailwindCSS"],
     },
     media: {
-      imageSrc: images.kweku_main,
-      altName: "project 1",
-      mockups: [images.kweku_mock1, images.kweku_mock2, images.kweku_mock3],
+      imageSrc: images.exp,
+      altName: "project 2",
+      mockups: [images.exp_mock1, images.exp_mock2, images.exp_mock3],
     },
   },
 ];

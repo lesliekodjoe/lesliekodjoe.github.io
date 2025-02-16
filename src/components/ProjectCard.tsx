@@ -16,8 +16,8 @@ const ProjectCard = () => {
                     {project.projectInfo.projectName}
                   </h4>
                   <p className="text-[#adadad] text-sm md:text-base">
-                    {project.projectInfo.projectRole} -{" "}
-                    {project.projectInfo.tech}
+                    {project.projectInfo.projectRole.join(", ")} -{" "}
+                    {project.projectInfo.tech.join(", ")}
                   </p>
                 </div>
                 <GoArrowRight className="text-2xl md:ml-16 md:text-3xl group-hover:translate-x-5 transition duration-500" />
@@ -27,7 +27,6 @@ const ProjectCard = () => {
                   <img
                     src={project.media.imageSrc}
                     alt={project.projectInfo.projectName}
-                    
                     className="w-full h-auto"
                   />
                 </div>
