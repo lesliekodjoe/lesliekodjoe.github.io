@@ -2,11 +2,15 @@ import React, { useEffect } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useParams, Link } from "react-router-dom";
 import { projects_data } from "../constants/data";
+import { projectScroll } from "../utils/animate";
 
 type Props = {};
 
 const ProjectDetails = (props: Props) => {
   const { id } = useParams();
+  useEffect(() => {
+    projectScroll();
+  }, []);
   const selectedProject = projects_data[Number(id) - 1];
   return (
     <section className="pt-6 px-8 md:px-48 bg-project h-full text-white">

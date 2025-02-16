@@ -2,8 +2,12 @@ import DesignCard from "../components/DesignCard";
 import ProjectCard from "../components/ProjectCard";
 import React, { useEffect, useState } from "react";
 import About from "./About";
+import { HeroFadeIn } from "../utils/animate";
 
 const Project = () => {
+  useEffect(() => {
+    HeroFadeIn();
+  });
   const [activeTab, setActiveTab] = useState("work");
 
   const handleTabButton = (tab: string) => {

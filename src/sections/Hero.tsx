@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import icons from "../constants/icons";
+import { HeroFadeIn } from "../utils/animate";
+
 type Props = {};
 
 const Hero = (props: Props) => {
+  useEffect(() => {
+    HeroFadeIn();
+  });
   return (
     <div className="h-screen flex items-center justify-center sticky top-0 z-10 pt-20 pb-20 px-8">
       <div
