@@ -1,7 +1,6 @@
 import { DesignData, ProjectData, SocialIcons } from "../utils/dataType";
-import icons from "./icons"
-import images from "./images"
-
+import icons from "./icons";
+import images from "./images";
 
 export const socialIcons: SocialIcons[] = [
   {
@@ -23,11 +22,11 @@ export const projects_data: ProjectData[] = [
       projectName: "Kweku's Portfolio",
       projectCategory: "Portfolio website",
       projectDescription:
-        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+        "In 2024, Kweku aimed to showcase his skills, experience, work & research. The design aimed to ensure the website's responsiveness across devices with smooth animations.",
       projectLink: "https://kwekuyamoah.github.io/",
       projectYear: "2024",
       projectRole: ["Designer", "Developer"],
-      tech: ["Figma", "React", "TailwindCSS"],
+      tech: ["Figma", "React + TypeScript", "TailwindCSS"],
     },
     media: {
       imageSrc: images.kweku_main,
@@ -41,11 +40,11 @@ export const projects_data: ProjectData[] = [
       projectName: "Experiential Transcript",
       projectCategory: "Website",
       projectDescription:
-        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
+        "Get an overview of the Experiential Transcript process, from capturing learning experiences to generating your official transcript. Easily update your account details and manage your profile to ensure accurate and up-to-date information",
       projectLink: "https://apps.ashesi.edu.gh/",
-      projectYear: "2024",
+      projectYear: "2022",
       projectRole: ["Designer", "Developer"],
-      tech: ["Figma", "React", "TailwindCSS"],
+      tech: ["Figma", "HTML", "TailwindCSS"],
     },
     media: {
       imageSrc: images.exp,
@@ -59,11 +58,11 @@ export const projects_data: ProjectData[] = [
       projectName: "Netflix Clone",
       projectCategory: "Website",
       projectDescription:
-        "In 2024, Force embarked on a mission to update and redesign their website. Their primary objective was to gain the ability to control content seamlessly through a Content Management System (CMS). The redesign aimed to ensure the website's responsiveness across mobile, tablet, and desktop devices. They chose Webflow to facilitate easy and efficient content updates.",
-      projectLink: "https://apps.ashesi.edu.gh/",
-      projectYear: "2024",
+        "Netflix Clone – A responsive layout platform built with Webflow, replicating Netflix's UI but updating the Hero with an animation",
+      projectLink: "https://lesliekodjoe.github.io/Netflix-Clone/",
+      projectYear: "2022",
       projectRole: ["Designer", "Developer"],
-      tech: ["Figma", "React", "TailwindCSS"],
+      tech: ["Webflow"],
     },
     media: {
       imageSrc: images.net,
@@ -80,11 +79,12 @@ export const design_data: DesignData[] = [
       designDate: "Jan 2024",
       designName: "Helt",
       designDescription:
-        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+        "HELT connects medical supply businesses and individuals with clients searching for consumables, equipment, and more.",
       designLink:
         "https://www.figma.com/proto/i4LBzBWAv0b0vbhagmA4NZ/HELT?page-id=129%3A2&node-id=130-19&p=f&viewport=342%2C252%2C0.09&t=5B4cF8inN50qTLIq-1&scaling=min-zoom&content-scaling=fixed",
     },
     designBgColor: "bg-[#00A6CB]",
+    designBorderColor: "border-[#00A6CB]",
     media: {
       imageSrc: images.helt_design,
       altName: "project 1",
@@ -96,11 +96,13 @@ export const design_data: DesignData[] = [
       designDate: "Jan 2024",
       designName: "Track Guide",
       designDescription:
-        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+        "A web platform designed to connect students with tutors based on their selected courses. Lecturers can assign tutors to students in need of academic support.",
       designLink:
         "https://www.figma.com/proto/UEN6Edj509bU6SO16vRJy8/TrackGuide?page-id=7%3A2&node-id=203-3&p=f&viewport=-111%2C273%2C0.08&t=ehyIzOBKyjMcYcQW-1&scaling=scale-down-width&content-scaling=fixed",
     },
     designBgColor: "bg-[#374151]",
+    designBorderColor: "border-[#374151]",
+
     media: {
       imageSrc: images.track_design,
       altName: "project 1",
@@ -112,11 +114,12 @@ export const design_data: DesignData[] = [
       designDate: "Jan 2024",
       designName: "Pod K",
       designDescription:
-        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+        "Listen and playback a world of stories, news, and entertainment tailored to your interests anytime, anywhere.",
       designLink:
         "https://www.figma.com/proto/oX2GlmyEduMDsZ8DJ3YsGI/PodK?page-id=16%3A323&node-id=42-54&viewport=470%2C-295%2C0.49&t=0TwMYFQuabyK9Pqn-1&scaling=min-zoom&content-scaling=fixed",
     },
     designBgColor: "bg-[#9C6DDB]",
+    designBorderColor: "border-[#9C6DDB]",
     media: {
       imageSrc: images.podk_design,
       altName: "project 1",

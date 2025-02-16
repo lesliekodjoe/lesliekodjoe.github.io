@@ -42,5 +42,6 @@ export interface DesignData {
   num: string;
   designInfo: DesignInfo;
   designBgColor: string;
+  designBorderColor: string;
   media: DesignMedia;
 }

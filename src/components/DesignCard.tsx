@@ -15,10 +15,10 @@ const DesignCard = () => {
                 {design.designInfo.designDate}
               </h4>
               <div className="mt-7 flex flex-col gap-y-5">
-                <h4 className="text-3xl font-semibold">
+                <h4 className={`text-3xl font-semibold py-3 border-b-2 ${design.designBorderColor} w-fit`}>
                   {design.designInfo.designName}
                 </h4>
-                <p className="">{design.designInfo.designDescription}</p>
+                <p className="text-base leading-7">{design.designInfo.designDescription}</p>
                 <a
                   href={design.designInfo.designLink}
                   className="flex items-center text-[#282828] uppercase text-sm font-semibold tracking-wide group hover:text-gray-500"
