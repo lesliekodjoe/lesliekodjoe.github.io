@@ -42,6 +42,16 @@
   font-weight: 800;
 }
 
+.bg-project {
+  @apply bg-cover bg-center;
+  background-image: url("/about_background.jpg");
+}
+
+.bg-design {
+  @apply bg-cover bg-center;
+  background-image: linear-gradient(#ffffffa6, #ffffffa6), url("/design_background.jpg");
+}
+
 body {
   font-family: 'Manrope', sans-serif;
 }

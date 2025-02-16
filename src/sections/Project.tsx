@@ -17,7 +17,7 @@ const Project = () => {
         activeTab === "work"
           ? "bg-[#1d1d1d] text-white"
           : activeTab === "design"
-          ? "bg-design-img text-black"
+          ? "bg-design h-screen w-full text-black"
           : "bg-white text-black"
       }`}
     >

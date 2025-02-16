@@ -23,11 +23,7 @@ export default {
       lineHeight: {
         "line-wide": "2",
       },
-      backgroundImage: {
-        "project-img": "url('/assets/background/about_background.jpg')",
-        "design-img":
-          "linear-gradient(#ffffffa6, #ffffffa6),url('/assets/background/design_background.jpg')",
-      },
+      
     },
     screens: {
       sm: "375px",
