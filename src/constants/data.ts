@@ -1,5 +1,6 @@
 import { DesignData, ProjectData, SocialIcons } from "../utils/dataType";
 import icons from "./icons"
+import images from "./images"
 
 export const socialIcons: SocialIcons[] = [
   {
@@ -72,32 +73,32 @@ export const tech_stack = [
 export const hobbys_data = [
   {
     num: 1,
-    imageSrc: "/assets/hobb_img/titan.jpg",
-    altname: "hobby 1",
+    imageSrc: images.titan,
+    altname: "Attack on Titan",
   },
   {
     num: 2,
-    imageSrc: "/assets/hobb_img/lincoln.jpg",
-    altname: "hobby 2",
+    imageSrc: images.lincoln,
+    altname: "The Lincoln Lawyer",
   },
   {
     num: 3,
-    imageSrc: "/assets/hobb_img/blacklist.jpg",
-    altname: "hobby 3",
+    imageSrc: images.blacklist,
+    altname: "Blacklist",
   },
   {
     num: 4,
-    imageSrc: "/assets/hobb_img/you.jpg",
-    altname: "hobby 4",
+    imageSrc: images.you,
+    altname: "YOU",
   },
   {
     num: 5,
-    imageSrc: "/assets/hobb_img/boys1.jpg",
-    altname: "hobby 5",
+    imageSrc: images.boys,
+    altname: "The Boys",
   },
   {
     num: 6,
-    imageSrc: "/assets/hobb_img/caped.jpg",
-    altname: "hobby 6",
+    imageSrc: images.caped,
+    altname: "Batman",
   },
 ];
