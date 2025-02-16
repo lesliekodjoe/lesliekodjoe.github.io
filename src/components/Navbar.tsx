@@ -67,16 +67,16 @@ function Navbar() {
                   </a>
                 ))}
                 <a
-                  href="/Leslie_CV.pdf"
+                  href="/Kodjoe_Nartey_Leslie_CV.pdf"
                   download
                   className={`flex items-center text-sm font-semibold text-white`}
                 >
+                  CV
                   <img
                     src={icons.download_white}
                     alt="download"
-                    className="w-6 h-6"
+                    className="w-4 h-4 ml-1"
                   />
-                  CV
                 </a>
               </div>
             </div>
@@ -121,16 +121,16 @@ function Navbar() {
                   Work
                 </NavLink>
                 <a
-                  href="/Leslie_CV.pdf"
+                  href="/Kodjoe_Nartey_Leslie_CV.pdf"
                   download
-                  className={`flex items-center text-sm font-semibold hover:text-zinc-400 ease-in-out duration-500`}
+                  className={`flex items-center justify-center text-sm font-semibold hover:text-zinc-400 ease-in-out duration-500`}
                 >
+                  My CV
                   <img
                     src={icons.download_black}
                     alt="download"
-                    className="w-6 h-6"
+                    className="w-4 h-4 ml-1"
                   />
-                  My CV
                 </a>
               </div>
             ) : (
