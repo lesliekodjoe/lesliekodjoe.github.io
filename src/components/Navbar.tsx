@@ -72,10 +72,9 @@ function Navbar() {
                   className={`flex items-center text-sm font-semibold text-white`}
                 >
                   <img
-                    src={icons.download}
+                    src={icons.download_white}
                     alt="download"
-                    width={18}
-                    height={18}
+                    className="w-6 h-6"
                   />
                   CV
                 </a>
@@ -127,10 +126,9 @@ function Navbar() {
                   className={`flex items-center text-sm font-semibold hover:text-zinc-400 ease-in-out duration-500`}
                 >
                   <img
-                    src={icons.download}
+                    src={icons.download_black}
                     alt="download"
-                    width={18}
-                    height={18}
+                    className="w-6 h-6"
                   />
                   My CV
                 </a>

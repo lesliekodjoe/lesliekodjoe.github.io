@@ -1,4 +1,3 @@
-"use client";
 import DesignCard from "../components/DesignCard";
 import ProjectCard from "../components/ProjectCard";
 import React, { useEffect, useState } from "react";

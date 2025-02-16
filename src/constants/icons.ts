@@ -4,7 +4,8 @@ import pencil  from "../assets/icons/pencil.svg"
 import twitter  from "../assets/icons/twitter.svg"
 import logoBlack  from "../assets/icons/LogoBlack.svg"
 import logoWhite  from "../assets/icons/LogoWhite.svg"
-import download  from "../assets/icons/download.svg"
+import download_white  from "../assets/icons/download_white.svg"
+import download_black  from "../assets/icons/download_black.svg"
 
 
 
@@ -16,5 +17,6 @@ export default {
     twitter,
     logoBlack,
     logoWhite,
-    download
+    download_white,
+    download_black
 }
