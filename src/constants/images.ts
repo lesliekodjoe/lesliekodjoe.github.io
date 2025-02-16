@@ -16,6 +16,10 @@ import net from "../assets/projects/projN.svg";
 import net_mock1 from "../assets/projects/Nmock1.svg";
 import net_mock2 from "../assets/projects/Nmock2.svg";
 import net_mock3 from "../assets/projects/Nmock3.svg";
+import helt_design from "../assets/designs/helt_design.png";
+import podk_design from "../assets/designs/podk_design.png";
+import track_design from "../assets/designs/track_design.png";
+
 
 export default {
   blacklist,
@@ -35,6 +39,9 @@ export default {
   net,
   net_mock1,
   net_mock2,
-  net_mock3
+  net_mock3,
+  helt_design,
+  podk_design,
+  track_design
 
 };

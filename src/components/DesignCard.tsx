@@ -28,9 +28,13 @@ const DesignCard = () => {
                 </a>
               </div>
             </div>
-            <div className="md:w-2/3 h-full">
-              <div className={`w-full h-full ${design.designBgColor}`}>
-                Fill
+            <div className="md:w-2/3 h-full border">
+              <div
+                className={`w-full h-full flex items-center justify-center relative overflow-hidden ${design.designBgColor}`}
+              >
+                <div className="w-full absolute bottom-0 left-32">
+                  <img src={design.media.imageSrc} className=" w-full h-auto" />
+                </div>
               </div>
             </div>
           </div>

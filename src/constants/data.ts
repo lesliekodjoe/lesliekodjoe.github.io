@@ -78,14 +78,47 @@ export const design_data: DesignData[] = [
     num: "01",
     designInfo: {
       designDate: "Jan 2024",
-      designName: "MenCrud",
+      designName: "Helt",
       designDescription:
         "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
-      designLink: "https://www.google.com",
+      designLink:
+        "https://www.figma.com/proto/i4LBzBWAv0b0vbhagmA4NZ/HELT?page-id=129%3A2&node-id=130-19&p=f&viewport=342%2C252%2C0.09&t=5B4cF8inN50qTLIq-1&scaling=min-zoom&content-scaling=fixed",
     },
-    designBgColor: "bg-[#FF6F6F]",
+    designBgColor: "bg-[#00A6CB]",
     media: {
-      imageSrc: images.projCard,
+      imageSrc: images.helt_design,
+      altName: "project 1",
+    },
+  },
+  {
+    num: "02",
+    designInfo: {
+      designDate: "Jan 2024",
+      designName: "Track Guide",
+      designDescription:
+        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+      designLink:
+        "https://www.figma.com/proto/UEN6Edj509bU6SO16vRJy8/TrackGuide?page-id=7%3A2&node-id=203-3&p=f&viewport=-111%2C273%2C0.08&t=ehyIzOBKyjMcYcQW-1&scaling=scale-down-width&content-scaling=fixed",
+    },
+    designBgColor: "bg-[#374151]",
+    media: {
+      imageSrc: images.track_design,
+      altName: "project 1",
+    },
+  },
+  {
+    num: "03",
+    designInfo: {
+      designDate: "Jan 2024",
+      designName: "Pod K",
+      designDescription:
+        "Lorem ipsum dolor sit amet consectetur. At lectus donec ut at vitae imperdiet duis diam mollis.",
+      designLink:
+        "https://www.figma.com/proto/oX2GlmyEduMDsZ8DJ3YsGI/PodK?page-id=16%3A323&node-id=42-54&viewport=470%2C-295%2C0.49&t=0TwMYFQuabyK9Pqn-1&scaling=min-zoom&content-scaling=fixed",
+    },
+    designBgColor: "bg-[#9C6DDB]",
+    media: {
+      imageSrc: images.podk_design,
       altName: "project 1",
     },
   },
