@@ -1,5 +1,4 @@
 import { design_data } from "../constants/data";
-import React from "react";
 import { GoArrowRight } from "react-icons/go";
 import { PiCalendarDotsFill } from "react-icons/pi";
 

@@ -3,11 +3,9 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { projects_data } from "../constants/data";
 import { projectScroll } from "../utils/animate";
-import TransitionLink from "../components/TransitionLink";
 
-type Props = {};
 
-const ProjectDetails = (props: Props) => {
+const ProjectDetails = () => {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const { id } = useParams();

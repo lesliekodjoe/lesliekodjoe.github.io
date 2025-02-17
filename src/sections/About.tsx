@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { hobbys_data, projects_data, tech_stack } from "../constants/data";
 import { GoArrowUpRight } from "react-icons/go";

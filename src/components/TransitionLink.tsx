@@ -1,7 +1,7 @@
-import { useLocation, useNavigation } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 import { usePageTransitions } from "../utils/animationPage";
 
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 type Props = {
   href: string;

@@ -1,4 +1,3 @@
-"use client";
 import { motion, MotionConfig } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { socialIcons } from "../constants/data";

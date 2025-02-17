@@ -1,5 +1,5 @@
-import React, { ReactNode, useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { ReactNode, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { animateGreetings } from "../utils/animateGreetings";
 
 type Props = {

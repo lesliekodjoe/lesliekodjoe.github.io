@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import icons from "../constants/icons";
 import { HeroFadeIn } from "../utils/animate";
 
-type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   useEffect(() => {
     HeroFadeIn();
   });

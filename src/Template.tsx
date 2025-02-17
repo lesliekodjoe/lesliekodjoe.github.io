@@ -24,8 +24,6 @@ export default function Template({ children }: Props) {
       </div>
       {children}
     </div>
-    // <div>
-    //   {children}
-    // </div>
+
   );
 }
