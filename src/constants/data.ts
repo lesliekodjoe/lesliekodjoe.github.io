@@ -17,7 +17,7 @@ export const socialIcons: SocialIcons[] = [
 
 export const projects_data: ProjectData[] = [
   {
-    num: "01",
+    num: 1,
     projectInfo: {
       projectName: "Kweku's Portfolio",
       projectCategory: "Portfolio website",
@@ -35,7 +35,7 @@ export const projects_data: ProjectData[] = [
     },
   },
   {
-    num: "02",
+    num: 2,
     projectInfo: {
       projectName: "Experiential Transcript",
       projectCategory: "Website",
@@ -53,7 +53,7 @@ export const projects_data: ProjectData[] = [
     },
   },
   {
-    num: "03",
+    num: 3,
     projectInfo: {
       projectName: "Netflix Clone",
       projectCategory: "Website",

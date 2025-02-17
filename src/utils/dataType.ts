@@ -33,7 +33,7 @@ interface ProjectMedia {
 }
 
 export interface ProjectData {
-  num: string;
+  num: number;
   projectInfo: ProjectInfo;
   media: ProjectMedia;
 }

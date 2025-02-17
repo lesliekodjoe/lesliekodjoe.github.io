@@ -1,19 +1,43 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { projects_data } from "../constants/data";
 import { projectScroll } from "../utils/animate";
+import TransitionLink from "../components/TransitionLink";
 
 type Props = {};
 
 const ProjectDetails = (props: Props) => {
+  const navigate = useNavigate();
+  const [index, setIndex] = useState(0);
   const { id } = useParams();
+
   useEffect(() => {
+    if (id) {
+      setIndex(Number(id) - 1);
+    }
+    window.scrollTo(0, 0);
     projectScroll();
-  }, []);
-  const selectedProject = projects_data[Number(id) - 1];
+  }, [id]);
+
+  const nextItem = () => {
+    if (index < projects_data.length - 1) {
+      navigate(`/projects/${index + 2}`);
+    }
+  };
+
+  const prevItem = () => {
+    if (index > 0) {
+      navigate(`/projects/${index}`);
+    }
+  };
+
+  const selectedProject = projects_data[index];
   return (
-    <section className="pt-6 px-8 md:px-48 bg-project h-full text-white">
+    <section
+      key={selectedProject.num}
+      className="pt-6 px-8 md:px-48 bg-project h-full text-white"
+    >
       <div className="pt-28 pb-14 w-full h-full ">
         <div className="">
           <Link
@@ -126,6 +150,30 @@ const ProjectDetails = (props: Props) => {
               </div>
             ))}
           </div>
+        </div>
+        <div
+          className={` w-full flex  my-10 ${
+            index > 0 ? "justify-between" : "justify-end"
+          }`}
+        >
+          {index > 0 && (
+            <button
+              onClick={prevItem}
+              className="w-fit group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105 ease-in-out duration-500"
+            >
+              <GoArrowLeft className="text-2xl mr-2 group-hover:-translate-x-2 ease-in-out duration-500" />
+              Back
+            </button>
+          )}
+          {index < projects_data.length - 1 && (
+            <button
+              onClick={nextItem}
+              className="w-fit group flex text-[14px] items-center bg-[#282828] px-6 py-3 rounded-full hover:scale-105 ease-in-out duration-500"
+            >
+              Next
+              <GoArrowRight className="text-2xl ml-2 group-hover:-translate-x-2 ease-in-out duration-500" />
+            </button>
+          )}
         </div>
       </div>
     </section>
