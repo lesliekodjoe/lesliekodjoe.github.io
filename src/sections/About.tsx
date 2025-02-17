@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { hobbys_data, projects_data, tech_stack } from "../constants/data";
 import { GoArrowUpRight } from "react-icons/go";
 import { aboutAnimate } from "../utils/animate";
+import TransitionLink from "../components/TransitionLink";
 
 const About = () => {
   useEffect(() => {
@@ -57,9 +57,9 @@ const About = () => {
             <div className="projects mt-14 py-3 px-3 flex flex-col gap-y-10 md:flex-row md:gap-x-12 overflow-x-auto">
               {projects_data.map((project) => (
                 <div>
-                  <Link
+                  <TransitionLink
                     key={project.num}
-                    to={`/projects/${project.num}`}
+                    href={`/projects/${project.num}`}
                     className="w-full flex flex-col items-start group"
                   >
                     <div className="w-full md:w-[480px] hover:scale-105 ease-in-out duration-500">
@@ -76,7 +76,7 @@ const About = () => {
                       {project.projectInfo.projectName}
                       <GoArrowUpRight className="text-xl ml-1 md:text-2xl transform group-hover:translate-x-2 group-hover:-translate-y-2 ease-in-out duration-500" />
                     </h4>
-                  </Link>
+                  </TransitionLink>
                 </div>
               ))}
             </div>
