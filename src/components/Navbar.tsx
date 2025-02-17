@@ -4,6 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import icons from "../constants/icons"
 import { socialIcons } from "../constants/data";
 import { AnimatedHamburgerMenu } from "./AnimatedHamburgerMenu";
+import TransitionLink from "./TransitionLink";
 
 function Navbar() {
   const location = useLocation();
@@ -32,30 +33,20 @@ function Navbar() {
         <nav className="fixed bottom-5 z-20 w-full">
           <div className="w-full flex justify-center">
             {/* Floating Navbar */}
-            <div className="w-[303px] py-3 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
+            <div className="w-fit px-12 py-3 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
               <div className="flex items-center justify-center h-full space-x-6">
                 <div className="flex">
-                  <NavLink to="/">
+                  <TransitionLink href="/">
                     <img
                       src={icons.logoWhite}
                       alt="logo"
                       height={20}
                       width={20}
                     />
-                  </NavLink>
+                  </TransitionLink>
                   <div className="w-0.5 h-6 bg-zinc-500 rounded-full ml-3"></div>
                 </div>
-                <NavLink
-                  to="#project"
-                  className={`text-white text-sm hover:text-zinc-400 ${
-                    location.pathname == "/projects" ||
-                    location.pathname == "/about"
-                      ? ""
-                      : "text-[#d28d50] font-bold"
-                  }`}
-                >
-                  Work
-                </NavLink>
+                
 
                 {socialIcons.map((icon, index) => (
                   <a
@@ -115,12 +106,7 @@ function Navbar() {
                     : "text-white"
                 }`}
               >
-                <NavLink
-                  to="#project"
-                  className="hover:text-zinc-400 ease-in-out duration-500"
-                >
-                  Work
-                </NavLink>
+
                 <a
                   href="/Kodjoe_Nartey_Leslie_CV.pdf"
                   download

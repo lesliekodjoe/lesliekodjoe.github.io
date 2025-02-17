@@ -4,11 +4,6 @@ import images from "./images";
 
 export const socialIcons: SocialIcons[] = [
   {
-    src: icons.mail,
-    alt: "mail",
-    href: "leswulffk@gmail.com",
-  },
-  {
     src: icons.github,
     alt: "githun",
     href: "https://github.com/lesliekodjoe/",
