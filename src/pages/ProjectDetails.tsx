@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { projects_data } from "../constants/data";
