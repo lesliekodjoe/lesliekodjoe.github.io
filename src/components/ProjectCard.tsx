@@ -1,14 +1,13 @@
 import { projects_data } from "../constants/data";
-import React from "react";
 import { GoArrowRight } from "react-icons/go";
-import { Link } from "react-router-dom";
+import TransitionLink from "./TransitionLink";
 
 const ProjectCard = () => {
   return (
     <>
       {projects_data.map((project) => (
         <div key={project.num} className="w-full pt-16 md:px-48">
-          <Link to={`/projects/${project.num}`} className="w-full">
+          <TransitionLink href={`/projects/${project.num}`} className="w-full">
             <div className="px-5 bg-[#2C2C2C] w-full h-full md:h-[625px] border border-[#393939] rounded-xl overflow-hidden group hover:bg-[#444444] transition duration-500 md:px-0">
               <div className="py-8 md:px-12 md:py-10 md:flex items-center">
                 <div className="mb-4">
@@ -32,7 +31,7 @@ const ProjectCard = () => {
                 </div>
               </div>
             </div>
-          </Link>
+          </TransitionLink>
         </div>
       ))}
     </>

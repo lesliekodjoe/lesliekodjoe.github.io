@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import icons from "../constants/icons"
 import { socialIcons } from "../constants/data";
+import { AnimatedHamburgerMenu } from "./AnimatedHamburgerMenu";
 
 function Navbar() {
   const location = useLocation();
@@ -135,8 +136,7 @@ function Navbar() {
               </div>
             ) : (
               <div className="w-1/3 flex flex-row-reverse">
-                Menu
-                {/* <AnimatedHamburgerMenu /> */}
+                <AnimatedHamburgerMenu />
               </div>
             )}
           </div>
