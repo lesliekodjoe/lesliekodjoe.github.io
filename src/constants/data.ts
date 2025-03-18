@@ -126,6 +126,7 @@ export const tech_stack = [
   "HTML/CSS/TailwindCSS/Bootstrap",
   "JavaScript",
   "ReactJs with TypeScript",
+  "React Native",
   "NextJS",
   "Redux - New",
   "Php",
