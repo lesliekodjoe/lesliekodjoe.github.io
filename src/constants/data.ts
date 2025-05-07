@@ -128,9 +128,8 @@ export const tech_stack = [
   "ReactJs with TypeScript",
   "React Native",
   "NextJS",
-  "Redux - New",
   "Php",
-  "Python",
+  "Python, Django",
   "SQL",
   "MongoDB - New",
 ];

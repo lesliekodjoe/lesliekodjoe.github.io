@@ -16,11 +16,12 @@ const About = () => {
           <div className="py-16">
             <h1 className="about-header">Me?</h1>
             <p className="about-text ">
-              Experienced Frontend Developer creating different full-stack
-              solutions that are functional and visually pleasing with modern
-              web technologies. I am eager to explore innovative approaches and
-              grow my tech stack. Feel free to reach out — I’m open for new,
-              exciting opportunities.
+              I am an Experienced Frontend Developer in React Typescript and
+              Javascript. I also have experience working with API's to render
+              live data and error handling with regex. I am actively growing my
+              skillset in Python Django. I am eager to explore innovative
+              projects and grow my tech stack. Feel free to reach out — I’m open
+              for new, exciting opportunities.
             </p>
           </div>
           {/* Tech Stack */}

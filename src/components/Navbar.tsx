@@ -33,7 +33,7 @@ function Navbar() {
         <nav className="fixed bottom-5 z-20 w-full">
           <div className="w-full flex justify-center">
             {/* Floating Navbar */}
-            <div className="w-fit px-12 py-3 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
+            <div className="w-fit px-12 bg py-3 h-full bg-[#333333] backdrop-blur-lg rounded-lg">
               <div className="flex items-center justify-center h-full space-x-6">
                 <div className="flex">
                   <TransitionLink href="/">
@@ -46,7 +46,6 @@ function Navbar() {
                   </TransitionLink>
                   <div className="w-0.5 h-6 bg-zinc-500 rounded-full ml-3"></div>
                 </div>
-                
 
                 {socialIcons.map((icon, index) => (
                   <a
@@ -59,7 +58,7 @@ function Navbar() {
                   </a>
                 ))}
                 <a
-                  href="/Kodjoe_Nartey_Leslie_CV.pdf"
+                  href="/Kodjoe_Leslie_CV.pdf"
                   download
                   className={`flex items-center text-sm font-semibold text-white`}
                 >
@@ -106,9 +105,8 @@ function Navbar() {
                     : "text-white"
                 }`}
               >
-
                 <a
-                  href="/Kodjoe_Nartey_Leslie_CV.pdf"
+                  href="/Kodjoe_Leslie_CV.pdf"
                   download
                   className={`flex items-center justify-center text-sm font-semibold hover:text-zinc-400 ease-in-out duration-500`}
                 >
